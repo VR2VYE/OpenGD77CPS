@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>PL Type</title>
+<link rel="stylesheet" href="../wcss.css" type="text/css" />
+</head>
+<body>
+<font class="Title"><strong>PL Type</strong></font>
+<hr class = "HrColor" />
+<p><font class="Descript">This feature indicates if Private Line (PL) decoding is required to unmute to a channel with activity during a scan operation. Disabling the need for CTCSS/DCS decoding increases the scanning speed.
+</font></p>
+<strong>Option</strong> 
+<table border = "1">
+<tr id="ulRange">
+<td>Disable</td><td>No PL decoding required.</td>
+</tr>
+<tr>
+<td>Non-Priority Channel</td><td>PL decoding is required on non-priority scan list member channels.</td>
+</tr>
+<tr>
+<td>Priority Channel</td><td>PL decoding is required only on priority list 1 or priority 2 scan list member channels.</td>
+</tr>
+<tr>
+<td>Priority and Non-Priority Channel</td><td>PL decoding is required on all current scan list member channels.</td>
+</tr>
+</table>
+<br/>
+<strong>Note</strong> 
+<ul>
+<li>Before selecting the priority channel option, make sure there are priority members in the scan list.</li>
+<li>Enabling this feature overrides the PL association of the scan list member channel.</li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,805 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resource>
+	<Settings>
+		<Item Id="MaxZoneCount" Text="32" />
+	</Settings>
+	<Language Id="Slo" Text="Slovenščina" />
+	<AboutForm Text="Informacija">
+		<Controls>
+			<Control Id="lblVersion" Text="v" />
+			<Control Id="lblCompany" Text="Radioddity and GD-77 Community" />
+			<Control Id="btnClose" Text="OK" />
+      <Control Id="lblTranslationCredit" Text="Solvenian version by Savo - S56LLS" />
+		</Controls>
+	</AboutForm>
+	<BootItemForm Text="Zagonski meni">
+		<Controls>
+			<Control Id="grpBootScreen" Text="Pozdravno okno" />
+			<Control Id="lblBootScreen" Text="Pozdrav" />
+			<Control Id="lblLine2" Text="Vrstica 2" />
+			<Control Id="lblLine1" Text="Vrstica 1" />
+			<Control Id="lblBootPwd" Text="Geslo ob vklopu" />
+			<Control Id="chkBootPwdEnable" Text="Geslo ob vklopu vključeno" />
+			<Control Id="chkBootScreen" Text="Pozdravno okno" />
+		</Controls>
+		<Commons>
+			<Item Id="BootScreen" Text="Animacija,Lastno ime" />
+		</Commons>
+	</BootItemForm>
+	<ButtonForm Text="Gumbi">
+		<Controls>
+			<Control Id="dgvOneTouch" Text="Način,Način klica,Klic,Sporočilo">
+				<ControlItem Id="cmbMode" Text="Način" />
+				<ControlItem Id="cmbCallType" Text="Način klica" />
+				<ControlItem Id="cmbCallList" Text="Klic" />
+				<ControlItem Id="cmbMsg" Text="Sporočilo" />
+			</Control>
+			<Control Id="lblEmgShortDur" Text="Nujno trajanje kratkega pritiska [ms]" />
+			<Control Id="lblLongDur" Text="Trajanje dolgega pritiska [ms]" />
+			<Control Id="lblSK1" Text="SK1" />
+			<Control Id="lblSK2" Text="SK2" />
+			<Control Id="lblLongPress" Text="Dolgi pritisk" />
+			<Control Id="lblTK" Text="TK" />
+			<Control Id="lblShortPress" Text="Kratki pritisk" />
+		</Controls>
+		<Commons>
+			<Item Id="ButtonItem" Text="Neopredeljeno,Vsi toni On/Off,Nujno vključeno,Nujno izključeno,Velika/Mala Moč,Monitor,Brisanje šumov,Hitri dostop 1,Hitri dostop 2,Hitri dostop 3,Hitri dostop 4,Hitri dostop 5,Hitri dostop 6,Repetitor/Simpleks,Skeniraj On/Off,Močan/Normalni Squelč,Enkripcija On/Off,Vox On/Off,Izbira Con,Indikator baterije,Samostojno delo On/Off,Monitor vključen,Izhod iz Phone načina,Kanal gor,Kanal dol,Info o kanalu," />
+			<Item Id="Mode" Text="Nič,Digitalno,Analogno" />
+			<Item Id="CallTypeD" Text="Klic,Sporočilo" />
+			<Item Id="CallTypeA" Text="DTMF klic" />
+		</Commons>
+	</ButtonForm>
+	<ChannelForm Text="Kanal">
+		<Controls>
+			<Control Id="btnCopy" Text=">>" />
+			<Control Id="lblSquelch" Text="Šumna zapora" />
+			<Control Id="lblSql" Text="Nivo šumne zapore" />
+			<Control Id="grpDigit" Text="Digitalno" />
+			<Control Id="lblTimingPreference" Text="Prednost časovnega razporeda" />
+			<Control Id="lblRepeaterSlot" Text="Repetitor Slot" />
+			<Control Id="lblArs" Text="ARS" />
+			<Control Id="lblKeySwitch" Text="Enkripcija" />
+			<Control Id="lblKey" Text="Enkripcija" />
+			<Control Id="lblTxColor" Text="Barvna Koda" />
+			<Control Id="lblEmgSystem" Text="Nujni sistem" />
+			<Control Id="lblContact" Text="Stiki" />
+			<Control Id="chkDualCapacity" Text="Neposredni način dvojne kapacitete" />
+			<Control Id="chkUdpDataHead" Text="Stisnjena UDP podatkovna glava" />
+			<Control Id="chkAllowTxInterupt" Text="Dovoli prekinitev" />
+			<Control Id="chkTxInteruptFreq" Text="Prekinitev TX Frekvence" />
+			<Control Id="chkPrivateCall" Text="Potrditev privatnega klica" />
+			<Control Id="chkDataCall" Text="Podatkovni klic potrjen" />
+			<Control Id="chkEmgConfirmed" Text="Nujno opozorilo Ack" />
+			<Control Id="chkEnhancedChAccess" Text="Izboljšan dostop do kanala" />
+			<Control Id="lblRxColor" Text="RX Barvna koda" />
+			<Control Id="lblRxGroup" Text="RX Skupina" />
+			<Control Id="chkRxOnly" Text="Samo RX" />
+			<Control Id="chkAllowTalkaround" Text="Dovoli simpleks" />
+			<Control Id="grpAnalog" Text="Analogno" />
+			<Control Id="lblChBandwidth" Text="Pasovna širina [KHz]" />
+			<Control Id="lblVoiceEmphasis" Text="Glasovni povdarek" />
+			<Control Id="lblSte" Text="STE" />
+			<Control Id="lblNonSte" Text="Brez STE" />
+			<Control Id="lblRxTone" Text="RX Ton [Hz]" />
+			<Control Id="lblRxSignaling" Text="RX signaliziranje" />
+			<Control Id="lblUnmuteRule" Text="Ustavi pravilo" />
+			<Control Id="lblArtsInterval" Text="ARTS trajanje [s]" />
+			<Control Id="lblArts" Text="ARTS" />
+			<Control Id="lblPttidType" Text="PTT ID tip" />
+			<Control Id="lblTxSignaling" Text="TX signaliziranje" />
+			<Control Id="lblTxTone" Text="TX Ton [Hz]" />
+			<Control Id="chkDataPl" Text="PL za podatke" />
+			<Control Id="chkLoneWoker" Text="Samostojno delo" />
+			<Control Id="chkVox" Text="Vox" />
+			<Control Id="chkAutoScan" Text="Avto skeniranje" />
+			<Control Id="lblChName" Text="Ime" />
+      <Control Id="chkOpenGD77ScanZoneSkip" Text="Scan: Zone skip" />
+			<Control Id="lblChMode" Text="Način" />
+			<Control Id="lblTot" Text="TOT [s]" />
+			<Control Id="lblTotRekey" Text="TOT Zakasnitev [s]" />
+			<Control Id="lblRssiThreshold" Text="RSSI prag [dBm]" />
+			<Control Id="lblRxRefFreq" Text="RX Referencčna Frekvenca" />
+			<Control Id="lblTxRefFreq" Text="TX Referenčna Frekvenca" />
+			<Control Id="lblRxFreq" Text="RX Frek [MHz]" />
+			<Control Id="lblPower" Text="Nivo moči" />
+			<Control Id="lblAdmitCriteria" Text="Sprejmi merila" />
+			<Control Id="lblTxFreq" Text="TX Frek [MHz]" />
+			<Control Id="lblScanList" Text="Skeniranje" />
+      <Control Id="lblxband" Text="POZOR: RX in TX področje je drugačno. Delovanje postaje je lahko slabše" />
+			<Control Id="tsrCh" Text="Orodje1">
+				<ToolStripItem Id="tslblInfo" Text="" />
+				<ToolStripItem Id="tsbtnFirst" Text="Prvi" />
+				<ToolStripItem Id="tsbtnPrev" Text="Prejšnji" />
+				<ToolStripItem Id="tsbtnNext" Text="Naslednji" />
+				<ToolStripItem Id="tsbtnLast" Text="Zadnji" />
+				<ToolStripItem Id="tsbtnAdd" Text="Dodaj" />
+				<ToolStripItem Id="tsbtnDel" Text="Izbriši" />
+			</Control>
+			<Control Id="mnsCh" Text="Skripta1" />
+		</Controls>
+		<Commons>
+			<Item Id="ChMode" Text="Analogno,Digitalno" />
+			<Item Id="RefFreq" Text="Mala,Srednja,Velika" />
+			<Item Id="Power" Text="Mala,Velika" />
+			<Item Id="AdmitCriterica" Text="Vedno,Prosti kanal,CTCSS/DCS" />
+			<Item Id="AdmitCritericaD" Text="Vedno,Prosti kanal,Barvna koda" />
+			<Item Id="Squelch" Text="Močno,Normalno" />
+			<Item Id="VoiceEmphasis" Text="Nič,De in Pre,De,Pre" />
+			<Item Id="Ste" Text="Frekvenca,120°,180°,240°" />
+			<Item Id="NonSte" Text="Nič,Frekvenca" />
+			<Item Id="SignalingSystem" Text="Izklopljeno,DTMF" />
+			<Item Id="UnmuteRule" Text="Std Vključi Vključi,in Vključi izključi,in Vključi ali izključi" />
+			<Item Id="PttidType" Text="Brez,Samo Spredaj,Samo zadaj,Spredaj in zadaj" />
+			<Item Id="Arts" Text="Onemogočeno,TX,RX,TX in RX" />
+			<Item Id="TimingPreference" Text="Prednostna,Primerna,neupravičena" />
+			<Item Id="Ars" Text="Onemogočeno,sprememba sistema" />
+			<Item Id="KeySwitch" Text="Izključeno,Vključeno" />
+		</Commons>
+	</ChannelForm>
+	<ChannelsForm Text="Kanali">
+			<Controls>
+			<Control Id="btnImport" Text="Uvozi" />
+			<Control Id="btnExport" Text="Izvozi" />
+			<Control Id="btnDeleteSelect" Text="Izbriši označeno" />
+			<Control Id="btnClear" Text="Počisti" />
+			<Control Id="btnDelete" Text="Izbriši" />
+			<Control Id="btnAdd" Text="Dodaj" />
+			<Control Id="dgvChannels" Text="Številka,Ime,RX Frek,TX Frek,Kanalski Način,Moč,RX Ton,TX Ton,Barvna koda,RX sprejemna lista,Stiki,Repetitor Slot">
+				<ControlItem Id="" Text="Številka" />
+				<ControlItem Id="" Text="Ime" />
+				<ControlItem Id="" Text="RX Frek" />
+				<ControlItem Id="" Text="TX Frek" />
+				<ControlItem Id="" Text="Kanali" />
+				<ControlItem Id="" Text="Moč" />
+				<ControlItem Id="" Text="RX Ton" />
+				<ControlItem Id="" Text="TX Ton" />
+				<ControlItem Id="" Text="Barvna koda" />
+				<ControlItem Id="" Text="RX lista" />
+				<ControlItem Id="" Text="Stiki" />
+				<ControlItem Id="" Text="Repetitor Slot" />
+			</Control>
+		</Controls>
+		<Commons>
+      <Item Id="DisplayHeaderText" Text="Number,Name,Ch Mode,Rx Freq,Tx Freq,Color Code,Repeater Slot,Contact,Rx Group List,Scan List,Rx Tone,Tx Tone"/>
+      <Item Id="ExportHeaderText" Text="Data type,Name,Channel Type,Rx Frequency,Tx Frequency,Color Code,Timeslot,Contact,Contact Type, Contact Id,Rx Group,Scanlist,Zone,RX CTCSS,TX CTCSS,Power,Bandwidth,Rx Only,Squelch,Tx Admit,TOT,TOT Rekey,Tx Signaling,Rx Signaling,Privacy Group,Emergency System,Flags1,Flags2,Flags3,Flags4,RssiThreshold,VoiceEmphasis,TxSignaling,UnmuteRule,RxSignaling,ArtsInterval" />
+    </Commons>
+	</ChannelsForm>
+	<CommPrgForm Text="">
+		<Controls>
+			<Control Id="btnCancel" Text="Prekini" />
+		</Controls>
+		<Commons>
+			<Item Id="ButtonItem" Text="Nič,Vsi Alarmni Toni On/Off,Nujno vključeno,Nujno izključeno,Visoka/Nizka Moč,Monitor,Brisanje šumov,Hitri dostop 1,Hitri dostop 2,Hitri dostop 3,Hitri dostop 4,Hitri dostop 5,Hitri dostop 6,Repetitor/Simpleks,Skeniranje On/Off,Visoka/Normalna zapora šuma,Enkripcija On/Off,Vox On/Off,Izbira Con,Indikator baterije,Samostojno delo On/Off,Stalni Monitor,Izhod iz fonije,Kanal gor,Kanal dol,Informacija o kanalu" />
+			<Item Id="Mode" Text="Nič,Digitalno,Analogno" />
+			<Item Id="CallTypeD" Text="Klic,Sporočilo" />
+			<Item Id="CallTypeA" Text="DTMF Klic" />
+		</Commons>
+	</CommPrgForm>
+	<ContactForm Text="Digitalni stik">
+		<Controls>
+			<Control Id="chkCallRxTone" Text="Klicni Sprejemni Ton" />
+			<Control Id="lblRingStyle" Text="Tip Zvonenja" />
+			<Control Id="lblCallType" Text="Tip Klica" />
+			<Control Id="lblName" Text="Ime" />
+			<Control Id="lblCallId" Text="DMR ID" />
+		</Controls>
+		<Commons>
+			<Item Id="CallType" Text="Skupinski klic,Privatni klic,Vsi klici" />
+			<Item Id="CallRxTone" Text="Izključen, Vključen" />
+		</Commons>
+	</ContactForm>
+	<ContactsForm Text="Stiki">
+		<Controls>
+			<Control Id="btnImport" Text="Uvoz" />
+			<Control Id="btnExport" Text="Izvoz" />
+			<Control Id="btnDeleteSelect" Text="Izbriši označeno" />
+			<Control Id="btnClear" Text="Počisti" />
+			<Control Id="btnDelete" Text="Izbriši" />
+			<Control Id="btnAdd" Text="Dodaj" />
+      <Control Id="btnInternetDownload" Text="Naloži iz interneta" />      
+      <Control Id="dgvContacts" Text="Število,Ime,DMR ID,Tip,Tip zvonenja,Ton klica,Repeater Slot override">
+				<ControlItem Id="" Text="Številka" />
+				<ControlItem Id="" Text="Ime" />
+				<ControlItem Id="" Text="DMR ID" />
+				<ControlItem Id="" Text="Tip" />
+				<ControlItem Id="" Text="Tip zvonenja" />
+				<ControlItem Id="" Text="Ton klica" />
+			</Control>
+		</Controls>
+		<Commons>
+			<Item Id="HeaderText" Text="Število,Ime,DMR ID,Tip,Tip zvonenja,Klicni ton,Repeater Slot override," />
+		</Commons>
+	</ContactsForm>
+	<DeviceInfoForm Text="Osnovne informacije">
+		<Controls>
+			<Control Id="lblTo1" Text="-" />
+			<Control Id="lblTo2" Text="-" />
+			<Control Id="lblSection1" Text="Frekvenčni razpon 1 [MHz]" />
+			<Control Id="lblDspFwVer" Text="DSP Verzija" />
+			<Control Id="lblFirmwareVer" Text="Firmware Verzija" />
+			<Control Id="lblHardwareVer" Text="Hardware Verzija" />
+			<Control Id="lblCpsSwVer" Text="CPS Verzija" />
+			<Control Id="lblSn" Text="Serijska Številka" />
+			<Control Id="lblSection2" Text="Frekvenčni razpon 2 [MHz]" />
+			<Control Id="lblLastPrgTime" Text="Nazadnje programirano" />
+			<Control Id="lblModel" Text="Ime modela" />
+		</Controls>
+	</DeviceInfoForm>
+	<DigitalKeyContactForm Text="Število izbranih gumbov">
+		<Controls>
+			<Control Id="dgvContact" Text="Stik">
+				<ControlItem Id="cmbContact" Text="Stik" />
+			</Control>
+		</Controls>
+		<Commons>
+			<Item Id="DigitKey" Text="Številka gumba " />
+		</Commons>
+	</DigitalKeyContactForm>
+	<DtmfContactForm Text="DTMF Stik">
+		<Controls>
+			<Control Id="dgvContact" Text="Ime,Številka">
+				<ControlItem Id="txtName" Text="Ime" />
+				<ControlItem Id="txtCode" Text="Številka" />
+			</Control>
+			<Control Id="btnAdd" Text="Dodaj" />
+			<Control Id="btnDel" Text="Izbriši" />
+		</Controls>
+	</DtmfContactForm>
+	<DtmfForm Text="DTMF">
+		<Controls>
+			<Control Id="chkSideTone" Text="DTMF Stranski ton" />
+			<Control Id="lblUpCode" Text="PTT ID Zgornja koda" />
+			<Control Id="lblDownCode" Text="PTT ID Spodnja koda" />
+			<Control Id="lblSelfID" Text="DMR ID" />
+			<Control Id="lblRespHoldTime" Text="Zakasnitev odzivnosti [s]" />
+			<Control Id="lblKillCode" Text="Prekini kodo" />
+			<Control Id="lblAutoResetTime" Text="Avtomastki reset časa [s]" />
+			<Control Id="lblDecTime" Text="Čas dekodiranja [s]" />
+			<Control Id="lblWakeCode" Text="Koda bujenja" />
+			<Control Id="lblDelimiter" Text="Razmejitev" />
+			<Control Id="lblGrpCallCode" Text="Skupinska koda" />
+			<Control Id="lblDecResp" Text="Odziv dekodiranja" />
+			<Control Id="lblFstDlyTime" Text="Zakasnitev prve številke [ms]" />
+			<Control Id="lblKillWakeDec" Text="Koda za Spanje/Bujenje" />
+			<Control Id="lblFstDur" Text="Trajanje prve številke [ms]" />
+			<Control Id="lblKillType" Text="Tip spanja" />
+			<Control Id="lblOtherDur" Text="*# Trajanje [ms]" />
+			<Control Id="lblRate" Text="DTMF ocena" />
+		</Controls>
+		<Commons>
+			<Item Id="DecodeResp" Text="Nič,Opomnik,Odgovori,Opomnik in odgovori" />
+			<Item Id="GroupCode" Text="Nič,A,B,C,D,*,#" />
+			<Item Id="KillType" Text="TX onemogočena,TX in RX onemogočeno,Prenehaj" />
+			<Item Id="KillWakeDec" Text="izključeno,Vključeno" />
+		</Commons>
+	</DtmfForm>
+	<EmergencyForm Text="Nujni Sistem">
+		<Controls>
+			<Control Id="lblAlias" Text="Ime" />
+			<Control Id="lblAlarmType" Text="Tip Alarma" />
+			<Control Id="lblAlarmMode" Text="Način" />
+			<Control Id="lblRevertCh" Text="Preusmeri kanal" />
+			<Control Id="lblImpoliteRetries" Text="Nevljudne Ponovitve" />
+			<Control Id="lblPoliteRetries" Text="Vljudne ponovitve" />
+			<Control Id="lblCycles" Text="Ciklov" />
+			<Control Id="lblTxCycle" Text="TX Čas ponovitve [s]" />
+			<Control Id="lblRxCycle" Text="RX čas ponovitve [s]" />
+		</Controls>
+		<Commons>
+			<Item Id="AlarmType" Text="Onemogoči,Redno,Tišina,Tišina w/ Glas" />
+			<Item Id="AlarmMode" Text="Nujni Alarm,Nujni Alarm w/ klic,Nujni Alarm w/ Glas" />
+			<Item Id="RevertCh" Text="Nič,Izbrano" />
+		</Commons>
+	</EmergencyForm>
+	<EncryptForm Text="Zasebnost">
+		<Controls>
+			<Control Id="dgvKey" Text="Ključ">
+				<ControlItem Id="txtKey" Text="Ključ" />
+			</Control>
+			<Control Id="lblType" Text="Tip zasebnosti" />
+			<Control Id="btnDel" Text="Izbriši" />
+			<Control Id="lblKeyLen" Text="Dolžina ključa" />
+			<Control Id="btnAdd" Text="Dodaj" />
+		</Controls>
+		<Commons>
+			<Item Id="EncryptType" Text="Nič,Osnovno" />
+		</Commons>
+	</EncryptForm>
+	<GeneralSetForm Text="Glavne nastavitve">
+		<Controls>
+			<Control Id="chkTxExitTone" Text="TX Izhodni Ton" />
+			<Control Id="grpBeep" Text="Opozorilni Ton" />
+			<Control Id="chkResetTone" Text="Reset Ton" />
+			<Control Id="chkUnifamiliarNumber" Text="Neznana številka tona" />
+			<Control Id="lblCallAlertDur" Text="Trajanje opozorilnega klica [s]" />
+			<Control Id="chkSelfTestPassTone" Text="Samodejni preizkusni ton" />
+			<Control Id="chkCrescendoTone" Text="Izboljšan Ton*" />
+			<Control Id="chkChFreeTone" Text="Kanal Frek zaznavni Ton" />
+			<Control Id="chkDisableAllTone" Text="Onemogoči vse tone" />
+			<Control Id="lblTalkPermitTone" Text="Ton za dovoljeno pogovarjanje" />
+			<Control Id="lblArtsTone" Text="ARTS Ton" />
+			<Control Id="grpVoice" Text="Jezik" />
+			<Control Id="chkChVoice" Text="Glasovni kanal" />
+			<Control Id="lblVoiceLang" Text="Glas jezika" />
+			<Control Id="grpSaveMode" Text="Varčevanje baterije" />
+			<Control Id="chkBatteryRx" Text="Sprejem" />
+			<Control Id="chkBatteryPreamble" Text="Preambula" />
+			<Control Id="grpLoneWork" Text="Samostojno delo" />
+			<Control Id="lblReminderTmr" Text="Časovnik [s]" />
+			<Control Id="lblRespTmr" Text="Odzivna meritev [min]" />
+			<Control Id="grpTalkAround" Text="Simpleks" />
+			<Control Id="lblPrivateHang" Text="Čas zasebnega klica [ms]" />
+			<Control Id="lblGrpHold" Text="Čas skupinskega klica [ms]" />
+			<Control Id="chkDisableAllLeds" Text="Onemogoči vse LED" />
+			<Control Id="lblRadioName" Text="Ime Postaje" />
+			<Control Id="lblRadioID" Text="DMR ID" />
+			<Control Id="lblTxPreambleDur" Text="Trajanje TX preambule [ms]" />
+			<Control Id="lblProgramPwd" Text="Geslo za program" />
+			<Control Id="lblRxLowBatt" Text="Interval prazne baterije [s]" />
+			<Control Id="chkKillState" Text="Ugasnjeno stanje" />
+			<Control Id="chkTestMode" Text="Testni način" />
+			<Control Id="lblArsInitDly" Text="ARS prepoznavanje zakasnitve [min]" />
+			<Control Id="chkDataEnCtrlStation" Text="Podatkovno omogočena centralna postaja" />
+			<Control Id="lblMonitorType" Text="Monitor način" />
+			<Control Id="lblVoxSense" Text="Vox Občutljivost" />
+			<Control Id="chkPrivateCall" Text="Privatni klic" />
+			<Control Id="chkTxInhibit" Text="TX preklic hitrih ključev" />
+			<Control Id="lblUpChMode" Text="Način kanal zgoraj" />
+			<Control Id="lblDownChMode" Text="Način kanal spodaj" />
+			<Control Id="grpScan" Text="Skeniraj" />
+			<Control Id="lblScanMode" Text="Način skeniranja" />
+		</Controls>
+		<Commons>
+			<Item Id="MonitorType" Text="Odpri šumno zaporo,Tišina" />
+			<Item Id="TalkPermitTone" Text="Nič,Digitalno,Analogno,Oboje" />
+			<Item Id="ArtsToneName" Text="Onemogoči,Enkrat,Vedno" />
+			<Item Id="ChannelMode" Text="Kanal,VFO" />
+			<Item Id="ScanMode" Text="Čas,Signal,Iskanje" />
+		</Commons>
+	</GeneralSetForm>
+	<HelpForm Text="Prikaz pomoči">
+		<Controls />
+	</HelpForm>
+	<MainForm Text="Radioddity GD-77 CPS 3.0.6 Community Edition">
+		<TreeView>
+			<TreeNode Id="Model" Text="GD-77" />
+			<TreeNode Id="BasicInfo" Text="Osnovne Informacije" />
+			<TreeNode Id="BootItem" Text="Zagonski meni" />
+			<TreeNode Id="Menu" Text="Glavni meni" />
+			<TreeNode Id="NumKeyAssign" Text="Določanje gumbov" />
+			<TreeNode Id="GeneralSetting" Text="Nastavitve postaje" />
+			<TreeNode Id="Buttons" Text="Gumbi" />
+			<TreeNode Id="TextMsg" Text="Sporočila" />
+			<TreeNode Id="Pivacy" Text="Enkripcija" />
+			<TreeNode Id="SignalingSys" Text="Signaliziranje" />
+			<TreeNode Id="EmergencySys" Text="Nujni sistem" />
+			<TreeNode Id="Contact" Text="Stiki" />
+			<TreeNode Id="DtmfContact" Text="DTMF" />
+			<TreeNode Id="DigitalContact" Text="Digitalni stiki" />
+			<TreeNode Id="RxGroupList" Text="RX skupina" />
+			<TreeNode Id="Zone" Text="Cone" />
+			<TreeNode Id="Channel" Text="Kanali" />
+			<TreeNode Id="Scan" Text="Skeniranje" />
+			<TreeNode Id="DtmfSignal" Text="DTMF" />
+			<TreeNode Id="VFO" Text="VFO" />
+			<TreeNode Id="VFOA" Text="VFO A" />
+			<TreeNode Id="VFOB" Text="VFO B" />
+		</TreeView>
+		<MenuStrip>
+			<MenuItem Id="tsmiFile" Text="&amp;Datoteka" />
+			<MenuItem Id="tsmiNew" Text="Novo" />
+			<MenuItem Id="tsmiSave" Text="Shrani" />
+			<MenuItem Id="tsmiOpen" Text="Odpri" />
+			<MenuItem Id="tsmiExit" Text="Izhod" />
+			<MenuItem Id="tsmiSetting" Text="Nastavitve" />
+			<MenuItem Id="tsmiDeviceInfo" Text="Osnovne informacije" />
+			<MenuItem Id="tsmiBootItem" Text="Zagonski meni" />
+			<MenuItem Id="tsmiMenu" Text="Meni" />
+			<MenuItem Id="tsmiNumKeyContact" Text="Določanje gumbov" />
+			<MenuItem Id="tsmiGerneralSet" Text="Glavni meni" />
+			<MenuItem Id="tsmiButton" Text="Gumbi" />
+			<MenuItem Id="tsmiTextMsg" Text="Sporočila" />
+			<MenuItem Id="tsmiEncrypt" Text="Enkripcija" />
+			<MenuItem Id="tsmiSignaling" Text="Signali" />
+      <MenuItem Id="tsmiSignalingSystem" Text="Signaliziranje" />      
+			<MenuItem Id="tsmiDtmf" Text="DTMF" />
+			<MenuItem Id="tsmiEmgSystem" Text="Nujno klicanje" />
+			<MenuItem Id="tsmiContact" Text="Stiki" />
+			<MenuItem Id="tsmiDtmfContact" Text="DTMF" />
+			<MenuItem Id="tsmiDmrContact" Text="Digitalni Stiki" />
+			<MenuItem Id="tsmiContacts" Text="Stiki" />
+			<MenuItem Id="tsmiGrpRxList" Text="Sprejemna skupina" />
+			<MenuItem Id="tsmiZone" Text="Cona" />
+			<MenuItem Id="tsmiZoneList" Text="Seznam Con" />
+			<MenuItem Id="tsmiChannels" Text="Kanal" />
+			<MenuItem Id="tsmiScan" Text="Skeniranje" />
+			<MenuItem Id="tsmiScanList" Text="Seznam skeniranja" />
+			<MenuItem Id="tsmiProgram" Text="Program" />
+			<MenuItem Id="tsmiRead" Text="Beri" />
+			<MenuItem Id="tsmiWrite" Text="Zapiši" />
+			<MenuItem Id="tsmiBasic" Text="Osnovno" />
+			<MenuItem Id="tsmiView" Text="Pogled" />
+			<MenuItem Id="tsmiTree" Text="Drevesni pogled" />
+			<MenuItem Id="tsmiHelp" Text="Pomoč" />
+			<MenuItem Id="tsmiToolBar" Text="Orodna vrstica" />
+			<MenuItem Id="tsmiStatusBar" Text="Statusna vrstica" />
+			<MenuItem Id="tsmiWindow" Text="Okno" />
+			<MenuItem Id="tsmiCascade" Text="Stopničasto" />
+			<MenuItem Id="tsmiTileHor" Text="Tloris vodoravno" />
+			<MenuItem Id="tsmiTileVer" Text="Tloris navpično" />
+			<MenuItem Id="tsmiCloseAll" Text="Zapri vse" />
+			<MenuItem Id="tsmiAbout" Text="Info" />
+			<MenuItem Id="tsmiLanguage" Text="Jezik" />
+			<MenuItem Id="tsmiEnglish" Text="Angleški" />
+			<MenuItem Id="tsmiChinese" Text="Kitajski" />
+      <MenuItem Id="tsmiExtras" Text="Posebno" />
+      <MenuItem Id="tsmiContactsDownload" Text="Naloži stike" />
+      <MenuItem Id="tsmiDMRID" Text="DMR ID" />
+      <MenuItem Id="tsmiCalibration" Text="Kalibracije" />
+    </MenuStrip>
+		<ContextMenuStrip>
+			<MenuItem Id="tsmiAdd" Text="Dodaj" />
+			<MenuItem Id="tsmiClear" Text="Počisti" />
+		</ContextMenuStrip>
+		<ContextMenuStrip>
+			<MenuItem Id="tsmiDel" Text="Zbriši" />
+			<MenuItem Id="tsmiRename" Text="Preimenuj" />
+			<MenuItem Id="tsmiCopy" Text="Kopiraj" />
+			<MenuItem Id="tsmiPaste" Text="Prilepi" />
+      <MenuItem Id="tsmiMoveUp" Text="Premakni gor" />
+      <MenuItem Id="tsmiMoveDown" Text="Premakni dol" />
+    </ContextMenuStrip>
+		<ContextMenuStrip>
+			<MenuItem Id="tsmiCollapseAll" Text="Združi vse" />
+			<MenuItem Id="tsmiExpandAll" Text="Razširi vse" />
+		</ContextMenuStrip>
+		<ContextMenuStrip>
+			<MenuItem Id="tsmiAddContact" Text="Dodaj" />
+			<MenuItem Id="tsmiGroupCall" Text="Skupinski klic" />
+			<MenuItem Id="tsmiPrivateCall" Text="Privatni klic" />
+			<MenuItem Id="tsmiAllCall" Text="Splošni" />
+		</ContextMenuStrip>
+		<ToolStrip>
+			<ToolItem Id="tsbtnNew" Text="Nov" />
+			<ToolItem Id="tsbtnOpen" Text="Odpri" />
+			<ToolItem Id="tsbtnSave" Text="Shrani" />
+			<ToolItem Id="tsbtnRead" Text="Preberi" />
+			<ToolItem Id="tsbtnWrite" Text="Zapiši" />
+			<ToolItem Id="tsbtnAbout" Text="Info" />
+		</ToolStrip>
+	</MainForm>
+	<MenuForm Text="Meni">
+		<Controls>
+			<Control Id="grpCall" Text="Dnevnik klicev" />
+			<Control Id="chkReceivedCall" Text="Odgovorjeni" />
+			<Control Id="chkDialedCall" Text="Odhodni klici" />
+			<Control Id="chkMissedCall" Text="Zgrešeni" />
+			<Control Id="grpSetting" Text="Osnovno" />
+			<Control Id="chkDoubleWait" Text="Dvojna pripravljenost" />
+			<Control Id="lblDwSwitch" Text="Dvojna pripravljenost" />
+			<Control Id="lblKeyTone" Text="Ton" />
+			<Control Id="lblBacklightTime" Text="Osvetlitev [s]" />
+			<Control Id="chkSql" Text="Šumna zapora" />
+			<Control Id="chkBacklight" Text="Osvetlitev" />
+			<Control Id="chkKeyboardLock" Text="Zaklep tipkovnice" />
+			<Control Id="chkVox" Text="Vox" />
+			<Control Id="chkToneHint" Text="Toni/opozorila" />
+			<Control Id="chkLed" Text="LED pokazatelj" />
+			<Control Id="lblChDispMode" Text="Kanalski prikaz" />
+			<Control Id="chkPwdLock" Text="Geslo in zaklep" />
+			<Control Id="lblMenuLang" Text="Meni Jezika" />
+			<Control Id="lblWorkMode" Text="Delovni način" />
+			<Control Id="chkPower" Text="Moč" />
+			<Control Id="chkBootScreen" Text="Pozdravno okno" />
+			<Control Id="chkEncrypt" Text="Kodiranje" />
+			<Control Id="lblKeyLockTime" Text="Zaklep tipkovnice [s]" />
+			<Control Id="chkTalkAround" Text="Simpleks" />
+			<Control Id="chkChDisp" Text="Kanalski način" />
+			<Control Id="grpContact" Text="Stiki" />
+			<Control Id="chkOneKeyDial" Text="Hitro izbiranje" />
+			<Control Id="chkRadioDetect" Text="Preveri postajo" />
+			<Control Id="chkRadioActive" Text="Postaja vključena" />
+			<Control Id="chkContactEdit" Text="Nastavitve" />
+			<Control Id="chkRadioKill" Text="Postaja izključena" />
+			<Control Id="chkManualDial" Text="Ročno izbiranje" />
+			<Control Id="chkRemoteMonitor" Text="Oddaljeno spremljanje " />
+			<Control Id="chkCallPrompt" Text="Opozorilo klica" />
+			<Control Id="grpScan" Text="Skeniranje" />
+			<Control Id="chkScanEditList" Text="Uredi seznam" />
+			<Control Id="chkScan" Text="Skeniranje" />
+			<Control Id="grpBasic" Text="Osnovno" />
+			<Control Id="lblMenuHangTime" Text="Čas menija [s]" />
+			<Control Id="chkInfo" Text="Informacije" />
+			<Control Id="chkFm" Text="FM" />
+			<Control Id="chkGps" Text="GPS" />
+			<Control Id="chkP1Key" Text="P1 gumb" />
+			<Control Id="lblBrightness" Text="Svetlost" />
+		</Controls>
+		<Commons>
+			<Item Id="KeyLockTime" Text="Ročno,5,10,15" />
+			<Item Id="BacklightTime" Text="Vedno odprto,Vedno zaprto,5,10" />
+			<Item Id="WorkMode" Text="VFO,Spomin,Kanal" />
+			<Item Id="ChDispMode" Text="Številka,Ime,Frekvenca" />
+			<Item Id="KeyTone" Text="Izključen,Vključen" />
+			<Item Id="DoubleWait" Text="Izključeno,Dvojna Dvojna,Dvojna Enojna" />
+			<Item Id="MenuLang" Text="Angleško,中文" />
+		</Commons>
+	</MenuForm>
+	<NormalScanForm Text="Skeniranje">
+		<Controls>
+			<Control Id="grpSelected" Text="Izbrano" />
+			<Control Id="chkTalkback" Text="Pogovor" />
+			<Control Id="grpUnselected" Text="Na voljo" />
+			<Control Id="chkChMark" Text="Oznaka kanala" />
+			<Control Id="lblTxDesignatedCh" Text="Določen TX kanal" />
+			<Control Id="lblPriorityCh1" Text="Prednostni kanal 1" />
+			<Control Id="lblSignalingHold" Text="Čas trajanja signala [ms]" />
+			<Control Id="lblName" Text="Ime" />
+			<Control Id="lblPLType" Text="PL tip" />
+			<Control Id="lblPriorityCh2" Text="Prednostni kanal 2" />
+			<Control Id="lblPrioritySample" Text="Prednostni vzorčni čas [ms]" />
+			<Control Id="btnDown" Text="Dol" />
+			<Control Id="btnUp" Text="Gor" />
+			<Control Id="btnDel" Text="Izbriši" />
+			<Control Id="btnAdd" Text="Dodaj" />
+		</Controls>
+		<Commons>
+			<Item Id="PriorityCh" Text="Nič,Izbrano" />
+			<Item Id="TxDesignatedCh" Text="Zadnji aktivni kanal,Izbrano" />
+			<Item Id="PlType" Text="Neprednostni kanal,Onemogoči,Prednostni kanal,Prednostni kanal in Neprednostni kanal" />
+		</Commons>
+	</NormalScanForm>
+	<PasswordForm Text="Geslo">
+		<Controls>
+			<Control Id="btnCancel" Text="Prekini" />
+			<Control Id="btnOk" Text="OK" />
+			<Control Id="lblPwd" Text="Geslo" />
+		</Controls>
+	</PasswordForm>
+	<PowerPwdForm Text="Geslo">
+		<Controls>
+			<Control Id="btnCancel" Text="Prekini" />
+			<Control Id="btnOk" Text="OK" />
+			<Control Id="lblPwd" Text="Geslo" />
+		</Controls>
+	</PowerPwdForm>
+	<RxGroupListForm Text="RX skupina">
+		<Controls>
+			<Control Id="btnDown" Text="Dol" />
+			<Control Id="btnUp" Text="Gor" />
+			<Control Id="grpSelected" Text="Izbrano" />
+			<Control Id="btnAdd" Text="Dodaj" />
+			<Control Id="grpUnselected" Text="Na voljo" />
+			<Control Id="btnDel" Text="Izbriši" />
+			<Control Id="lblName" Text="Ime" />
+		</Controls>
+	</RxGroupListForm>
+	<SignalingBasicForm Text="Osnovna signalizacija">
+		<Controls>
+			<Control Id="chkCallAlert" Text="Opozorilo klica je kodirano" />
+			<Control Id="chkRadioDisable" Text="Deaktiviraj radijsko postajo" />
+			<Control Id="chkRemoteMonitor" Text="Oddaljeno monitoriranje dekodiranje" />
+			<Control Id="chkEmgRM" Text="Nujno oddaljeno dekodiranje" />
+			<Control Id="lblTxSyncWakeTot" Text="TX Sinc bujenja TOT [ms]" />
+			<Control Id="chkSelCall" Text="Enkodiranje samega klica" />
+			<Control Id="lblTxWakeMsgLimit" Text="Št. poslanih sporočil za bujenje" />
+			<Control Id="lblSelCallToneId" Text="Sam klic TON/DMR ID" />
+			<Control Id="lblRMDuration" Text="Trajanje oddaljenega Monitoringa [s]" />
+			<Control Id="lblSelCallHang" Text="Trajanje samega klica [ms]" />
+			<Control Id="lblAutoResetTimer" Text="Avto reset časovnik [s]" />
+		</Controls>
+	</SignalingBasicForm>
+	<ScanBasicForm Text="Osnovno Skeniranje">
+		<Controls>
+      <Control Id="lblScanTime" Text="Čas skeniranja [s]" />
+			<Control Id="lblDigitHang" Text="Digitalno čakanje [ms]" />
+			<Control Id="lblAnalogHang" Text="Analogno čakanje [ms]" />
+			<Control Id="lblVoteHang" Text="Isknaje čakanja [s]" />
+			<Control Id="lblFastVoteRssi" Text="Iskanje RSSI praga [dB]" />
+			<Control Id="lblStartVoteRssi" Text="Start RSSI praga [dB]" />
+			<Control Id="chkPriorityAlert" Text="Prioritetno opozorilo" />
+		</Controls>
+	</ScanBasicForm>
+	<TextMsgForm Text="Sporočilo">
+		<Controls>
+			<Control Id="dgvMsg" Text="Vsebina">
+				<ControlItem Id="txtMessage" Text="Sporočilo" />
+			</Control>
+			<Control Id="btnAdd" Text="Dodaj" />
+			<Control Id="btnDel" Text="Zbriši" />
+		</Controls>
+	</TextMsgForm>
+	<TreeForm Text="Derevsni pogled">
+		<Controls />
+	</TreeForm>
+	<VfoForm Text="VFO">
+		<Controls>
+			<Control Id="btnCopy" Text=">>" />
+			<Control Id="lblSquelch" Text="Šumna zapora" />
+			<Control Id="lblSql" Text="Nivo šumne zapore" />
+			<Control Id="grpDigit" Text="Digitalno" />
+			<Control Id="lblTimingPreference" Text="Prednost časovnega razporeda" />
+			<Control Id="lblRepeaterSlot" Text="Repetitor slot" />
+			<Control Id="lblArs" Text="ARS" />
+			<Control Id="lblKeySwitch" Text="Zasebnost" />
+			<Control Id="lblKey" Text="Zasebna skupina" />
+			<Control Id="lblTxColor" Text="Barvna Koda" />
+			<Control Id="lblEmgSystem" Text="Opozorilni Sistem" />
+			<Control Id="lblContact" Text="Stiki" />
+			<Control Id="chkDualCapacity" Text="Neposredni način dvojne kapacitete" />
+			<Control Id="chkUdpDataHead" Text="Stisnjena podatkovna UDP glava" />
+			<Control Id="chkAllowTxInterupt" Text="Dovoli prekinitev" />
+			<Control Id="chkTxInteruptFreq" Text="TX prekinitvena frekvenca" />
+			<Control Id="chkPrivateCall" Text="Potrdi privatni klic" />
+			<Control Id="chkDataCall" Text="Potrdi podatkovni klic" />
+			<Control Id="chkEmgConfirmed" Text="Nujno opozorilo Ack" />
+			<Control Id="chkEnhancedChAccess" Text="Izboljšan dostop do kanala" />
+			<Control Id="lblRxColor" Text="RX Barvma koda" />
+			<Control Id="lblRxGroup" Text="RX" />
+			<Control Id="chkRxOnly" Text="Samo sprejem" />
+			<Control Id="chkAllowTalkaround" Text="Dovoli simpleks" />
+			<Control Id="grpAnalog" Text="Analogno" />
+			<Control Id="lblChBandwidth" Text="Pasovna širina [KHz]" />
+			<Control Id="lblVoiceEmphasis" Text="Glasovni povdarek" />
+			<Control Id="lblSte" Text="STE" />
+			<Control Id="lblNonSte" Text="Ne STE" />
+			<Control Id="lblRxTone" Text="RX Ton [Hz]" />
+			<Control Id="lblRxSignaling" Text="RX Sistem signalizacije" />
+			<Control Id="lblUnmuteRule" Text="Omogoči Pravilo" />
+			<Control Id="lblArtsInterval" Text="ARTS Interval [s]" />
+			<Control Id="lblArts" Text="ARTS" />
+			<Control Id="lblPttidType" Text="PTT ID Tip" />
+			<Control Id="lblTxSignaling" Text="TX Signaliziranje" />
+			<Control Id="lblTxTone" Text="TX Ton [Hz]" />
+			<Control Id="chkDataPl" Text="PL za podatke" />
+			<Control Id="chkLoneWoker" Text="Samostojno delo" />
+			<Control Id="chkVox" Text="Vox" />
+			<Control Id="chkAutoScan" Text="Avto Skeniranje" />
+			<Control Id="lblChName" Text="Ime" />
+			<Control Id="lblChMode" Text="Način" />
+			<Control Id="lblTot" Text="TOT [s]" />
+			<Control Id="lblTotRekey" Text="TOT zakasnitev [s]" />
+			<Control Id="lblRssiThreshold" Text="RSSI Prag [dBm]" />
+			<Control Id="lblRxRefFreq" Text="RX Referenčna Frekvenca" />
+			<Control Id="lblTxRefFreq" Text="TX Referenčna frekvenca" />
+			<Control Id="lblRxFreq" Text="RX Frek [MHz]" />
+			<Control Id="lblPower" Text="Nivo moči" />
+			<Control Id="lblAdmitCriteria" Text="Sprejmi merila" />
+			<Control Id="lblTxFreq" Text="TX Frek [MHz]" />
+			<Control Id="lblScanList" Text="Seznam skeniranj" />
+			<Control Id="lblOffsetStep" Text="Offset korak" />
+			<Control Id="lblOffsetDirection" Text="Offset Smeri" />
+			<Control Id="lblOffsetFreq" Text="Offset Frek" />
+		</Controls>
+		<Commons>
+			<Item Id="ChMode" Text="Analogno,Digitalno" />
+			<Item Id="RefFreq" Text="Nizka,Srednja,Visoka" />
+			<Item Id="Power" Text="Nizka,Visoka" />
+			<Item Id="AdmitCriterica" Text="Vedno,Prosti kanal,CTCSS/DCS" />
+			<Item Id="AdmitCritericaD" Text="Vedno,Prosti kanal,Barvna Koda" />
+			<Item Id="Squelch" Text="Močno,Normalno" />
+			<Item Id="VoiceEmphasis" Text="Nič,De in Pre,De,Pre" />
+			<Item Id="Ste" Text="Frekvenca,120°,180°,240°" />
+			<Item Id="NonSte" Text="Nič,Frekvenca" />
+			<Item Id="SignalingSystem" Text="Izključen,DTMF" />
+			<Item Id="UnmuteRule" Text="Izklopljen Vklopljen,in izklopljen vklopljen,in vklopljen ali izklopljen" />
+			<Item Id="PttidType" Text="Nič,Samo spredaj,Samo zadaj,Spredaj in zadaj" />
+			<Item Id="Arts" Text="Izključi,Tx,Rx,Tx in Rx" />
+			<Item Id="TimingPreference" Text="Raje,Upravičeno,Neopravičeno" />
+			<Item Id="Ars" Text="Onemogočeno,Spreminjanje sistema" />
+			<Item Id="KeySwitch" Text="Izključeno,Vključeno" />
+			<Item Id="" Text="Nič,+,-" />
+		</Commons>
+	</VfoForm>
+	<ZoneBasicForm Text="Osnovne Cone">
+		<Controls>
+			<Control Id="grpSub" Text="Spodaj" />
+			<Control Id="lblSubCh" Text="Kanal" />
+			<Control Id="lblSubZone" Text="Cone" />
+			<Control Id="grpMain" Text="Zgoraj" />
+			<Control Id="lblMainCh" Text="Kanal" />
+			<Control Id="lblCurZone" Text="Cone" />
+		</Controls>
+	</ZoneBasicForm>
+	<ZoneForm Text="Zone">
+		<Controls>
+			<Control Id="tsrZone" Text="toolStrip1">
+				<ToolStripItem Id="tslblInfo" Text="" />
+				<ToolStripItem Id="tsbtnFirst" Text="Prvi" />
+				<ToolStripItem Id="tsbtnPrev" Text="Prejšnji" />
+				<ToolStripItem Id="tsbtnNext" Text="Naslednji" />
+				<ToolStripItem Id="tsbtnLast" Text="Zadnji" />
+				<ToolStripItem Id="tsbtnAdd" Text="Dodaj" />
+				<ToolStripItem Id="tsbtnDel" Text="Briši" />
+			</Control>
+			<Control Id="btnDown" Text="Dol" />
+			<Control Id="btnUp" Text="Gor" />
+			<Control Id="grpSelected" Text="Član" />
+			<Control Id="btnAdd" Text="Dodaj" />
+			<Control Id="grpUnselected" Text="Na voljo" />
+			<Control Id="btnDel" Text="Izbriši" />
+			<Control Id="lblName" Text="Ime" />
+		</Controls>
+	</ZoneForm>
+  <DownloadContactsForm Text="Prenesi stike iz 'zadnji slišani'">
+    <Controls>
+      <Control Id="lblMessage" Text="Vnesi ID prefiks za tvojo regijo in pritisni PRENOS..." />
+      <Control Id="btnImport" Text="Uvoz označen" />
+      <Control Id="btnSelectAll" Text="Izberi vse" />      
+      <Control Id="btnDownload" Text="Prenos 'zadnjih slišanih'" />
+      <Control Id="lblIDStart" Text="Regijska koda" />
+      <Control Id="lblMessageDownloading" Text="Prenašam" />
+      <Control Id="dgvDownloadeContacts" Text="DMR ID,Klicni znak,Ime,Nazadnje slišan">
+        <ControlItem Id="" Text="DMR ID." />
+        <ControlItem Id="" Text="Klicni znak" />
+        <ControlItem Id="" Text="Ime" />
+        <ControlItem Id="" Text="Nazadnje slišani" />
+      </Control>      
+    </Controls>
+  </DownloadContactsForm>
+  <DMRIDForm Text="DMR ID">
+    <Controls>
+      <Control Id="lblMessage" Text="Vpišite kodo predpona ID za svojo regijo in pritisnite Prenesi, da dodate na seznam" />
+      <Control Id="lblRegionId" Text="Regija" />
+      <Control Id="lblInactivityFilter" Text="Filter neaktivnosti (dni))" />
+      <Control Id="btnDownload" Text="Prenesi" />
+      <Control Id="btnImportCSV" Text="Uvoz CSV - filter Regija" />
+      <Control Id="btnRead" Text="Preberite od GD-77" />
+      <Control Id="btnWrite" Text="Napišite GD-77" />
+      <Control Id="btnClear" Text="Počisti" />
+    </Controls>
+  </DMRIDForm>  
+	<Commons>
+		<Item Id="None" Text="Nič" />
+		<Item Id="Selected" Text="Izbrano" />
+		<Item Id="RadioIdNotEmpty" Text="DMR ID Ne sme biti prazen!" />
+		<Item Id="RadioIdOutOfRange" Text="DMR ID ni poznan!" />
+		<Item Id="Read" Text="Preberi" />
+		<Item Id="Write" Text="Zapiši" />
+		<Item Id="ReadComplete" Text="Branje končano" />
+		<Item Id="WriteComplete" Text="Zapisovanje končano" />
+		<Item Id="NameExist" Text="Ime že obstaja" />
+		<Item Id="FirstChNotDelete" Text="Prvi kanal v prvi Coni ne more biti izbrisan" />
+		<Item Id="FileFormatError" Text="Napaka v datoteki" />
+		<Item Id="OpenSuccessfully" Text="Uspešno odprto" />
+		<Item Id="SaveSuccessfully" Text="Uspešno shranjeno" />
+		<Item Id="TypeNotMatch" Text="Tip ne ustreza" />
+		<Item Id="NotSelectItemNotCopyItem" Text="Ne moreš izbrati ali kopirati" />
+		<Item Id="KeyPressHex" Text="Prosim vstavi : " />
+		<Item Id="KeyPressDigit" Text="Prosim vstavi : Digitalno in {0}" />
+		<Item Id="KeyPressPrint" Text="Prosim dodaj napravo" />
+		<Item Id="DeviceNotFound" Text="Naprava ni najdena" />
+		<Item Id="ModelNotMatch" Text="Model ne ustreza" />
+		<Item Id="PromptKey1" Text="Ali želiš shraniti datoteko preden zapreš program?" />
+		<Item Id="PromptKey2" Text="Ali želiš odpreti nov prazen program? Vsi podatki bodo prepisani." />
+		<Item Id="DataFormatError" Text="Napačna datoteka" />
+		<Item Id="FirstNotDelete" Text="Prva vrstica ne more biti izbrisana" />
+		<Item Id="OpenPortFail" Text="Nisem mogel odpreti porta" />
+		<Item Id="CommError" Text="Napaka v komunikaciji" />
+		<Item Id="Add" Text="Dodaj: " />
+		<Item Id="ScanSelected" Text="Nemogoče je zagnati izbrano" />
+		<Item Id="codePlugReadConfirm"  Text="Ali želiš prebrati podatke iz GD-77?.To bo prepisalo obstoječe podatke." />
+		<Item Id="codePlugWriteConfirm"  Text="Ali želiš zapisati podatke v GD-77?.To bo prepisalo obstoje podatke v GD-77" />
+		<Item Id="pleaseConfirm"  Text="Prosim potrdi" />
+    <Item Id="userAgreement"  Text="Ta program je narejem in preveden tak kot je in ne dajem nobene garancije. Uporabljaš ga na lastno odgovornost na računalniku in na DMR postaji GD-77. Ko potrdiš z DA, se strinjaš in razumeš opozorilo." />
+    <Item Id="DownloadContactsMessageAdded" Text="Tukaj je {0} novih DMR ID-jev ki še niso v tvojih stikih" />
+    <Item Id="DownloadContactsRegionEmpty" Text="Prosim vnesi 3 mestno kodo za prefiks regijo, recimo 293 za Slovenijo." />
+    <Item Id="DownloadContactsDownloading" Text="Prenašam....." />
+    <Item Id="DownloadContactsSelectContactsToImport" Text="Prosim izberi stik, ki ga želiš izvoziti" />
+    <Item Id="DownloadContactsTooMany" Text="Nisem mogel uvoziti vseh stikov, ker je bilo preseženo maximalno število stikov" />
+    <Item Id="Warning" Text="POZOR" />
+    <Item Id="UnableDownloadFromInternet" Text="Nemogoče je prenesti podatke. Preveri internetno povezavo" />
+    <Item Id="DownloadContactsImportComplete" Text="Uvoz končan" />
+    <Item Id="CodeplugUpgradeNotice" Text="To je verzija V3.0.6. Spremenil jo bom v V3.1.x" />
+    <Item Id="CodeplugUpgradeWarningToManyRxGroups" Text="Verzija 3.1.x ima lahko 76 RX skupin. Vse nadaljne RX skupine bodo izbrisane" />
+    <Item Id="IdAlreadyExists" Text="ID already exists！" />
+    <Item Id="IdOutOfRange" Text="ID out of range!" />
+    <Item Id="IdNotEmpty" Text="ID can not be empty!" />
+    <Item Id="ContactNameDuplicate" Text="Warning. Duplicate contact name." />
+    <Item Id="EnableMemoryAccessMode" Text ="The GD-77 does not seem to be in Memory Access modeHold keys SK2 (Blue side key), Green Menu and * when turning on the transceiver, and try again" />
+    <Item Id="dataRead" Text="Reading data from GD-77"/>
+    <Item Id="dataWrite" Text="Writing data to GD-77"/>
+    <Item Id="DMRIdContcatsTotal" Text="Total number of IDs = {0}. Max of {1} can be uploaded" />
+    <Item Id="ErrorParsingData" Text="Error while parsing data" />
+  </Commons>
+</Resource>

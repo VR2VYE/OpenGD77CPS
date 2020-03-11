@@ -1,0 +1,503 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{DEF0E499-718F-45BE-9052-2D41D049A434}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>OpenGD77CPS</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>DMR_32512.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+    <DefineConstants>OpenGD77</DefineConstants>
+    <OutputPath>bin\ReleaseOpenGD77\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug_3.1.x|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug_3.1.x\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <DefineConstants>CP_VER_3_1_X</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release_3.1.x|x86'">
+    <OutputPath>bin\Release_3.1.x\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <DefineConstants>CP_VER_3_1_X</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DefineConstants>OpenGD77</DefineConstants>
+    <OutputPath>bin\Debug_OpenGD77\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core">
+      <HintPath>C:\Windows\assembly\GAC_MSIL\System.Core\3.5.0.0__b77a5c561934e089\System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.XML" />
+    <Reference Include="WeifenLuo.WinFormsUI.Docking, Version=3.0.4.0, Culture=neutral, PublicKeyToken=5cded1a1a0a7b481, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class16.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Extras\DMRID\DMRDataItem.cs" />
+    <Compile Include="Extras\DMRID\DMRIDForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Extras\DMRID\DMRIDForm.Designer.cs">
+      <DependentUpon>DMRIDForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Extras\DownloadContacts\DmrMarcData.cs" />
+    <Compile Include="Extras\DownloadContacts\DownloadContactsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Extras\DownloadContacts\DownloadContactsForm.Designer.cs">
+      <DependentUpon>DownloadContactsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DMR\RxListData.cs" />
+    <Compile Include="DMR\RxListOneData.cs" />
+    <Compile Include="Extras\Calibration\CalibrationBandControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Extras\Calibration\CalibrationBandControl.Designer.cs">
+      <DependentUpon>CalibrationBandControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Extras\Calibration\CalibrationData.cs" />
+    <Compile Include="Extras\Calibration\CalibrationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Extras\Calibration\CalibrationForm.Designer.cs">
+      <DependentUpon>CalibrationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Extras\Calibration\CalibrationNUDLabelControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Extras\Calibration\CalibrationNUDLabelControl.Designer.cs">
+      <DependentUpon>CalibrationNUDLabelControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Extras\Calibration\MultiNUDControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Extras\Calibration\MultiNUDControl.Designer.cs">
+      <DependentUpon>MultiNUDControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Extras\Calibration\PowerSettingData.cs" />
+    <Compile Include="Extras\FirmwareLoader\FirmwareDataTable.cs" />
+    <Compile Include="Extras\FirmwareLoader\FirmwareLoader.cs" />
+    <Compile Include="Extras\FirmwareLoader\FirmwareLoaderUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Extras\FirmwareLoader\FirmwareLoaderUI.Designer.cs">
+      <DependentUpon>FirmwareLoaderUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Extras\OpenGD77\CommPortSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Extras\OpenGD77\CommPortSelector.Designer.cs">
+      <DependentUpon>CommPortSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Extras\OpenGD77\OpenGD77Comms.cs" />
+    <Compile Include="Extras\OpenGD77\OpenGD77CommsTransferData.cs" />
+    <Compile Include="Extras\OpenGD77\OpenGD77Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Extras\OpenGD77\OpenGD77Form.Designer.cs">
+      <DependentUpon>OpenGD77Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Extras\SetupDiWrap.cs" />
+    <Compile Include="MainWindow.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Class20.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CustomStopwatch.cs" />
+    <Compile Include="TextMsgFormCustomPasteWndProc.cs" />
+    <Compile Include="CustomNumericUpDown.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Class13.cs" />
+    <Compile Include="SelectedItemUtils.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="CodeplugComms.cs" />
+    <Compile Include="DoubleClickGroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomCombo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NameValuePair.cs" />
+    <Compile Include="IniFileUtils.cs" />
+    <Compile Include="Base64Utils.cs" />
+    <Compile Include="CustomListbox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FirmwareUpdate.cs" />
+    <Compile Include="Common\AutoClosingMessageBox.cs" />
+    <Compile Include="DMR.Properties\Resources.cs" />
+    <Compile Include="DMR.Properties\Settings.cs" />
+    <Compile Include="DMR\AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DMR\AttachmentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DMR\BootItemForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DMR\ButtonForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DMR\CallTypeE.cs" />
+    <Compile Include="DMR\ChannelForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DMR\ChannelsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DMR\CommPrgForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DMR\ContactForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DMR\ContactsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DMR\DeviceInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DMR\DigitalKeyContactForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DMR\DtmfContactForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DMR\DtmfForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DMR\EmergencyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DMR\EncryptForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DMR\FirmwareUpdateProgressEventArgs.cs" />
+    <Compile Include="DMR\FirmwareUpdateProgressEventHandler.cs" />
+    <Compile Include="DMR\GeneralSetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DMR\HelpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DMR\IData.cs" />
+    <Compile Include="DMR\IDisp.cs" />
+    <Compile Include="DMR\IFirmwareUpdate.cs" />
+    <Compile Include="DMR\ISingleRow.cs" />
+    <Compile Include="DMR\IVerify.cs" />
+    <Compile Include="DMR\Log.cs" />
+    <Compile Include="DMR\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DMR\MenuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DMR\MyDataGridViewTextBoxCell.cs" />
+    <Compile Include="DMR\MyDataGridViewTextBoxColumn.cs" />
+    <Compile Include="DMR\MyDataGridViewTextBoxEditingControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DMR\NormalScanForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DMR\PasswordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DMR\PowerPwdForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DMR\RxGroupListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DMR\ScanBasicForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DMR\SGTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DMR\SignalingBasicForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DMR\TextMsgForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DMR\ToolWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DMR\TreeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DMR\TreeNodeItem.cs" />
+    <Compile Include="DMR\VfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DMR\VoteScanForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DMR\WaitForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DMR\ZoneBasicForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DMR\ZoneForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReadWriteCsv\CsvFileReader.cs" />
+    <Compile Include="ReadWriteCsv\CsvFileWriter.cs" />
+    <Compile Include="ReadWriteCsv\CsvRow.cs" />
+    <Compile Include="UsbLibrary\DataRecievedEventArgs.cs" />
+    <Compile Include="UsbLibrary\DataRecievedEventHandler.cs" />
+    <Compile Include="UsbLibrary\DataSendEventArgs.cs" />
+    <Compile Include="UsbLibrary\DataSendEventHandler.cs" />
+    <Compile Include="UsbLibrary\GException0.cs" />
+    <Compile Include="UsbLibrary\HIDDevice.cs" />
+    <Compile Include="UsbLibrary\InputReport.cs" />
+    <Compile Include="UsbLibrary\OutputReport.cs" />
+    <Compile Include="UsbLibrary\Report.cs" />
+    <Compile Include="UsbLibrary\SpecifiedDevice.cs" />
+    <Compile Include="UsbLibrary\SpecifiedInputReport.cs" />
+    <Compile Include="UsbLibrary\SpecifiedOutputReport.cs" />
+    <Compile Include="UsbLibrary\Win32Usb.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Default306.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Default31X.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="DefaultOpenGD77.g77">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="DockPanel.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="IsSetup.ini" />
+    <None Include="Language\SpanishCatalan.chm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Language\English.chm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Language\French.chm" />
+    <None Include="Language\German.chm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Language\Polski.chm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Language\Portuguese.chm" />
+    <None Include="Language\Slovenian.chm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Language\Spanish.chm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Language\Ukrainian.chm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Setup.ini" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DMR\aR3nbf8dQp2feLmk31.lSfgApatkdxsVcGcrktoFd.resx" />
+    <EmbeddedResource Include="DMR\aR3nbf8dQp2feLmk31.SplashForm.resx" />
+    <EmbeddedResource Include="DMR\AboutForm.resx" />
+    <EmbeddedResource Include="DMR\AttachmentForm.resx" />
+    <EmbeddedResource Include="DMR\BootItemForm.resx" />
+    <EmbeddedResource Include="DMR\ButtonForm.resx" />
+    <EmbeddedResource Include="DMR\ChannelForm.resx" />
+    <EmbeddedResource Include="DMR\ChannelsForm.resx" />
+    <EmbeddedResource Include="DMR\ComForm.resx" />
+    <EmbeddedResource Include="DMR\CommPrgForm.resx" />
+    <EmbeddedResource Include="DMR\ContactForm.resx" />
+    <EmbeddedResource Include="DMR\ContactsForm.resx" />
+    <EmbeddedResource Include="DMR\DeviceInfoForm.resx" />
+    <EmbeddedResource Include="DMR\DigitalKeyContactForm.resx" />
+    <EmbeddedResource Include="DMR\DtmfContactForm.resx" />
+    <EmbeddedResource Include="DMR\DtmfForm.resx" />
+    <EmbeddedResource Include="DMR\EmergencyForm.resx" />
+    <EmbeddedResource Include="DMR\EncryptForm.resx" />
+    <EmbeddedResource Include="Extras\DMRID\DMRIDForm.resx">
+      <DependentUpon>DMRIDForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Extras\DownloadContacts\DownloadContactsForm.resx">
+      <DependentUpon>DownloadContactsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DMR\g.resx" />
+    <EmbeddedResource Include="DMR\GeneralSetForm.resx" />
+    <EmbeddedResource Include="DMR\HelpForm.resx" />
+    <EmbeddedResource Include="DMR\MainForm.resx" />
+    <EmbeddedResource Include="DMR\MenuForm.resx" />
+    <EmbeddedResource Include="DMR\NormalScanForm.resx" />
+    <EmbeddedResource Include="DMR\PasswordForm.resx" />
+    <EmbeddedResource Include="DMR\PowerPwdForm.resx" />
+    <EmbeddedResource Include="DMR\Properties.Resources.resx" />
+    <EmbeddedResource Include="DMR\RxGroupListForm.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DMR\ScanBasicForm.resx" />
+    <EmbeddedResource Include="DMR\SignalingBasicForm.resx" />
+    <EmbeddedResource Include="DMR\TextMsgForm.resx" />
+    <EmbeddedResource Include="DMR\ToolWindow.resx" />
+    <EmbeddedResource Include="DMR\TreeForm.resx" />
+    <EmbeddedResource Include="DMR\VfoForm.resx" />
+    <EmbeddedResource Include="DMR\VoteScanForm.resx" />
+    <EmbeddedResource Include="DMR\WaitForm.resx" />
+    <EmbeddedResource Include="DMR\ZoneBasicForm.resx" />
+    <EmbeddedResource Include="DMR\ZoneForm.resx" />
+    <EmbeddedResource Include="Extras\Calibration\CalibrationBandControl.resx">
+      <DependentUpon>CalibrationBandControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Extras\Calibration\CalibrationForm.resx">
+      <DependentUpon>CalibrationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Extras\Calibration\CalibrationNUDLabelControl.resx">
+      <DependentUpon>CalibrationNUDLabelControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Extras\Calibration\MultiNUDControl.resx">
+      <DependentUpon>MultiNUDControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Extras\FirmwareLoader\FirmwareLoaderUI.resx">
+      <DependentUpon>FirmwareLoaderUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Extras\OpenGD77\CommPortSelector.resx">
+      <DependentUpon>CommPortSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Extras\OpenGD77\OpenGD77Form.resx">
+      <DependentUpon>OpenGD77Form.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="help.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Language\SpanishCatalan.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Language\English.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Language\French.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Language\German.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Language\Polski.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Language\Portuguese.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Language\Slovenian.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Language\Spanish.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Language\Ukrainian.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DMR_32512.ico" />
+    <Content Include="Tone.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="WeifenLuo.WinFormsUI.Docking.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

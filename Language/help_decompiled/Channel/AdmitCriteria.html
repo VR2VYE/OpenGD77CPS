@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Admit Criteria</title>
+<link rel="stylesheet" href="../wcss.css" type="text/css" />
+</head>
+<body>
+<font class="Title"><strong>Admit Criteria</strong></font>
+<hr class = "HrColor" />
+<p><font class="Descript">Determines when voice or data is allowed to be transmitted on the channel. This is used to prevent a radio from transmitting on channels that are already being used. If the radio has different transmit and receive frequencies, only the receive frequency is monitored for activity. If no activity is found on the receive frequency, the radio allows the user to transmit on the transmit frequency even if it is being used. This is a channel-wide feature.
+</font></p>
+<strong>Option</strong> 
+<table border = "1">
+<tr>
+<td>Always</td><td>The radio will always transmit when the Push-to-Talk (PTT) button is pressed. This option is also referred to as "Impolite" channel access (not available in a Capacity Plus Personality and Linked Capacity Plus Personality channel). </td>
+</tr>
+<tr>
+<td>Channel Free</td><td>The radio will check for an idle channel prior to allowing a transmission. This option is also referred to as "Polite to All" channel access. </td>
+</tr>
+<tr>
+<td>Correct PL</td><td>The radio will check for a PL match prior to allowing a transmission. This option is available only when Rx Squelch Type is set to TPL or DPL  (for Analog channels only).</td>
+</tr>
+<tr>
+<td>Color Code Free</td><td>The radio will check if the specified Color Code is not in use prior to allowing transmission (except for Group Calls that are already in progress). This option is also referred to as "Polite to Own Digital System" channel access (for Digital channels only). </td>
+</tr>
+</table>
+<br/>
+<strong>Note</strong> 
+<ul>
+<li>These settings are not used for all launch types. For example, the emergency alarm voice is always rude and the data and control messages are always polite. An exceptional case is that the sending of an emergency alert includes both impolite channel visits and also courtesy channel services. You must disable the receive function only.</li>
+</ul>
+</body>
+</html>

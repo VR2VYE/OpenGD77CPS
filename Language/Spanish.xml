@@ -1,0 +1,815 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Resource>
+	<Settings>
+		<Item Id="MaxZoneCount" Text="32" />
+	</Settings>
+	<Language Id="Esp" Text="Español" />
+	<AboutForm Text="Acerca de">
+		<Controls>
+			<Control Id="lblVersion" Text="" />
+			<Control Id="lblCompany" Text="GD-77 Community Español EA" />
+			<Control Id="btnClose" Text="OK" />
+      <Control Id="lblTranslationCredit" Text="Spanish version by EA4ALX/EA5SW" />
+		</Controls>
+	</AboutForm>
+	<BootItemForm Text="Elementos Inicio">
+		<Controls>
+			<Control Id="grpBootScreen" Text="Pantalla" />
+			<Control Id="lblBootScreen" Text="Pantalla Inicial" />
+			<Control Id="lblLine2" Text="Línea 2" />
+			<Control Id="lblLine1" Text="Línea 1" />
+			<Control Id="lblBootPwd" Text="Contraseña: " />
+			<Control Id="chkBootPwdEnable" Text="Habilitar Contraseña de Encendido" />
+			<Control Id="chkBootScreen" Text="Pantalla Inicio" />
+		</Controls>
+		<Commons>
+			<Item Id="BootScreen" Text="Imagen,Texto" />
+		</Commons>
+	</BootItemForm>
+	<ButtonForm Text="Botones">
+		<Controls>
+			<Control Id="dgvOneTouch" Text="Modo,Tipo Llamada,Llamada,Mensaje Texto">
+				<ControlItem Id="cmbMode" Text="Modo" />
+				<ControlItem Id="cmbCallType" Text="Tipo Llamada" />
+				<ControlItem Id="cmbCallList" Text="Llamada" />
+				<ControlItem Id="cmbMsg" Text="Mensaje Texto" />
+			</Control>
+			<Control Id="lblEmgShortDur" Text="Duración Pulsación Corta Emergencia [ms]" />
+			<Control Id="lblLongDur" Text="Duración Pulsación Larga [ms]" />
+			<Control Id="lblSK1" Text="NEGRO (SK1)" />
+			<Control Id="lblSK2" Text="AZUL (SK2)" />
+			<Control Id="lblLongPress" Text="Pulsación Larga" />
+			<Control Id="lblTK" Text="NARANJA (TK)" />
+			<Control Id="lblShortPress" Text="Pulsación Corta" />
+		</Controls>
+		<Commons>
+			<Item Id="ButtonItem" Text="Ninguno,Tonos de Alerta Sí/No,Emergencia ON,Emergencia OFF,Potencia Alta/Baja,Monitor,Anular canal molesto,Acceso Directo 1,Acceso Directo 2,Acceso Directo 3,Acceso Directo 4,Acceso Directo 5,Acceso Directo 6,Repetidor/Directo,Exploración Sí/No,Silenciador Estricto/Normal,Privacidad Sí/No,VOX Sí/No,Selección de Zona,Indicador de Batería,Trabajador Aislado Sí/No,Monitor Permanente,Finalizar Llamada,Canal Arriba,Canal Abajo,Infomación de Canal," />
+			<Item Id="Mode" Text="Ninguno,Digital,Analógico" />
+			<Item Id="CallTypeD" Text="Llamada,Mensaje" />
+			<Item Id="CallTypeA" Text="Llamada DTMF" />
+		</Commons>
+	</ButtonForm>
+	<ChannelForm Text="Canal">
+		<Controls>
+			<Control Id="btnCopy" Text=">>" />
+			<Control Id="lblSquelch" Text="Silenciador" />
+			<Control Id="lblSql" Text="Nivel Silenciador" />
+			<Control Id="grpDigit" Text="Digital" />
+			<Control Id="lblTimingPreference" Text="Preferencia Timing Leader" />
+			<Control Id="lblRepeaterSlot" Text="Slot Repetidor" />
+			<Control Id="lblArs" Text="ARS" />
+			<Control Id="lblKeySwitch" Text="Private" />
+			<Control Id="lblKey" Text="Gr. Privado" />
+			<Control Id="lblTxColor" Text="Color" />
+			<Control Id="lblEmgSystem" Text="Emergencia" />
+			<Control Id="lblContact" Text="Contacto" />
+			<Control Id="chkDualCapacity" Text="DCDM - Modo Directo Capacidad Doble" />
+			<Control Id="chkUdpDataHead" Text="Compresión Cabecera Datos UDP" />
+			<Control Id="chkAllowTxInterupt" Text="Permitir Interrupción" />
+			<Control Id="chkTxInteruptFreq" Text="Frecuencias TX Interrumpibles" />
+			<Control Id="chkPrivateCall" Text="Confirmación Llamada Privada" />
+			<Control Id="chkDataCall" Text="Confirmación Llamada Datos" />
+			<Control Id="chkEmgConfirmed" Text="Alarma Emergencia Aceptada" />
+			<Control Id="chkEnhancedChAccess" Text="Acceso Mejorado Canal" />
+			<Control Id="lblRxColor" Text="Código Color RX" />
+			<Control Id="lblRxGroup" Text="Grupo RX" />
+			<Control Id="chkRxOnly" Text="Sólo RX" />
+			<Control Id="chkAllowTalkaround" Text="Permitir Talkaround" />
+			<Control Id="grpAnalog" Text="Analógico" />
+			<Control Id="lblChBandwidth" Text="Ancho Banda [KHz]" />
+			<Control Id="lblVoiceEmphasis" Text="Enfasis Voz" />
+			<Control Id="lblSte" Text="STE" />
+			<Control Id="lblNonSte" Text="No STE" />
+			<Control Id="lblRxTone" Text="Tono RX [Hz]" />
+			<Control Id="lblRxSignaling" Text="Señalización RX" />
+			<Control Id="lblUnmuteRule" Text="Regla Silenciamiento" />
+			<Control Id="lblArtsInterval" Text="Intervalo ARTS [s]" />
+			<Control Id="lblArts" Text="ARTS" />
+			<Control Id="lblPttidType" Text="Tipo PTTID" />
+			<Control Id="lblTxSignaling" Text="Señalización TX" />
+			<Control Id="lblTxTone" Text="Tono TX [Hz]" />
+			<Control Id="chkDataPl" Text="PL Datos" />
+			<Control Id="chkLoneWoker" Text="Trabajador Aislado" />
+			<Control Id="chkVox" Text="VOX" />
+			<Control Id="chkAutoScan" Text="Auto Exploración" />
+			<Control Id="lblChName" Text="CH" />
+      <Control Id="chkOpenGD77ScanZoneSkip" Text="Scan: Zone skip" />
+			<Control Id="lblChMode" Text="Modo" />
+			<Control Id="lblTot" Text="TOT [s]" />
+			<Control Id="lblTotRekey" Text="Retardo TOT [s]" />
+			<Control Id="lblRssiThreshold" Text="Umbral RSSI [dBm]" />
+			<Control Id="lblRxRefFreq" Text="Frec Ref RX" />
+			<Control Id="lblTxRefFreq" Text="Frec Ref TX" />
+			<Control Id="lblRxFreq" Text="Frec RX [MHz]" />
+			<Control Id="lblPower" Text="Potencia TX" />
+			<Control Id="lblAdmitCriteria" Text="Criterio TX" />
+			<Control Id="lblTxFreq" Text="Frec TX [MHz]" />
+			<Control Id="lblScanList" Text="Explorar" />
+      <Control Id="lblxband" Text="ATENCION: Las bandas de RX y TX son diferentes. El comportamiento del equipo puede verse afectado" />
+			<Control Id="tsrCh" Text="toolStrip1">
+				<ToolStripItem Id="tslblInfo" Text="" />
+				<ToolStripItem Id="tsbtnFirst" Text="Primero" />
+				<ToolStripItem Id="tsbtnPrev" Text="Anterior" />
+				<ToolStripItem Id="tsbtnNext" Text="Siguiente" />
+				<ToolStripItem Id="tsbtnLast" Text="Ultimo" />
+				<ToolStripItem Id="tsbtnAdd" Text="Añadir" />
+				<ToolStripItem Id="tsbtnDel" Text="Borrar" />
+			</Control>
+			<Control Id="mnsCh" Text="menuStrip1" />
+		</Controls>
+		<Commons>
+			<Item Id="ChMode" Text="Analógico,Digital" />
+			<Item Id="RefFreq" Text="Bajo,Medio,Alto" />
+			<Item Id="Power" Text="Baja,Alta" />
+			<Item Id="AdmitCriterica" Text="Siempre,Canal Libre,CTCSS/DCS" />
+			<Item Id="AdmitCritericaD" Text="Siempre,Canal Libre,Color" />
+			<Item Id="Squelch" Text="Estricto,Normal" />
+			<Item Id="VoiceEmphasis" Text="Ninguno,De y Pre,De,Pre" />
+			<Item Id="Ste" Text="Frequencia,120°,180°,240°" />
+			<Item Id="NonSte" Text="Ninguno,Frecuencia" />
+			<Item Id="SignalingSystem" Text="No,DTMF" />
+			<Item Id="UnmuteRule" Text="Std Unmute Mute,And Unmute Mute,And Unmute Or Mute" />
+			<Item Id="PttidType" Text="Ninguno,Solo PRE,Solo POS,PRE y POS" />
+			<Item Id="Arts" Text="Deshabilitado,Tx,Rx,Tx y Rx" />
+			<Item Id="TimingPreference" Text="Preferido,Eligible,No eligible" />
+			<Item Id="Ars" Text="Deshabilitado,Cambio Sistema" />
+			<Item Id="KeySwitch" Text="No,Sí" />
+		</Commons>
+	</ChannelForm>
+	<ChannelsForm Text="Canales">
+			<Controls>
+			<Control Id="btnImport" Text="Importar" />
+			<Control Id="btnExport" Text="Exportar" />
+			<Control Id="btnDeleteSelect" Text="Borrar Seleccionados" />
+			<Control Id="btnClear" Text="Limpiar" />
+			<Control Id="btnDelete" Text="Borrar" />
+			<Control Id="btnAdd" Text="Añadir" />
+			<Control Id="dgvChannels" Text="Número,Nombre,Frec RX,Frec TX,Modo CH,Potencia,Tono RX,Tono TX,Código Color,Grupo RX,Contacto,Slot">
+				<ControlItem Id="" Text="Número" />
+				<ControlItem Id="" Text="Nombre" />
+				<ControlItem Id="" Text="Frec RX" />
+				<ControlItem Id="" Text="Frec TX" />
+				<ControlItem Id="" Text="Modo CH" />
+				<ControlItem Id="" Text="Potencia" />
+				<ControlItem Id="" Text="Tono RX" />
+				<ControlItem Id="" Text="Tono TX" />
+				<ControlItem Id="" Text="Código Color" />
+				<ControlItem Id="" Text="Grupo RX" />
+				<ControlItem Id="" Text="Contacto" />
+				<ControlItem Id="" Text="Slot Repetidor" />
+			</Control>
+		</Controls>
+		<Commons>
+      <Item Id="DisplayHeaderText" Text="Number,Name,Ch Mode,Rx Freq,Tx Freq,Color Code,Repeater Slot,Contact,Rx Group List,Scan List,Rx Tone,Tx Tone"/>
+      <Item Id="ExportHeaderText" Text="Data type,Name,Channel Type,Rx Frequency,Tx Frequency,Color Code,Timeslot,Contact,Contact Type, Contact Id,Rx Group,Scanlist,Zone,RX CTCSS,TX CTCSS,Power,Bandwidth,Rx Only,Squelch,Tx Admit,TOT,TOT Rekey,Tx Signaling,Rx Signaling,Privacy Group,Emergency System,Flags1,Flags2,Flags3,Flags4,RssiThreshold,VoiceEmphasis,TxSignaling,UnmuteRule,RxSignaling,ArtsInterval" />
+    </Commons>
+	</ChannelsForm>
+	<CommPrgForm Text="">
+		<Controls>
+			<Control Id="btnCancel" Text="Cancelar" />
+		</Controls>
+		<Commons>
+			<Item Id="ButtonItem" Text="Ninguno,Todos Tonos Alerta Sí/No,Emergencia On,Emergencia Off,Potencia Alta/Baja,Monitor,Eliminar Canal Molesto,Acceso Directo 1,Acceso Directo 2,Acceso Directo 3,Acceso Directo 4,Acceso Directo 5,Acceso Directo 6,Repetidor/Salida Directo,Exploración Sí/No,Silenciador Estricto/Normal,Privacidad Sí/No,Vox Sí/No,Selección Zonat,Indicador Batería,Trabajador Aislado Sí/No,Monitor Permanente,Fin Llamada,Canal Arriba,Canal Abajo,Infomación Canal" />
+			<Item Id="Mode" Text="Ninguno,Digital,Analógico" />
+			<Item Id="CallTypeD" Text="Llamada,Mensaje" />
+			<Item Id="CallTypeA" Text="Llamada DTMF" />
+		</Commons>
+	</CommPrgForm>
+	<ContactForm Text="Contacto Digital">
+		<Controls>
+			<Control Id="chkCallRxTone" Text="Tono Llamada Recibida" />
+			<Control Id="lblRingStyle" Text="Timbre" />
+			<Control Id="lblCallType" Text="Llamada" />
+			<Control Id="lblName" Text="Nombre" />
+			<Control Id="lblCallId" Text="ID Llamada" />
+		</Controls>
+		<Commons>
+			<Item Id="CallType" Text="Grupo,Privada,Todos" />
+			<Item Id="CallRxTone" Text="No,Sí" />
+		</Commons>
+	</ContactForm>
+	<ContactsForm Text="Contactos">
+		<Controls>
+			<Control Id="btnImport" Text="Importar" />
+			<Control Id="btnExport" Text="Exportar" />
+			<Control Id="btnDeleteSelect" Text="Borrar Seleccionados" />
+			<Control Id="btnClear" Text="Limpiar" />
+			<Control Id="btnDelete" Text="Borrar" />
+			<Control Id="btnAdd" Text="Añadir" />
+      <Control Id="btnInternetDownload" Text="Descargas Internet" />
+      <Control Id="dgvContacts" Text="Número,Nombre,ID Llamada,Tipo,Estilo Timbre,Tono Llamada Recibida,Repeater Slot override">
+				<ControlItem Id="" Text="Número" />
+				<ControlItem Id="" Text="Nombre" />
+				<ControlItem Id="" Text="ID Llamada" />
+				<ControlItem Id="" Text="Tipo" />
+				<ControlItem Id="" Text="Estilo Timbre" />
+				<ControlItem Id="" Text="Tono Llamada Recibida" />
+			</Control>
+		</Controls>
+		<Commons>
+			<Item Id="HeaderText" Text="Número,Nombre,ID Llamada,Tipo,Estilo Timbre,Tono Llamada Recibida,Repeater Slot override," />
+		</Commons>
+	</ContactsForm>
+	<DeviceInfoForm Text="Información Básica">
+		<Controls>
+			<Control Id="lblTo1" Text="-" />
+			<Control Id="lblTo2" Text="-" />
+			<Control Id="lblSection1" Text="Rango Frecuencias UHF [MHz]" />
+			<Control Id="lblDspFwVer" Text="Versión del DSP" />
+			<Control Id="lblFirmwareVer" Text="Versión Firmware" />
+			<Control Id="lblHardwareVer" Text="Versión Hardware" />
+			<Control Id="lblCpsSwVer" Text="Versión del CPS" />
+			<Control Id="lblSn" Text="Número de Serie" />
+			<Control Id="lblSection2" Text="Rango Frecuencias VHF [MHz]" />
+			<Control Id="lblLastPrgTime" Text="Fecha Programación" />
+			<Control Id="lblModel" Text="Nombre Modelo" />
+		</Controls>
+	</DeviceInfoForm>
+	<DigitalKeyContactForm Text="Teclas Numéricas">
+		<Controls>
+			<Control Id="dgvContact" Text="Contacto">
+				<ControlItem Id="cmbContact" Text="Contacto" />
+			</Control>
+		</Controls>
+		<Commons>
+			<Item Id="DigitKey" Text="Tecla Número" />
+		</Commons>
+	</DigitalKeyContactForm>
+	<DtmfContactForm Text="Contactos DTMF">
+		<Controls>
+			<Control Id="dgvContact" Text="Nombre,Número">
+				<ControlItem Id="txtName" Text="Nombre" />
+				<ControlItem Id="txtCode" Text="Número" />
+			</Control>
+			<Control Id="btnAdd" Text="Añadir" />
+			<Control Id="btnDel" Text="Borrar" />
+		</Controls>
+	</DtmfContactForm>
+	<DtmfForm Text="DTMF">
+		<Controls>
+			<Control Id="chkSideTone" Text="Monitorizar DTMF" />
+			<Control Id="lblUpCode" Text="DTMFID Final PTT" />
+			<Control Id="lblDownCode" Text=" DTMFID Inicio PTT" />
+			<Control Id="lblSelfID" Text="ID Propio" />
+			<Control Id="lblRespHoldTime" Text="Retención Respuesta [s]" />
+			<Control Id="lblKillCode" Text="Código DESHABILITAR" />
+			<Control Id="lblAutoResetTime" Text="Tiempo Auto Reset [s]" />
+			<Control Id="lblDecTime" Text="Tiempo Decodificación [s]" />
+			<Control Id="lblWakeCode" Text="Código HABILITAR" />
+			<Control Id="lblDelimiter" Text="Delimitador" />
+			<Control Id="lblGrpCallCode" Text="Código Grupo" />
+			<Control Id="lblDecResp" Text="Respuesta Decodificar" />
+			<Control Id="lblFstDlyTime" Text="Retardo Primer Digito [ms]" />
+			<Control Id="lblKillWakeDec" Text="Codigo Deshabitar/Habilitar" />
+			<Control Id="lblFstDur" Text="Duración primer dígito [ms]" />
+			<Control Id="lblKillType" Text="Tipo DESHABILITAR" />
+			<Control Id="lblOtherDur" Text="*# Duración [ms]" />
+			<Control Id="lblRate" Text="Velocidad DTMF" />
+		</Controls>
+		<Commons>
+			<Item Id="DecodeResp" Text="Ninguno,Recordatorio,Respuesta,Recordar y Responder" />
+			<Item Id="GroupCode" Text="Ninguno,A,B,C,D,*,#" />
+			<Item Id="KillType" Text="Deshabilitar TX,Deshabilitar TX y RX,Total" />
+			<Item Id="KillWakeDec" Text="No,Sí" />
+		</Commons>
+	</DtmfForm>
+	<EmergencyForm Text="Sistema de Emergencia">
+		<Controls>
+			<Control Id="lblAlias" Text="Nombre" />
+			<Control Id="lblAlarmType" Text="Tipo Alarma" />
+			<Control Id="lblAlarmMode" Text="Modo" />
+			<Control Id="lblRevertCh" Text="Canal" />
+			<Control Id="lblImpoliteRetries" Text="Intentos Agresivos" />
+			<Control Id="lblPoliteRetries" Text="Intentos Amables" />
+			<Control Id="lblCycles" Text="Ciclos" />
+			<Control Id="lblTxCycle" Text="Tiempo Ciclo TX [s]" />
+			<Control Id="lblRxCycle" Text="Tiempo Ciclo RX [s]" />
+		</Controls>
+		<Commons>
+			<Item Id="AlarmType" Text="Deshabilitado,Normal,Silencio,Silencio con Voz" />
+			<Item Id="AlarmMode" Text="Alarma,Alarma con Llamada,Alarma con Voz" />
+			<Item Id="RevertCh" Text="Ninguno,Seleccionado" />
+		</Commons>
+	</EmergencyForm>
+	<EncryptForm Text="Privacidad">
+		<Controls>
+			<Control Id="dgvKey" Text="Clave">
+				<ControlItem Id="txtKey" Text="Clave" />
+			</Control>
+			<Control Id="lblType" Text="Tipo Privacidad" />
+			<Control Id="btnDel" Text="Borrar" />
+			<Control Id="lblKeyLen" Text="Longitud Clave" />
+			<Control Id="btnAdd" Text="Añadir" />
+		</Controls>
+		<Commons>
+			<Item Id="EncryptType" Text="Ninguna,Básica" />
+		</Commons>
+	</EncryptForm>
+	<GeneralSetForm Text="Configuración General">
+		<Controls>
+			<Control Id="chkTxExitTone" Text="Tono Final TX" />
+			<Control Id="grpBeep" Text="Tonos de Alerta" />
+			<Control Id="chkResetTone" Text="Tono Reset" />
+			<Control Id="chkUnifamiliarNumber" Text="Tono Desconocido" />
+			<Control Id="lblCallAlertDur" Text="Duración Tono Alerta Llamada [s]" />
+			<Control Id="chkSelfTestPassTone" Text="Tono de Autocomprobación" />
+			<Control Id="chkCrescendoTone" Text="Tono Mejorado*" />
+			<Control Id="chkChFreeTone" Text="Tono Indicación Canal Frecuencia" />
+			<Control Id="chkDisableAllTone" Text="Deshabilitar TODOS los Tonos" />
+			<Control Id="lblTalkPermitTone" Text="Tono Permiso Hablar" />
+			<Control Id="lblArtsTone" Text="Tono ARTS" />
+			<Control Id="grpVoice" Text="Idioma" />
+			<Control Id="chkChVoice" Text="Canal Voz" />
+			<Control Id="lblVoiceLang" Text="Idioma de Voz" />
+			<Control Id="grpSaveMode" Text="Ahorro de Bateria" />
+			<Control Id="chkBatteryRx" Text="Recepción (RX)" />
+			<Control Id="chkBatteryPreamble" Text="Preámbulo" />
+			<Control Id="grpLoneWork" Text="Trabajador Aislado (Lone Worker)" />
+			<Control Id="lblReminderTmr" Text="Tiempo Recordatorio [s]" />
+			<Control Id="lblRespTmr" Text="Tiempo Respuesta [min]" />
+			<Control Id="grpTalkAround" Text="Salida Repetidor (Talkaround)" />
+			<Control Id="lblPrivateHang" Text="Fin Llamada Privada [ms]" />
+			<Control Id="lblGrpHold" Text="Fin Llamada Grupo [ms]" />
+			<Control Id="chkDisableAllLeds" Text="Deshabilitar LED" />
+			<Control Id="lblRadioName" Text="Indicativo Radio" />
+			<Control Id="lblRadioID" Text="Identificador DMR ID" />
+			<Control Id="lblTxPreambleDur" Text="Duración preámbulo TX [ms]" />
+			<Control Id="lblProgramPwd" Text="Contraseña Programación" />
+			<Control Id="lblRxLowBatt" Text="Intervalo Bateria Baja [s]" />
+			<Control Id="chkKillState" Text="Estado de Anulación" />
+			<Control Id="chkTestMode" Text="Modo TEST" />
+			<Control Id="lblArsInitDly" Text="Retardo Inicialización ARS [min]" />
+			<Control Id="chkDataEnCtrlStation" Text="Datos Estación Control Habilitados" />
+			<Control Id="lblMonitorType" Text="Tipo de Monitor" />
+			<Control Id="lblVoxSense" Text="Sensibilidad VOX" />
+			<Control Id="chkPrivateCall" Text="Llamada Privada" />
+			<Control Id="chkTxInhibit" Text="Sobreescritura Inhabilitación TX" />
+			<Control Id="lblUpChMode" Text="Modo Pantalla Superior" />
+			<Control Id="lblDownChMode" Text="Modo PAntalla Inferior" />
+			<Control Id="grpScan" Text="Exploración Automática (Scan)" />
+			<Control Id="lblScanMode" Text="Modo de Exploración (SCAN)" />
+		</Controls>
+		<Commons>
+			<Item Id="MonitorType" Text="Squelch Abierto,Silencio" />
+			<Item Id="TalkPermitTone" Text="Ninguno,Digital,Analógico,Ambos" />
+			<Item Id="ArtsToneName" Text="Deshabilitado,Una Vez,Siempre" />
+			<Item Id="ChannelMode" Text="Canales,VFO" />
+			<Item Id="ScanMode" Text="Tiempo,Portadora,Búsqueda" />
+		</Commons>
+	</GeneralSetForm>
+	<HelpForm Text="Visor de Ayuda (Sistema de Ayuda pendiente de traducción)">
+		<Controls />
+	</HelpForm>
+	<MainForm Text="Radioddity GD-77 CPS 3.0.6 Community Edition - Traducción al español de EA4ALX">
+		<TreeView>
+			<TreeNode Id="Model" Text="GD-77" />
+			<TreeNode Id="BasicInfo" Text="Información Básica" />
+			<TreeNode Id="BootItem" Text="Elementos Inicio" />
+			<TreeNode Id="Menu" Text="Menú Radio" />
+			<TreeNode Id="NumKeyAssign" Text="Teclas Númericas" />
+			<TreeNode Id="GeneralSetting" Text="Configuración General" />
+			<TreeNode Id="Buttons" Text="Botones" />
+			<TreeNode Id="TextMsg" Text="Mensajes de Texto" />
+			<TreeNode Id="Pivacy" Text="Privacidad" />
+			<TreeNode Id="SignalingSys" Text="Sistema de Señalización" />
+			<TreeNode Id="EmergencySys" Text="Sistema de Emergencia" />
+			<TreeNode Id="Contact" Text="Contactos" />
+			<TreeNode Id="DtmfContact" Text="DTMF" />
+			<TreeNode Id="DigitalContact" Text="Contactos Digitales" />
+			<TreeNode Id="RxGroupList" Text="Listas de grupos de RX" />
+			<TreeNode Id="Zone" Text="Zonas" />
+			<TreeNode Id="Channel" Text="Canales" />
+			<TreeNode Id="Scan" Text="Exploración" />
+			<TreeNode Id="DtmfSignal" Text="DTMF" />
+			<TreeNode Id="VFO" Text="VFO" />
+			<TreeNode Id="VFOA" Text="VFO A" />
+			<TreeNode Id="VFOB" Text="VFO B" />
+		</TreeView>
+		<MenuStrip>
+			<MenuItem Id="tsmiFile" Text="Archivo" />
+			<MenuItem Id="tsmiNew" Text="Nuevo" />
+			<MenuItem Id="tsmiSave" Text="Guardar" />
+			<MenuItem Id="tsmiOpen" Text="Abrir" />
+			<MenuItem Id="tsmiExit" Text="Salir" />
+			<MenuItem Id="tsmiSetting" Text="Configuración" />
+			<MenuItem Id="tsmiDeviceInfo" Text="Información Básica" />
+			<MenuItem Id="tsmiBootItem" Text="Elementos Inicio" />
+			<MenuItem Id="tsmiMenu" Text="Menú Radio" />
+			<MenuItem Id="tsmiNumKeyContact" Text="Teclas Númericas" />
+			<MenuItem Id="tsmiGerneralSet" Text="Configuración General" />
+			<MenuItem Id="tsmiButton" Text="Botones" />
+			<MenuItem Id="tsmiTextMsg" Text="Mensajes de Texto " />
+			<MenuItem Id="tsmiEncrypt" Text="Privacidad" />
+			<MenuItem Id="tsmiSignaling" Text="Señalización" />
+      <MenuItem Id="tsmiSignalingSysten" Text="Sistema de Señalización" />      
+			<MenuItem Id="tsmiDtmf" Text="DTMF" />
+			<MenuItem Id="tsmiEmgSystem" Text="Sistema de Emergencia" />
+			<MenuItem Id="tsmiContact" Text="Contactos" />
+			<MenuItem Id="tsmiDtmfContact" Text="DTMF" />
+			<MenuItem Id="tsmiDmrContact" Text="Contactos Digitales" />
+			<MenuItem Id="tsmiContacts" Text="Contactos" />
+			<MenuItem Id="tsmiGrpRxList" Text="Lista de Grupos de RX" />
+			<MenuItem Id="tsmiZone" Text="Zonas" />
+			<MenuItem Id="tsmiZoneList" Text="Lista de Zonas" />
+			<MenuItem Id="tsmiChannels" Text="Canales" />
+			<MenuItem Id="tsmiScan" Text="Exploración" />
+			<MenuItem Id="tsmiScanList" Text="Lista de Exploración" />
+			<MenuItem Id="tsmiProgram" Text="Programar" />
+			<MenuItem Id="tsmiRead" Text="Leer" />
+			<MenuItem Id="tsmiWrite" Text="Escribir" />
+			<MenuItem Id="tsmiBasic" Text="Básico" />
+			<MenuItem Id="tsmiView" Text="Ver" />
+			<MenuItem Id="tsmiTree" Text="Vista de Arbol" />
+			<MenuItem Id="tsmiHelp" Text="Vista de Ayuda" />
+			<MenuItem Id="tsmiToolBar" Text="Barra de herramientas" />
+			<MenuItem Id="tsmiStatusBar" Text="Barra de estado" />
+			<MenuItem Id="tsmiWindow" Text="Ventana" />
+			<MenuItem Id="tsmiCascade" Text="Cascada" />
+			<MenuItem Id="tsmiTileHor" Text="Acoplar Horizontal" />
+			<MenuItem Id="tsmiTileVer" Text="Acoplar Vertical" />
+			<MenuItem Id="tsmiCloseAll" Text="Cerrar todas" />
+			<MenuItem Id="tsmiAbout" Text="Acerca" />
+			<MenuItem Id="tsmiLanguage" Text="Idioma" />
+			<MenuItem Id="tsmiEnglish" Text="Inglés" />
+			<MenuItem Id="tsmiChinese" Text="Español" />
+      <MenuItem Id="tsmiExtras" Text="Extras" />
+      <MenuItem Id="tsmiContactsDownload" Text="Descargar contactos" />
+      <MenuItem Id="tsmiDMRID" Text="DMR ID" />
+      <MenuItem Id="tsmiCalibration" Text="Calibración" />
+    </MenuStrip>
+		<ContextMenuStrip>
+			<MenuItem Id="tsmiAdd" Text="Añadir" />
+			<MenuItem Id="tsmiClear" Text="Borrar" />
+		</ContextMenuStrip>
+		<ContextMenuStrip>
+			<MenuItem Id="tsmiDel" Text="Borrar" />
+			<MenuItem Id="tsmiRename" Text="Renombrar" />
+			<MenuItem Id="tsmiCopy" Text="Copiar" />
+			<MenuItem Id="tsmiPaste" Text="Pegar" />
+			<MenuItem Id="tsmiMoveUp" Text="Mover Arriba" />
+			<MenuItem Id="tsmiMoveDown" Text="Mover Abajo" />
+		</ContextMenuStrip>
+		<ContextMenuStrip>
+			<MenuItem Id="tsmiCollapseAll" Text="Recoger Todos" />
+			<MenuItem Id="tsmiExpandAll" Text="Expandir Todos" />
+		</ContextMenuStrip>
+		<ContextMenuStrip>
+			<MenuItem Id="tsmiAddContact" Text="Añadir" />
+			<MenuItem Id="tsmiGroupCall" Text="Llamada de Grupo" />
+			<MenuItem Id="tsmiPrivateCall" Text="Llamada Privada" />
+			<MenuItem Id="tsmiAllCall" Text="Llamada Todos" />
+		</ContextMenuStrip>
+		<ToolStrip>
+			<ToolItem Id="tsbtnNew" Text="Nuevo" />
+			<ToolItem Id="tsbtnOpen" Text="Abrir" />
+			<ToolItem Id="tsbtnSave" Text="Guardar" />
+			<ToolItem Id="tsbtnRead" Text="Leer" />
+			<ToolItem Id="tsbtnWrite" Text="Escribir" />
+			<ToolItem Id="tsbtnAbout" Text="Acerca" />
+		</ToolStrip>
+	</MainForm>
+	<MenuForm Text="Menú Radio">
+		<Controls>
+			<Control Id="grpCall" Text="Registro de Llamadas" />
+			<Control Id="chkReceivedCall" Text="Contestadas" />
+			<Control Id="chkDialedCall" Text="Salientes" />
+			<Control Id="chkMissedCall" Text="Perdidas" />
+			<Control Id="grpSetting" Text="Básico" />
+			<Control Id="chkDoubleWait" Text="Doble Espera" />
+			<Control Id="lblDwSwitch" Text="Doble Espera" />
+			<Control Id="lblKeyTone" Text="Tono BIP" />
+			<Control Id="lblBacklightTime" Text="Iluminación [s]" />
+			<Control Id="chkSql" Text="Silenciador" />
+			<Control Id="chkBacklight" Text="Iluminación" />
+			<Control Id="chkKeyboardLock" Text="Bloqueo Teclado" />
+			<Control Id="chkVox" Text="VOX" />
+			<Control Id="chkToneHint" Text="Tonos/Alertas" />
+			<Control Id="chkLed" Text="Indicador LED" />
+			<Control Id="lblChDispMode" Text="Modo Pantalla" />
+			<Control Id="chkPwdLock" Text="Contraseña y Bloqueo" />
+			<Control Id="lblMenuLang" Text="Idioma Menú" />
+			<Control Id="lblWorkMode" Text="Mode Trabajo" />
+			<Control Id="chkPower" Text="Potencia" />
+			<Control Id="chkBootScreen" Text="Pantalla Inicio" />
+			<Control Id="chkEncrypt" Text="Privacidad" />
+			<Control Id="lblKeyLockTime" Text="Bloqueo Teclado [s]" />
+			<Control Id="chkTalkAround" Text="Talkaround" />
+			<Control Id="chkChDisp" Text="Modo Pantalla" />
+			<Control Id="grpContact" Text="Contacto" />
+			<Control Id="chkOneKeyDial" Text="Teclas Acceso Rápido" />
+			<Control Id="chkRadioDetect" Text="Comprobar Radio" />
+			<Control Id="chkRadioActive" Text="Habilitar Radio" />
+			<Control Id="chkContactEdit" Text="Editar" />
+			<Control Id="chkRadioKill" Text="Deshabilitar Radio" />
+			<Control Id="chkManualDial" Text="Sintonización Manual" />
+			<Control Id="chkRemoteMonitor" Text="Monitor Remoto" />
+			<Control Id="chkCallPrompt" Text="Alerta de LLamada" />
+			<Control Id="grpScan" Text="Exploración" />
+			<Control Id="chkScanEditList" Text="Editar Lista" />
+			<Control Id="chkScan" Text="Exploración" />
+			<Control Id="grpBasic" Text="Basico" />
+			<Control Id="lblMenuHangTime" Text="Tiempo espera Menú [s]" />
+			<Control Id="chkInfo" Text="Información" />
+			<Control Id="chkFm" Text="FM" />
+			<Control Id="chkGps" Text="GPS" />
+			<Control Id="chkP1Key" Text="Tecla P1" />
+			<Control Id="lblBrightness" Text="Brillo" />
+		</Controls>
+		<Commons>
+			<Item Id="KeyLockTime" Text="Manual,5,10,15" />
+			<Item Id="BacklightTime" Text="Siempre Encendido,Siempre Apagado,5,10" />
+			<Item Id="WorkMode" Text="VFO,MR,Canal" />
+			<Item Id="ChDispMode" Text="Número,Nombre,Frecuencia" />
+			<Item Id="KeyTone" Text="No,Sí" />
+			<Item Id="DoubleWait" Text="No,Doble Doble,Doble Sencillo" />
+			<Item Id="MenuLang" Text="Inglés,Chino" />
+		</Commons>
+	</MenuForm>
+	<NormalScanForm Text="Exploración (Scan)">
+		<Controls>
+			<Control Id="grpSelected" Text="Miembros" />
+			<Control Id="chkTalkback" Text="Replicar" />
+			<Control Id="grpUnselected" Text="Disponibles" />
+			<Control Id="chkChMark" Text="Marca Canal" />
+			<Control Id="lblTxDesignatedCh" Text="Canal TX Designado" />
+			<Control Id="lblPriorityCh1" Text="Canal Prioritario 1" />
+			<Control Id="lblSignalingHold" Text="Tiempo Retención Señalización [ms]" />
+			<Control Id="lblName" Text="Nombre" />
+			<Control Id="lblPLType" Text="Tipo PL" />
+			<Control Id="lblPriorityCh2" Text="Canal Prioritario 2" />
+			<Control Id="lblPrioritySample" Text="Tiempo Muestreo Prioritario [ms]" />
+			<Control Id="btnDown" Text="Bajar" />
+			<Control Id="btnUp" Text="Subir" />
+			<Control Id="btnDel" Text="Borrar" />
+			<Control Id="btnAdd" Text="Añadir" />
+		</Controls>
+		<Commons>
+			<Item Id="PriorityCh" Text="Ninguno,Seleccionado" />
+			<Item Id="TxDesignatedCh" Text="Ultimo Canal Activo,Seleccionado" />
+			<Item Id="PlType" Text="Canal No-Prioritario,Deshabilitado,Canal Prioritario,Canal Prioritario y No-Prioritario" />
+		</Commons>
+	</NormalScanForm>
+	<PasswordForm Text="Contraseña">
+		<Controls>
+			<Control Id="btnCancel" Text="Cancelar" />
+			<Control Id="btnOk" Text="OK" />
+			<Control Id="lblPwd" Text="Contraseña" />
+		</Controls>
+	</PasswordForm>
+	<PowerPwdForm Text="Contraseña">
+		<Controls>
+			<Control Id="btnCancel" Text="Cancelar" />
+			<Control Id="btnOk" Text="OK" />
+			<Control Id="lblPwd" Text="Contraseña" />
+		</Controls>
+	</PowerPwdForm>
+	<RxGroupListForm Text="Lista de Grupo RX">
+		<Controls>
+			<Control Id="btnDown" Text="Bajar" />
+			<Control Id="btnUp" Text="Subir" />
+			<Control Id="grpSelected" Text="Miembros" />
+			<Control Id="btnAdd" Text="Añadir" />
+			<Control Id="grpUnselected" Text="Disponibles" />
+			<Control Id="btnDel" Text="Borrar" />
+			<Control Id="lblName" Text="Nombre" />
+		</Controls>
+	</RxGroupListForm>
+	<SignalingBasicForm Text="Señalización Básica">
+		<Controls>
+			<Control Id="chkCallAlert" Text="Codificar Llamada Alerta" />
+			<Control Id="chkRadioDisable" Text="Decodificar Deshabilitar Radio" />
+			<Control Id="chkRemoteMonitor" Text="Decodificar Monitor Remoto" />
+			<Control Id="chkEmgRM" Text="Decodificar Monitor Remoto Emergencia" />
+			<Control Id="lblTxSyncWakeTot" Text="TX TOT Habilitar [ms]" />
+			<Control Id="chkSelCall" Text="Codificar Llamada Propia" />
+			<Control Id="lblTxWakeMsgLimit" Text="Limite Mensajes HABILITAR" />
+			<Control Id="lblSelCallToneId" Text="Tono/ID de Llamada Propia" />
+			<Control Id="lblRMDuration" Text="Tiempo Monitor Remoto [s]" />
+			<Control Id="lblSelCallHang" Text="Tiempo Caida Llamada [ms]" />
+			<Control Id="lblAutoResetTimer" Text="Tiempo Auto Reset [s]" />
+		</Controls>
+	</SignalingBasicForm>
+	<ScanBasicForm Text="Configuración Exploración">
+		<Controls>
+      <Control Id="lblScanTime" Text="Scan Time [s]" />
+			<Control Id="lblDigitHang" Text="Tiempo Caida Digital [ms]" />
+			<Control Id="lblAnalogHang" Text="Tiempo Caida Analógico [ms]" />
+			<Control Id="lblVoteHang" Text="Tiempo Caida Itinerancia [s]" />
+			<Control Id="lblFastVoteRssi" Text="Umbral Rápido Itinerancia RSSI [dB]" />
+			<Control Id="lblStartVoteRssi" Text="Inicio Umbral Itinerancia RSSI [dB]" />
+			<Control Id="chkPriorityAlert" Text="Alerta Prioritaria" />
+		</Controls>
+	</ScanBasicForm>
+	<TextMsgForm Text="Mensajes de Texto">
+		<Controls>
+			<Control Id="dgvMsg" Text="Contenido">
+				<ControlItem Id="txtMessage" Text="Mensaje de Texto" />
+			</Control>
+			<Control Id="btnAdd" Text="Añadir" />
+			<Control Id="btnDel" Text="Borrar" />
+		</Controls>
+	</TextMsgForm>
+	<TreeForm Text="Vista">
+		<Controls />
+	</TreeForm>
+	<VfoForm Text="VFO">
+		<Controls>
+			<Control Id="btnCopy" Text=">>" />
+			<Control Id="lblSquelch" Text="Silenciador" />
+			<Control Id="lblSql" Text="Nivel Silenciador" />
+			<Control Id="grpDigit" Text="Digital" />
+			<Control Id="lblTimingPreference" Text="Preferencia Timing Leader" />
+			<Control Id="lblRepeaterSlot" Text="Slot Repetidor" />
+			<Control Id="lblArs" Text="ARS" />
+			<Control Id="lblKeySwitch" Text="Privacidad" />
+			<Control Id="lblKey" Text="Grupo Privacidad" />
+			<Control Id="lblTxColor" Text="Código Color" />
+			<Control Id="lblEmgSystem" Text="Sistema Emergencia" />
+			<Control Id="lblContact" Text="Contacto" />
+			<Control Id="chkDualCapacity" Text="DCDM - Modo Directo Capacidad Doble " />
+			<Control Id="chkUdpDataHead" Text="Comprimir cabecera datos UDP" />
+			<Control Id="chkAllowTxInterupt" Text="Permitir Interrupción" />
+			<Control Id="chkTxInteruptFreq" Text="Frec TX Interrumpible" />
+			<Control Id="chkPrivateCall" Text="Confirmar Llamada Privada" />
+			<Control Id="chkDataCall" Text="Confirmar Llamada Datos" />
+			<Control Id="chkEmgConfirmed" Text="Reconocer Alarma Emergencia" />
+			<Control Id="chkEnhancedChAccess" Text="Acesso Canal Mejorado" />
+			<Control Id="lblRxColor" Text="Código Color RX" />
+			<Control Id="lblRxGroup" Text="Lista Grupo RX" />
+			<Control Id="chkRxOnly" Text="Sólo RX" />
+			<Control Id="chkAllowTalkaround" Text="Permitir Talkaround" />
+			<Control Id="grpAnalog" Text="Analógico" />
+			<Control Id="lblChBandwidth" Text="Ancho Banda [KHz]" />
+			<Control Id="lblVoiceEmphasis" Text="Enfasis Voz" />
+			<Control Id="lblSte" Text="STE" />
+			<Control Id="lblNonSte" Text="No STE" />
+			<Control Id="lblRxTone" Text="Tono RX [Hz]" />
+			<Control Id="lblRxSignaling" Text="Señalización RX" />
+			<Control Id="lblUnmuteRule" Text="Regla Slienciamiento" />
+			<Control Id="lblArtsInterval" Text="Intervalo ARTS [s]" />
+			<Control Id="lblArts" Text="ARTS" />
+			<Control Id="lblPttidType" Text="Tipo PTTID" />
+			<Control Id="lblTxSignaling" Text="Señalización TX" />
+			<Control Id="lblTxTone" Text="Tono TX [Hz]" />
+			<Control Id="chkDataPl" Text="PL Datos" />
+			<Control Id="chkLoneWoker" Text="Trabajador Aislado" />
+			<Control Id="chkVox" Text="VOX" />
+			<Control Id="chkAutoScan" Text="Auto Exploración" />
+			<Control Id="lblChName" Text="VFO" />
+			<Control Id="lblChMode" Text="Modo" />
+			<Control Id="lblTot" Text="TOT [s]" />
+			<Control Id="lblTotRekey" Text="Retardo TOT [s]" />
+			<Control Id="lblRssiThreshold" Text="Umbral RSSI [dBm]" />
+			<Control Id="lblRxRefFreq" Text="Frequencia Referencia RX" />
+			<Control Id="lblTxRefFreq" Text="Frequencia Referencia TX" />
+			<Control Id="lblRxFreq" Text="Frec RX [MHz]" />
+			<Control Id="lblPower" Text="Potencia TX" />
+			<Control Id="lblAdmitCriteria" Text="Criterio Admisión" />
+			<Control Id="lblTxFreq" Text="Frec TX [MHz]" />
+			<Control Id="lblScanList" Text="Lista Exploración" />
+			<Control Id="lblOffsetStep" Text="Pasos Salto" />
+			<Control Id="lblOffsetDirection" Text="Dirección" />
+			<Control Id="lblOffsetFreq" Text="Desplazamiento" />
+		</Controls>
+		<Commons>
+			<Item Id="ChMode" Text="Analógico,Digital" />
+			<Item Id="RefFreq" Text="Bajo,Medio,Alto" />
+			<Item Id="Power" Text="Baja,Alta" />
+			<Item Id="AdmitCriterica" Text="Siempre,Canal Libre,CTCSS/DCS" />
+			<Item Id="AdmitCritericaD" Text="Siempre,Canal Libre,Código Color" />
+			<Item Id="Squelch" Text="Estricto,Normal" />
+			<Item Id="VoiceEmphasis" Text="Ninguno,De y Pre,De,Pre" />
+			<Item Id="Ste" Text="Frequencia,120°,180°,240°" />
+			<Item Id="NonSte" Text="Ninguno,Frequencia" />
+			<Item Id="SignalingSystem" Text="No,DTMF" />
+			<Item Id="UnmuteRule" Text="Std Unmute Mute,And Unmute Mute,And Unmute Or Mute" />
+			<Item Id="PttidType" Text="Ninguno,Sólo Inicio,Sólo Final,Inicio y Final" />
+			<Item Id="Arts" Text="Deshabilitado,TX,RX,TX y RX" />
+			<Item Id="TimingPreference" Text="Preferido,Elegible,No Elegible" />
+			<Item Id="Ars" Text="Deshabilitado,Cambios del Sistema" />
+			<Item Id="KeySwitch" Text="No,Sí" />
+			<Item Id="" Text="Ninguno,+,-" />
+		</Commons>
+	</VfoForm>
+	<ZoneBasicForm Text="Configuración de Zonas (Valores predefinidos al inicio del GD-77)">
+		<Controls>
+			<Control Id="grpSub" Text="Pantalla Inferior" />
+			<Control Id="lblSubCh" Text="Canal" />
+			<Control Id="lblSubZone" Text="Zona" />
+			<Control Id="grpMain" Text="Pantalla Superior" />
+			<Control Id="lblMainCh" Text="Canal" />
+			<Control Id="lblCurZone" Text="Zona" />
+		</Controls>
+	</ZoneBasicForm>
+	<ZoneForm Text="Zonas">
+		<Controls>
+			<Control Id="tsrZone" Text="toolStrip1">
+				<ToolStripItem Id="tslblInfo" Text="" />
+				<ToolStripItem Id="tsbtnFirst" Text="Primero" />
+				<ToolStripItem Id="tsbtnPrev" Text="Anterior" />
+				<ToolStripItem Id="tsbtnNext" Text="Siguiente" />
+				<ToolStripItem Id="tsbtnLast" Text="Ultimo" />
+				<ToolStripItem Id="tsbtnAdd" Text="Añadir" />
+				<ToolStripItem Id="tsbtnDel" Text="Borrar" />
+			</Control>
+			<Control Id="btnDown" Text="Bajar" />
+			<Control Id="btnUp" Text="Subir" />
+			<Control Id="grpSelected" Text="Miembros" />
+			<Control Id="btnAdd" Text="Añadir" />
+			<Control Id="grpUnselected" Text="Disponibles" />
+			<Control Id="btnDel" Text="Borrar" />
+			<Control Id="lblName" Text="Nombre" />
+		</Controls>
+	</ZoneForm>
+<DownloadContactsForm Text="Descargar Contactos">
+    <Controls>
+      <Control Id="lblMessage" Text="Introduzca prefijo de código ID de su region y pulse Descargar..." />
+      <Control Id="btnImport" Text="Importar seleccionados" />
+      <Control Id="btnSelectAll" Text="Seleccionar Todos" />
+      <Control Id="btnDownload" Text="Descargar Datos URL" />
+      <Control Id="btnDownloadDMRMARC" Text="Descargar desde DRM MARC" />      
+      <Control Id="lblIDStart" Text="Prefijo Regional" />
+      <Control Id="txtIDStart" Text="505" />
+      <Control Id="lblIDStartAlert" Text="Por favor, introduzca el código de prefijo de 3 digitos de su zona. Ej.: 214 España" />
+      <Control Id="lblMessageAdded" Text="Disponibles {0} nuevas ID que no estaban ya en sus contactos" />
+      <Control Id="lblMessageDownloading" Text="Descargando..." />
+      <Control Id="dgvDownloadeContacts" Text="ID DMR,Indicativo,Nombre,Ultima Vez">
+        <ControlItem Id="" Text="ID DMR" />
+        <ControlItem Id="" Text="Ìndicativo" />
+        <ControlItem Id="" Text="Nombre" />
+        <ControlItem Id="" Text="Ultima Vez" />
+      </Control>
+    </Controls>
+</DownloadContactsForm>
+  <DMRIDForm Text="DMR ID">
+    <Controls>
+      <Control Id="lblMessage" Text="Ingrese el código de prefijo de ID para su región y presione Descargar, para agregarlo a la lista" />
+      <Control Id="lblRegionId" Text="Región" />
+      <Control Id="lblInactivityFilter" Text="Filtro de inactividad (días)" />
+      <Control Id="btnDownload" Text="Descargar HamDigital" />
+      <Control Id="btnImportCSV" Text="Importar CSV - Filtro Región" />
+      <Control Id="btnRead" Text="Lea de GD-77" />
+      <Control Id="btnWrite" Text="Escribir a GD-77" />
+      <Control Id="btnClear" Text="Claro" />
+    </Controls>
+  </DMRIDForm>  
+	<Commons>
+		<Item Id="None" Text="Ninguno" />
+		<Item Id="Selected" Text="Seleccionado" />
+		<Item Id="RadioIdNotEmpty" Text="El ID de DMR no puede estar vacio!" />
+		<Item Id="RadioIdOutOfRange" Text="Radio ID fuera de rango!" />
+		<Item Id="Read" Text="Leyendo ..." />
+		<Item Id="Write" Text="Escribiendo ..." />
+		<Item Id="ReadComplete" Text="Lectura Completa" />
+		<Item Id="WriteComplete" Text="Escritura Completa" />
+		<Item Id="NameExist" Text="Nombre ya existe" />
+		<Item Id="FirstChNotDelete" Text="El primer Canal en la primera Zona no puede ser borrado" />
+		<Item Id="FileFormatError" Text="ERROR de formato del archivo" />
+		<Item Id="OpenSuccessfully" Text="Abierto con éxito" />
+		<Item Id="SaveSuccessfully" Text="Guardado con éxito" />
+		<Item Id="TypeNotMatch" Text="No coinciden los tipos" />
+		<Item Id="NotSelectItemNotCopyItem" Text="Elemento no seleccionado" />
+		<Item Id="KeyPressHex" Text="Por favor, introduce : " />
+		<Item Id="KeyPressDigit" Text="Por favor, introduce : Digito y {0}" />
+		<Item Id="KeyPressPrint" Text="Por favor, introduce : print" />
+		<Item Id="DeviceNotFound" Text="ERROR: Dispositivo no encontrado" />
+		<Item Id="ModelNotMatch" Text="ERROR: Modelo Incorrecto" />
+		<Item Id="PromptKey1" Text="¿Quiere guardar el Codeplug antes de salir?" />
+		<Item Id="PromptKey2" Text="¿Quiere cargar un nuevo Codeplug por defecto? Todos los datos actuales serán reemplazados." />
+		<Item Id="DataFormatError" Text="ERROR de formato de datos" />
+		<Item Id="FirstNotDelete" Text="La primera fila no puede ser eliminada" />
+		<Item Id="OpenPortFail" Text="ERROR: Fallo al abrir el puerto serie" />
+		<Item Id="CommError" Text="ERROR de Comunicación" />
+		<Item Id="Add" Text="Añadir: " />
+		<Item Id="ScanSelected" Text="Imposible ejecutar selección" />
+		<Item Id="codePlugReadConfirm"  Text="¿Está seguro de querer LEER el Codeplug desde el GD-77?. Esto sobreescribirá el codeplug actual en la pantalla." />
+		<Item Id="codePlugWriteConfirm"  Text="¿Está seguro de querer ESCRIBIR este Codeplug en el GD-77?. Esto sobreescribirá el codeplug existente en el GD-77" />
+		<Item Id="pleaseConfirm"  Text="ATENCION - Por favor, confirme..." />
+    <Item Id="userAgreement"  Text="Este programa se suministra tal y como está 'AS IS', sin garantía alguna. Utilicelo bajo su propio riesgo tanto para su PC como para su Radio DMR. Pulsando el botón 'Sí' confirma que entiende esta advertencia y está de acuerdo." />
+    <Item Id="DownloadContactsMessageAdded" Text="Disponibles {0} nuevas ID's que no estaban ya incluidas en sus contactos" />
+    <Item Id="DownloadContactsRegionEmpty" Text="Por favor, introduzca el código de prefijo de al menos 3 digitos de su zona. Por ejemplo: 214 para España, 2147 para Andalucía , 213 Andorra..." />
+    <Item Id="DownloadContactsDownloading" Text="Descargando ..." />
+    <Item Id="DownloadContactsSelectContactsToImport" Text="Por favor, seleccione los contactos que desea importar" />
+    <Item Id="DownloadContactsTooMany" Text="No todos los contactos pudieron ser importados. Se ha alcanzado el número máximo de Contactos Digitales" />
+    <Item Id="Warning" Text="Aviso" />
+    <Item Id="UnableDownloadFromInternet" Text="Imposible descargar los datos. Compruebe su conexión a Internet" />
+    <Item Id="DownloadContactsImportComplete" Text="Importación completada" />
+    <Item Id="CodeplugUpgradeNotice" Text="Parece un Codeplug de la V3.0.6,se convertirá a la V3.1.x" />
+    <Item Id="CodeplugUpgradeWarningToManyRxGroups" Text="La version 3.1.x solo tiene 76 Rx Groups. Los demás Rx Groups serán ignorados" />
+    <Item Id="CodeplugRead" Text="Leyendo codeplug desde GD-77" />
+    <Item Id="CodeplugWrite" Text="Escribiendo codeplug a GD-77" />
+    <Item Id="DMRIDRead" Text="Leyendo base de datos DMR ID desde GD-77" />
+    <Item Id="DMRIDWrite" Text="Escribiendo base de datos DMR ID a GD-77" />
+    <Item Id="CalibrationRead" Text="Leyendo datos de calibración desde GD-77" />
+    <Item Id="CalibrationWrite" Text="Escribiendo datos de calibración a GD-77" />
+    <Item Id="IdAlreadyExists" Text="ID ya existe!" />
+    <Item Id="IdOutOfRange" Text="ID fuera de rango!" />
+    <Item Id="IdNotEmpty" Text="ID no puede estar vacío!" />
+    <Item Id="ContactNameDuplicate" Text="Aviso. Nombre de contacto duplicado." />
+    <Item Id="EnableMemoryAccessMode" Text ="El GD-77 no parece estar en modo de acceso memoria.Aprieta tecla SK2 (Azul lateral), Menu verde y * cuando enciendas el equipo, y vuelve a probar" />
+    <Item Id="dataRead" Text="Leyendo datos desde GD-77"/>
+    <Item Id="dataWrite" Text="Escribiendo datos a GD-77"/>
+    <Item Id="DMRIdContcatsTotal" Text="Número total de IDs = {0}. Máximo de {1} se pueden escribir" />
+    <Item Id="ErrorParsingData" Text="Error mientras analizaba datos" />    
+  </Commons>
+</Resource>

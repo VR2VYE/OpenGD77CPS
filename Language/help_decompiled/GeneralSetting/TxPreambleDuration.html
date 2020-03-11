@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>TX Preamble Duration</title>
+<link rel="stylesheet" href="../wcss.css" type="text/css" />
+</head>
+<body>
+<font class="Title"><strong>TX Preamble Duration</strong></font>
+<hr class = "HrColor" />
+<p><font class="Descript">Preamble is a string of bits added in front of a data message or control message (Text Messaging, Location Messaging, Registration, Radio Check, Private Call, etc…) before transmission. This preamble prolongs the message in order to reduce the chances of the message being missed by the receiving radio. The Transmit (TX) Preamble Duration sets the duration of the preamble. This duration needs to be increased as the number of scan members increases on the target radio. This value can be increased in all the transmitting radios if scanning radios are often missing data messages. However, a larger preamble occupies the channel longer. Therefore, increasing the Transmit Preamble duration will increase the success rate of data received while other radios are scanning, but will decrease the amount of data that can be transmitted on the channel.  
+</font></p>
+<strong>Range</strong> 
+<table border = "1">
+<tr id="ulRange">
+<td>Max</td><td>8640</td>
+</tr>
+<tr>
+<td>Min</td><td>0</td>
+</tr>
+<tr>
+<td>Step</td><td>60</td>
+</tr>
+</table>
+<br />
+<strong>Note</strong> 
+<ul>
+<li>If the duration is set to 0, the transmit preamble function is disabled.</li>
+<li>If the radio configuration power is disabled, the function should be set to 0.</li>
+<li>Only analog mode supports this feature.</li> 
+</ul>
+</body>
+</html>

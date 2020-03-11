@@ -1,0 +1,14 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Channel Marker</title>
+<link rel="stylesheet" href="../wcss.css" type="text/css" />
+</head>
+<body>
+<font class="Title"><strong>Channel Marker</strong></font>
+<hr class = "HrColor" />
+<p><font class="Descript">During priority monitoring, the radio will sample higher priority members while unmuted to lower priority members. As the radio is transmitting voice to the user, leaving the current member to scan for higher priority members will cause audio holes in the transmission played out of the radio’s speaker. The Channel Marker feature can be used to reduce the audio holes experienced during priority monitoring.   This feature assumes that if a transmission was recently identified as 'not of interest' (in Analog Mode, it is identified by matching the PL code, whereas in Digital mode, it is identified by matching the ID), there is no need to fully qualify it at every priority sampling interval. The radio only needs to identify the type of transmission (e.g. DPL, TPL, etc) taking place. If the type of transmission is the same as the transmission identified as 'not of interest', the radio will ignore the activity. This assumption is made for a predetermined number of times, after which, the scan member is fully qualified again. However, this assumption may not be correct every time.   The tradeoff is between the audio quality of non-priority scan members versus the reliability of detecting the activity of interest of priority members. If audio quality is very important, it is recommended to enable channel marking, but note that priority scanning reliability is decreased. This feature is also known as PL Lockout.
+</font></p>
+</body>
+</html>

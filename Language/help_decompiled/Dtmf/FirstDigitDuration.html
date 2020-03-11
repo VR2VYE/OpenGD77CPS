@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>First Digit Duration</title>
+<link rel="stylesheet" href="../wcss.css" type="text/css" />
+</head>
+<body>
+<font class="Title"><strong>First Digit Duration</strong></font>
+<hr class = "HrColor" />
+<p><font class="Descript">Allows you to set the delay time from the start of the launch to the first DTMF digital transmission (considering the factors that start the decoder's time). Increasing this interval is the same as increasing the duration of the first code.</font></p>
+<strong>Range</strong> 
+<ul id="ulRange">
+<li>10～1000 ms</li>
+</ul> 
+<br />
+<strong>Sample</strong>
+<ul id="ulRange">
+<li>Sample 1：
+"DTMF rate" is set to 10 digits per second (duration is 50 milliseconds). The first digit time is set to 100 milliseconds. Thus, the actual length of the first digit duration is 150 milliseconds. However, if the launch starts with a "*" or "#" tone, the intercom will compare the duration with "* and #" and whichever is longer for both.
+</li>
+<li>Sample 2：
+"DTMF rate" is set to 10 digits per second (duration is 50 milliseconds). The first digit time is set to 100 milliseconds. "* And # tone" is set to 500 milliseconds. Thus, the actual length of the first "*" or "#" tone is 550 milliseconds. 
+</li>
+</ul>  
+</body>
+</html>

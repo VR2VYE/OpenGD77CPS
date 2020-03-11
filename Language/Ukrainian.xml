@@ -1,0 +1,826 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resource>
+	<Settings>
+		<Item Id="MaxZoneCount" Text="32"/>
+	</Settings>
+	<Language Id="Ukr" Text="Українська"/>
+	<AboutForm Text="Про програму">
+		<Controls>
+			<Control Id="lblVersion" Text=""/>
+			<Control Id="lblCompany" Text="Radioddity and GD-77 Community"/>
+			<Control Id="btnClose" Text="ОК"/>
+			<Control Id="lblTranslationCredit" Text="Ukranian version by Sergiy - UR3PDA" />
+		</Controls>
+	</AboutForm>
+	<BootItemForm Text="Тип привітання">
+		<Controls>
+			<Control Id="grpBootScreen" Text="Екран завантаження"/>
+			<Control Id="lblBootScreen" Text="Екран завантаження"/>
+			<Control Id="lblLine2" Text="Рядок 2"/>
+			<Control Id="lblLine1" Text="Рядок 1"/>
+			<Control Id="lblBootPwd" Text="Пароль увімкнення"/>
+			<Control Id="chkBootPwdEnable" Text="Пароль на увімкнення"/>
+			<Control Id="chkBootScreen" Text="Екран завантаження"/>
+		</Controls>
+		<Commons>
+			<Item Id="BootScreen" Text="Картинка,Рядок символів"/>
+		</Commons>
+	</BootItemForm>
+	<ButtonForm Text="Кнопки">
+		<Controls>
+			<Control Id="dgvOneTouch" Text="Mode,Call Type,Call,Text Message">
+				<ControlItem Id="cmbMode" Text="Режим"/>
+				<ControlItem Id="cmbCallType" Text="Тип виклику"/>
+				<ControlItem Id="cmbCallList" Text="Виклик"/>
+				<ControlItem Id="cmbMsg" Text="Текстові повідомлення"/>
+			</Control>
+			<Control Id="lblEmgShortDur" Text="Emergency Short Press Duration [ms]"/>
+			<Control Id="lblLongDur" Text="Тривалість довгого натискання [мс]"/>
+			<Control Id="lblSK1" Text="Кл1"/>
+			<Control Id="lblSK2" Text="Кл2"/>
+			<Control Id="lblLongPress" Text="Довге натискання"/>
+			<Control Id="lblTK" Text="TK"/>
+			<Control Id="lblShortPress" Text="Коротке натискання"/>
+		</Controls>
+		<Commons>
+			<Item Id="ButtonItem" Text="Немає,Всі звуки Увімк/Вимк,Emergency On,Emergency Off,Висока/Низька потужність,Відкрити шумодав,Nuisance Delete,Швидкий доступ 1,Швидкий доступ 2,Швидкий доступ 3,Швидкий доступ 4,Швидкий доступ 5,Швидкий доступ 6,Репітер/Talkaround,Сканування Увімк/Вимк,Нормальний/Сильний шумодав,Шифрування Увімк/Вимк,VOX Увімк/Вимк,Вибір зони,Індикатор батареї,Одинокий робітник Увімк/Вимк,Permanent Monitor,Phone Exit,Канал вверх,Канал вниз,Інформація про канал,???"/>
+			<Item Id="Mode" Text="Немає,Цифровий,Аналоговий"/>
+			<Item Id="CallTypeD" Text="Виклик,Повідомленя"/>
+			<Item Id="CallTypeA" Text="DTMF виклик"/>
+		</Commons>
+	</ButtonForm>
+	<ChannelForm Text="Канал">
+		<Controls>
+			<Control Id="btnCopy" Text=">>"/>
+			<Control Id="lblSquelch" Text="Шумоподавлювач"/>
+			<Control Id="lblSql" Text="Рівень шумодава"/>
+			<Control Id="grpDigit" Text="Цифровий"/>
+			<Control Id="lblTimingPreference" Text="Timing Leader Prefernce"/>
+			<Control Id="lblRepeaterSlot" Text="Таймслот"/>
+			<Control Id="lblArs" Text="ARS"/>
+			<Control Id="lblKeySwitch" Text="Шифрування"/>
+			<Control Id="lblKey" Text="Ключ шифрування"/>
+			<Control Id="lblTxColor" Text="Колірний код"/>
+			<Control Id="lblEmgSystem" Text="Аварійна система"/>
+			<Control Id="lblContact" Text="Контакт"/>
+			<Control Id="chkDualCapacity" Text="Dual Capacity Direct Mode"/>
+			<Control Id="chkUdpDataHead" Text="Стислий заголовок даних UDP"/>
+			<Control Id="chkAllowTxInterupt" Text="Дозволити переривання"/>
+			<Control Id="chkTxInteruptFreq" Text="Tx Interruptible Frequencies"/>
+			<Control Id="chkPrivateCall" Text="Підтв. приватного виклику"/>
+			<Control Id="chkDataCall" Text="Передача даних підтверджено"/>
+			<Control Id="chkEmgConfirmed" Text="Emergency Alarm Ack"/>
+			<Control Id="chkEnhancedChAccess" Text="Enhanced Channel Access"/>
+			<Control Id="lblRxColor" Text="Rx колірний код"/>
+			<Control Id="lblRxGroup" Text="Список прийому"/>
+			<Control Id="chkRxOnly" Text="тільки прийом"/>
+			<Control Id="chkAllowTalkaround" Text="Дозволити Talkaround"/>
+			<Control Id="grpAnalog" Text="Аналоговий"/>
+			<Control Id="lblChBandwidth" Text="Смуга [кГц]"/>
+			<Control Id="lblVoiceEmphasis" Text="Voice Emphasis"/>
+			<Control Id="lblSte" Text="STE"/>
+			<Control Id="lblNonSte" Text="Non STE"/>
+			<Control Id="lblRxTone" Text="Тон ПРМ [Гц]"/>
+			<Control Id="lblRxSignaling" Text="Сигналинг на ПРМ"/>
+			<Control Id="lblUnmuteRule" Text="Unmute Rule"/>
+			<Control Id="lblArtsInterval" Text="Інтервал ARTS [с]"/>
+			<Control Id="lblArts" Text="ARTS"/>
+			<Control Id="lblPttidType" Text="PTTID Type"/>
+			<Control Id="lblTxSignaling" Text="Сигналинг на ПРД"/>
+			<Control Id="lblTxTone" Text="Тон ПРД [Гц]"/>
+			<Control Id="chkDataPl" Text="PL for Data"/>
+			<Control Id="chkLoneWoker" Text="Одинокий працівник"/>
+			<Control Id="chkVox" Text="VOX"/>
+			<Control Id="chkAutoScan" Text="Автосканування"/>
+      <Control Id="chkOpenGD77ScanZoneSkip" Text="Scan: Zone skip" />
+			<Control Id="lblChName" Text="Ім'я"/>
+			<Control Id="lblChMode" Text="Режим"/>
+			<Control Id="lblTot" Text="TOT [с]"/>
+			<Control Id="lblTotRekey" Text="TOT Rekey Delay [s]"/>
+			<Control Id="lblRssiThreshold" Text="RSSI Threshold [dBm]"/>
+			<Control Id="lblRxRefFreq" Text="Rx Reference Frequency"/>
+			<Control Id="lblTxRefFreq" Text="Tx Reference Frequency"/>
+			<Control Id="lblRxFreq" Text="ПРМ частота [МГц]"/>
+			<Control Id="lblPower" Text="Потужність"/>
+			<Control Id="lblAdmitCriteria" Text="Критерій дозволу"/>
+			<Control Id="lblTxFreq" Text="ПРД частота [МГЦ]"/>
+			<Control Id="lblScanList" Text="Список сканув"/>
+			<Control Id="lblxband" Text="Warning: Rx and Tx bands are different. Radio performance may be affected"/>
+			<Control Id="tsrCh" Text="toolStrip1">
+				<ToolStripItem Id="tslblInfo" Text=""/>
+				<ToolStripItem Id="tsbtnFirst" Text="Перший"/>
+				<ToolStripItem Id="tsbtnPrev" Text="Попередній"/>
+				<ToolStripItem Id="tsbtnNext" Text="Наступний"/>
+				<ToolStripItem Id="tsbtnLast" Text="Останній"/>
+				<ToolStripItem Id="tsbtnAdd" Text="Додати"/>
+				<ToolStripItem Id="tsbtnDel" Text="Видалити"/>
+			</Control>
+			<Control Id="mnsCh" Text="menuStrip1"/>
+		</Controls>
+		<Commons>
+			<Item Id="ChMode" Text="Аналоговий,Цифровий"/>
+			<Item Id="RefFreq" Text="Низька,Середня,Висока"/>
+			<Item Id="Power" Text="Низька,Висока"/>
+			<Item Id="AdmitCriterica" Text="Завжди,Вільний канал,CTCSS/DCS"/>
+			<Item Id="AdmitCritericaD" Text="Завжди,Вільний канал,Колірний код"/>
+			<Item Id="Squelch" Text="Сильний,Нормальний"/>
+			<Item Id="VoiceEmphasis" Text="None,De and Pre,De,Pre"/>
+			<Item Id="Ste" Text="Частота,120°,180°,240°"/>
+			<Item Id="NonSte" Text="Немає,Частота"/>
+			<Item Id="SignalingSystem" Text="Вимк,DTMF"/>
+			<Item Id="UnmuteRule" Text="Std Unmute Mute,And Unmute Mute,And Unmute Or Mute"/>
+			<Item Id="PttidType" Text="None,Only Front,Only Post,Front and Post"/>
+			<Item Id="Arts" Text="Вимкнути,Tx,Rx,Tx і Rx"/>
+			<Item Id="TimingPreference" Text="Preferred,Eligibel,Ineligibel"/>
+			<Item Id="Ars" Text="Disable,System Change"/>
+			<Item Id="KeySwitch" Text="Вимк,Увімк"/>
+		</Commons>
+	</ChannelForm>
+	<ChannelsForm Text="Канали">
+		<Controls>
+			<Control Id="btnImport" Text="Імпорт"/>
+			<Control Id="btnExport" Text="Експорт"/>
+			<Control Id="btnDeleteSelect" Text="Видалити вибране"/>
+			<Control Id="btnClear" Text="Очистити"/>
+			<Control Id="btnDelete" Text="Видалити"/>
+			<Control Id="btnAdd" Text="Додати"/>
+			<Control Id="dgvChannels" Text="Номер,Назва,Частота ПРМ,Частота ПРД,Канальний режим,Потужність,Тон ПРМ,Тон ПРД,Колірний код,Список ПРМ,Контакт ПРД,Таймслот">
+				<ControlItem Id="" Text="Номер"/>
+				<ControlItem Id="" Text="Ім'я"/>
+				<ControlItem Id="" Text="Частота ПРМ"/>
+				<ControlItem Id="" Text="Частота ПРД"/>
+				<ControlItem Id="" Text="Канальний режим"/>
+				<ControlItem Id="" Text="Потужність"/>
+				<ControlItem Id="" Text="Тон ПРМ"/>
+				<ControlItem Id="" Text="Тон ПРД"/>
+				<ControlItem Id="" Text="Колірний код"/>
+				<ControlItem Id="" Text="Список прийому"/>
+				<ControlItem Id="" Text="Контакт"/>
+				<ControlItem Id="" Text="Таймслот"/>
+			</Control>
+		</Controls>
+		<Commons>
+      <Item Id="DisplayHeaderText" Text="Number,Name,Ch Mode,Rx Freq,Tx Freq,Color Code,Repeater Slot,Contact,Rx Group List,Scan List,Rx Tone,Tx Tone"/>
+      <Item Id="ExportHeaderText" Text="Data type,Name,Channel Type,Rx Frequency,Tx Frequency,Color Code,Timeslot,Contact,Contact Type, Contact Id,Rx Group,Scanlist,Zone,RX CTCSS,TX CTCSS,Power,Bandwidth,Rx Only,Squelch,Tx Admit,TOT,TOT Rekey,Tx Signaling,Rx Signaling,Privacy Group,Emergency System,Flags1,Flags2,Flags3,Flags4,RssiThreshold,VoiceEmphasis,TxSignaling,UnmuteRule,RxSignaling,ArtsInterval" />
+    </Commons>
+	</ChannelsForm>
+	<CommPrgForm Text="">
+		<Controls>
+			<Control Id="btnCancel" Text="Скасувати"/>
+		</Controls>
+		<Commons>
+			<Item Id="ButtonItem" Text="Немає,Всі звуки Увімк/Вимк,Emergency On,Emergency Off,Висока/Низька потужність,Відкрити шумодав,Nuisance Delete,Швидкий доступ 1,Швидкий доступ 2,Швидкий доступ 3,Швидкий доступ 4,Швидкий доступ 5,Швидкий доступ 6,Репітер/Talkaround,Сканування Увімк/Вимк,Нормальний/Сильний шумодав,Шифрування Увімк/Вимк,VOX Увімк/Вимк,Вибір зони,Індикатор батареї,Одинокий робітник Увімк/Вимк,Permanent Monitor,Phone Exit,Канал вверх,Канал вниз,Інформація про канал"/>
+			<Item Id="Mode" Text="Немає,Цифровий,Аналоговий"/>
+			<Item Id="CallTypeD" Text="Виклик,Повідомленя"/>
+			<Item Id="CallTypeA" Text="DTMF виклик"/>
+		</Commons>
+	</CommPrgForm>
+	<ContactForm Text="Цифровий контакт">
+		<Controls>
+			<Control Id="chkCallRxTone" Text="Тон вхідного вилику"/>
+			<Control Id="lblRingStyle" Text="Стиль дзвінка"/>
+			<Control Id="lblCallType" Text="Тип виклику"/>
+			<Control Id="lblName" Text="Ім'я"/>
+			<Control Id="lblCallId" Text="ID виклику"/>
+		</Controls>
+		<Commons>
+			<Item Id="CallType" Text="Груповий виклик,Приватний виклик,Всі виклики"/>
+			<Item Id="CallRxTone" Text="Вимк,Увімк"/>
+		</Commons>
+	</ContactForm>
+	<ContactsForm Text="Контакт">
+		<Controls>
+			<Control Id="btnImport" Text="Імпорт"/>
+			<Control Id="btnExport" Text="Експорт"/>
+			<Control Id="btnDeleteSelect" Text="Вилучити вибране"/>
+			<Control Id="btnClear" Text="Очистити"/>
+			<Control Id="btnDelete" Text="Видалити"/>
+			<Control Id="btnAdd" Text="Додати"/>
+			<Control Id="btnInternetDownload" Text="Завантажити з Інтернету"/>
+			<Control Id="dgvContacts" Text="Number,Name,Call ID,Type,Ring Style,Call Receive Tone,Repeater Slot override">
+				<ControlItem Id="" Text="Номер"/>
+				<ControlItem Id="" Text="Ім'я"/>
+				<ControlItem Id="" Text="ID виклику"/>
+				<ControlItem Id="" Text="Тип"/>
+				<ControlItem Id="" Text="Стиль дзвінка"/>
+				<ControlItem Id="" Text="Тон вхідного вилику"/>
+			</Control>
+		</Controls>
+		<Commons>
+			<Item Id="HeaderText" Text="Номер,Назва,ID виклику,Тип,Стиль дзвінка,Тон вхідного виклику,Repeater Slot override,"/>
+		</Commons>
+	</ContactsForm>
+	<DeviceInfoForm Text="Основна інформація">
+		<Controls>
+			<Control Id="lblTo1" Text="-"/>
+			<Control Id="lblTo2" Text="-"/>
+			<Control Id="lblSection1" Text="Діапазон частот 1 [МГц]"/>
+			<Control Id="lblDspFwVer" Text="Версія DSP"/>
+			<Control Id="lblFirmwareVer" Text="Версія прошивки"/>
+			<Control Id="lblHardwareVer" Text="Апаратна версія"/>
+			<Control Id="lblCpsSwVer" Text="Версія CPS"/>
+			<Control Id="lblSn" Text="Серійний номер"/>
+			<Control Id="lblSection2" Text="Діапазон частот 2 [МГц]"/>
+			<Control Id="lblLastPrgTime" Text="Останнє програмування"/>
+			<Control Id="lblModel" Text="Модель"/>
+		</Controls>
+	</DeviceInfoForm>
+	<DigitalKeyContactForm Text="Призначення цифр. клавіш">
+		<Controls>
+			<Control Id="dgvContact" Text="Контакт">
+				<ControlItem Id="cmbContact" Text="Контакт"/>
+			</Control>
+		</Controls>
+		<Commons>
+			<Item Id="DigitKey" Text="Цифр.клавіша "/>
+		</Commons>
+	</DigitalKeyContactForm>
+	<DtmfContactForm Text="DTMF контакт">
+		<Controls>
+			<Control Id="dgvContact" Text="Назва,Номер">
+				<ControlItem Id="txtName" Text="Ім'я"/>
+				<ControlItem Id="txtCode" Text="Номер"/>
+			</Control>
+			<Control Id="btnAdd" Text="Додати"/>
+			<Control Id="btnDel" Text="Видалити"/>
+		</Controls>
+	</DtmfContactForm>
+	<DtmfForm Text="DTMF">
+		<Controls>
+			<Control Id="chkSideTone" Text="DTMF Side Tone"/>
+			<Control Id="lblUpCode" Text="PTTID Up Code"/>
+			<Control Id="lblDownCode" Text="PTTID Down Code"/>
+			<Control Id="lblSelfID" Text="Self ID"/>
+			<Control Id="lblRespHoldTime" Text="Response Hold [s]"/>
+			<Control Id="lblKillCode" Text="Kill Code"/>
+			<Control Id="lblAutoResetTime" Text="Час автоскидання [с]"/>
+			<Control Id="lblDecTime" Text="Час декодування [с]"/>
+			<Control Id="lblWakeCode" Text="Wake Code"/>
+			<Control Id="lblDelimiter" Text="Роздільник"/>
+			<Control Id="lblGrpCallCode" Text="Груповий код"/>
+			<Control Id="lblDecResp" Text="Decode Response"/>
+			<Control Id="lblFstDlyTime" Text="First Digit Delay [ms]"/>
+			<Control Id="lblKillWakeDec" Text="Kill/Wake Code"/>
+			<Control Id="lblFstDur" Text="First Digit Duration [ms]"/>
+			<Control Id="lblKillType" Text="Kill Type"/>
+			<Control Id="lblOtherDur" Text="*# Тривалість [мс]"/>
+			<Control Id="lblRate" Text="DTMF Rate"/>
+		</Controls>
+		<Commons>
+			<Item Id="DecodeResp" Text="Немає,Нагадування,Відповідь,Нагадування та відповідь"/>
+			<Item Id="GroupCode" Text="Немає,A,B,C,D,*,#"/>
+			<Item Id="KillType" Text="Tx Disable,Tx and Rx Disable,Kill"/>
+			<Item Id="KillWakeDec" Text="Вимк,Увімк"/>
+		</Commons>
+	</DtmfForm>
+	<EmergencyForm Text="Аварійна система">
+		<Controls>
+			<Control Id="lblAlias" Text="Ім'я"/>
+			<Control Id="lblAlarmType" Text="Тип сигналізації"/>
+			<Control Id="lblAlarmMode" Text="Режим"/>
+			<Control Id="lblRevertCh" Text="Повернути канал"/>
+			<Control Id="lblImpoliteRetries" Text="Impolite Retries"/>
+			<Control Id="lblPoliteRetries" Text="Ввічливі спроби"/>
+			<Control Id="lblCycles" Text="Циклів"/>
+			<Control Id="lblTxCycle" Text="Tx Cycle Time [s]"/>
+			<Control Id="lblRxCycle" Text="Rx Cycle Time [s]"/>
+		</Controls>
+		<Commons>
+			<Item Id="AlarmType" Text="Вимкнути,Звичайний,Тихий,Тихий з голосом"/>
+			<Item Id="AlarmMode" Text="Emergency Alarm,Emergency Alarm w/ call,Emergency Alarm w/ Voice"/>
+			<Item Id="RevertCh" Text="Немає,Обране"/>
+		</Commons>
+	</EmergencyForm>
+	<EncryptForm Text="Шифрування">
+		<Controls>
+			<Control Id="dgvKey" Text="Клавіша">
+				<ControlItem Id="txtKey" Text="Клавіша"/>
+			</Control>
+			<Control Id="lblType" Text="Тип шифрування"/>
+			<Control Id="btnDel" Text="Видалити"/>
+			<Control Id="lblKeyLen" Text="Довжина ключа"/>
+			<Control Id="btnAdd" Text="Додати"/>
+		</Controls>
+		<Commons>
+			<Item Id="EncryptType" Text="Немає,Базове"/>
+		</Commons>
+	</EncryptForm>
+	<GeneralSetForm Text="Загальні налаштування">
+		<Controls>
+			<Control Id="chkTxExitTone" Text="Тон кінця ПРД"/>
+			<Control Id="grpBeep" Text="Тон сигналу"/>
+			<Control Id="chkResetTone" Text="Reset Tone"/>
+			<Control Id="chkUnifamiliarNumber" Text="Unifamiliar Number Tone"/>
+			<Control Id="lblCallAlertDur" Text="Call Alert Tone Duration [s]"/>
+			<Control Id="chkSelfTestPassTone" Text="Тон самотестування"/>
+			<Control Id="chkCrescendoTone" Text="Enhanced Tone*"/>
+			<Control Id="chkChFreeTone" Text="Тон вільного каналу"/>
+			<Control Id="chkDisableAllTone" Text="Вимкнути всі сигнали"/>
+			<Control Id="lblTalkPermitTone" Text="Тон перед ПРД"/>
+			<Control Id="lblArtsTone" Text="Тон ARTS"/>
+			<Control Id="grpVoice" Text="Мова"/>
+			<Control Id="chkChVoice" Text="Channel Voice"/>
+			<Control Id="lblVoiceLang" Text="Голосові підказки"/>
+			<Control Id="grpSaveMode" Text="Економія батареї"/>
+			<Control Id="chkBatteryRx" Text="Приймача"/>
+			<Control Id="chkBatteryPreamble" Text="Преамбули"/>
+			<Control Id="grpLoneWork" Text="Одинокий працівник"/>
+			<Control Id="lblReminderTmr" Text="Час нагадування[с]"/>
+			<Control Id="lblRespTmr" Text="Response Timer [min]"/>
+			<Control Id="grpTalkAround" Text="Talkaround"/>
+			<Control Id="lblPrivateHang" Text="Private Call Hang Time [ms]"/>
+			<Control Id="lblGrpHold" Text="Group Call Hang Time [ms]"/>
+			<Control Id="chkDisableAllLeds" Text="Вимкнути всі LED"/>
+			<Control Id="lblRadioName" Text="Позивний"/>
+			<Control Id="lblRadioID" Text="ID рації"/>
+			<Control Id="lblTxPreambleDur" Text="Преамбула ПРД [мс]"/>
+			<Control Id="lblProgramPwd" Text="Пароль програмування"/>
+			<Control Id="lblRxLowBatt" Text="Інтервал розряду акум.[с]"/>
+			<Control Id="chkKillState" Text="Kill State"/>
+			<Control Id="chkTestMode" Text="Режим перевірки"/>
+			<Control Id="lblArsInitDly" Text="Затримка ініціалізації ARS [хв]"/>
+			<Control Id="chkDataEnCtrlStation" Text="Data Enabled COntrol Station"/>
+			<Control Id="lblMonitorType" Text="Тип монітора"/>
+			<Control Id="lblVoxSense" Text="Чутливість VOX"/>
+			<Control Id="chkPrivateCall" Text="приватний виклик"/>
+			<Control Id="chkTxInhibit" Text="Tx Inhibit Quick Key Override"/>
+			<Control Id="lblUpChMode" Text="Up Channel Mode"/>
+			<Control Id="lblDownChMode" Text="Down Channel Mode"/>
+			<Control Id="grpScan" Text="Сканування"/>
+			<Control Id="lblScanMode" Text="Режим сканування"/>
+			<Control Id="lblAni" Text="ANI"/>
+			<Control Id="lblDoubleWaitTxSelect" Text="Вибір Tx подвійн.прийому"/>
+			<Control Id="lblRepeaterSte" Text="Repeater Ste"/>
+			<Control Id="lblRepeaterEndDelay" Text="Repeater End Delay"/>
+			<Control Id="lblChParamStorageMode" Text="Ch Param Storage Mode"/>
+		</Controls>
+		<Commons>
+			<Item Id="MonitorType" Text="Відкритий шумодав,Тиша"/>
+			<Item Id="TalkPermitTone" Text="Немає,Цифровий,Аналоговий,Обоє"/>
+			<Item Id="ArtsToneName" Text="Вимкнути,Один раз,Завжди"/>
+			<Item Id="ChannelMode" Text="Канал,VFO"/>
+			<Item Id="ScanMode" Text="Time,Carrier,Search"/>
+			<Item Id="Ani" Text="Вимк,Увімк"/>
+			<Item Id="StorageMode" Text="Постійно,Тимчасово"/>
+			<Item Id="TxSelect" Text="Головний,Активний"/>
+		</Commons>
+	</GeneralSetForm>
+	<HelpForm Text="HelpView">
+		<Controls/>
+	</HelpForm>
+	<MainForm Text="Radioddity GD-77 CPS 3.0.6 Community Edition">
+		<TreeView>
+			<TreeNode Id="Model" Text="GD-77"/>
+			<TreeNode Id="BasicInfo" Text="Основна інформація"/>
+			<TreeNode Id="BootItem" Text="Тип привітання"/>
+			<TreeNode Id="Menu" Text="Меню"/>
+			<TreeNode Id="NumKeyAssign" Text="Призначення цифр. клавіш"/>
+			<TreeNode Id="GeneralSetting" Text="Загальні налаштування"/>
+			<TreeNode Id="Buttons" Text="Кнопки"/>
+			<TreeNode Id="TextMsg" Text="Текстові повідомлення"/>
+			<TreeNode Id="Pivacy" Text="Шифрування"/>
+			<TreeNode Id="SignalingSys" Text="Signaling System"/>
+			<TreeNode Id="EmergencySys" Text="Аварійна система"/>
+			<TreeNode Id="Contact" Text="Контакт"/>
+			<TreeNode Id="DtmfContact" Text="DTMF"/>
+			<TreeNode Id="DigitalContact" Text="Цифровий контакт"/>
+			<TreeNode Id="RxGroupList" Text="Список прийому"/>
+			<TreeNode Id="Zone" Text="Зона"/>
+			<TreeNode Id="Channel" Text="Канал"/>
+			<TreeNode Id="Scan" Text="Сканування"/>
+			<TreeNode Id="DtmfSignal" Text="DTMF"/>
+			<TreeNode Id="VFO" Text="VFO"/>
+			<TreeNode Id="VFOA" Text="VFO A"/>
+			<TreeNode Id="VFOB" Text="VFO B"/>
+		</TreeView>
+		<MenuStrip>
+			<MenuItem Id="tsmiFile" Text="&amp;Файл"/>
+			<MenuItem Id="tsmiNew" Text="Створити"/>
+			<MenuItem Id="tsmiSave" Text="Зберегти"/>
+			<MenuItem Id="tsmiOpen" Text="Відкрити"/>
+			<MenuItem Id="tsmiExit" Text="Вихід"/>
+			<MenuItem Id="tsmiSetting" Text="Параметри"/>
+			<MenuItem Id="tsmiDeviceInfo" Text="Основна інформація"/>
+			<MenuItem Id="tsmiBootItem" Text="Тип привітання"/>
+			<MenuItem Id="tsmiMenu" Text="Меню"/>
+			<MenuItem Id="tsmiNumKeyContact" Text="Призначення цифр. клавіш"/>
+			<MenuItem Id="tsmiGerneralSet" Text="Загальні налаштування"/>
+			<MenuItem Id="tsmiButton" Text="Кнопки"/>
+			<MenuItem Id="tsmiTextMsg" Text="Текстові повідомлення"/>
+			<MenuItem Id="tsmiEncrypt" Text="Шифрування"/>
+			<MenuItem Id="tsmiSignaling" Text="Signaling"/>
+      <MenuItem Id="tsmiSignalingSystem" Text="Signaling System"/>      
+			<MenuItem Id="tsmiDtmf" Text="DTMF"/>
+			<MenuItem Id="tsmiEmgSystem" Text="Аварійна система"/>
+			<MenuItem Id="tsmiContact" Text="Контакт"/>
+			<MenuItem Id="tsmiDtmfContact" Text="DTMF"/>
+			<MenuItem Id="tsmiDmrContact" Text="Цифровий контакт"/>
+			<MenuItem Id="tsmiContacts" Text="Контакти"/>
+			<MenuItem Id="tsmiGrpRxList" Text="Список прийому"/>
+			<MenuItem Id="tsmiZone" Text="Зона"/>
+			<MenuItem Id="tsmiZoneList" Text="ZoneList"/>
+			<MenuItem Id="tsmiCh" Text="Канал"/>
+			<MenuItem Id="tsmiScan" Text="Сканування"/>
+			<MenuItem Id="tsmiScanList" Text="Список сканув."/>
+			<MenuItem Id="tsmiProgram" Text="Програма"/>
+			<MenuItem Id="tsmiRead" Text="Читати"/>
+			<MenuItem Id="tsmiWrite" Text="Записати"/>
+			<MenuItem Id="tsmiBasic" Text="Базові"/>
+			<MenuItem Id="tsmiView" Text="Переглянути"/>
+			<MenuItem Id="tsmiTree" Text="TreeView"/>
+			<MenuItem Id="tsmiHelp" Text="HelpView"/>
+			<MenuItem Id="tsmiToolBar" Text="Панель інструментів"/>
+			<MenuItem Id="tsmiStatusBar" Text="Рядок стану"/>
+			<MenuItem Id="tsmiWindow" Text="Вікно"/>
+			<MenuItem Id="tsmiCascade" Text="Каскадом"/>
+			<MenuItem Id="tsmiTileHor" Text="Горизонтально"/>
+			<MenuItem Id="tsmiTileVer" Text="Вертикально"/>
+			<MenuItem Id="tsmiCloseAll" Text="Закрити все"/>
+			<MenuItem Id="tsmiAbout" Text="Про програму"/>
+			<MenuItem Id="tsmiLanguage" Text="Мова"/>
+			<MenuItem Id="tsmiEnglish" Text="Українська"/>
+			<MenuItem Id="tsmiChinese" Text="Китайська"/>
+			<MenuItem Id="tsmiExtras" Text="Додаткові можливості"/>
+      <MenuItem Id="tsmiContactsDownload" Text="Завантажте контакти" />
+      <MenuItem Id="tsmiDMRID" Text="DMR ID" />
+      <MenuItem Id="tsmiCalibration" Text="глядач" />
+    </MenuStrip>
+		<ContextMenuStrip>
+			<MenuItem Id="tsmiAdd" Text="Додати"/>
+			<MenuItem Id="tsmiClear" Text="Очистити"/>
+		</ContextMenuStrip>
+		<ContextMenuStrip>
+			<MenuItem Id="tsmiDel" Text="Видалити"/>
+			<MenuItem Id="tsmiRename" Text="Перейменувати"/>
+			<MenuItem Id="tsmiCopy" Text="Копіювати"/>
+			<MenuItem Id="tsmiPaste" Text="Вставити"/>
+			<MenuItem Id="tsmiMoveUp" Text="Угору"/>
+			<MenuItem Id="tsmiMoveDown" Text="Униз"/>
+		</ContextMenuStrip>
+		<ContextMenuStrip>
+			<MenuItem Id="tsmiCollapseAll" Text="Згорнути все"/>
+			<MenuItem Id="tsmiExpandAll" Text="Розгорнути все"/>
+		</ContextMenuStrip>
+		<ContextMenuStrip>
+			<MenuItem Id="tsmiAddContact" Text="Додати"/>
+			<MenuItem Id="tsmiGroupCall" Text="Груповий виклик"/>
+			<MenuItem Id="tsmiPrivateCall" Text="приватний виклик"/>
+			<MenuItem Id="tsmiAllCall" Text="Загальний виклик"/>
+		</ContextMenuStrip>
+		<ToolStrip>
+			<ToolItem Id="tsbtnNew" Text="Створити"/>
+			<ToolItem Id="tsbtnOpen" Text="Відкрити"/>
+			<ToolItem Id="tsbtnSave" Text="Зберегти"/>
+			<ToolItem Id="tsbtnRead" Text="Читати"/>
+			<ToolItem Id="tsbtnWrite" Text="Записати"/>
+			<ToolItem Id="tsbtnAbout" Text="Про програму"/>
+		</ToolStrip>
+	</MainForm>
+	<MenuForm Text="Меню">
+		<Controls>
+			<Control Id="grpCall" Text="список викликів"/>
+			<Control Id="chkReceivedCall" Text="Приняті"/>
+			<Control Id="chkDialedCall" Text="Вихідні"/>
+			<Control Id="chkMissedCall" Text="Пропущені"/>
+			<Control Id="grpSetting" Text="Базові"/>
+			<Control Id="chkDoubleWait" Text="Подвійний ПРМ"/>
+			<Control Id="lblDwSwitch" Text="Подвійний ПРМ"/>
+			<Control Id="lblKeyTone" Text="Звук клавіш"/>
+			<Control Id="lblBacklightTime" Text="Підсвітка [с]"/>
+			<Control Id="chkSql" Text="Шумоподавлювач"/>
+			<Control Id="chkBacklight" Text="Підсвітка"/>
+			<Control Id="chkKeyboardLock" Text="Блокування клавіатури"/>
+			<Control Id="chkVox" Text="VOX"/>
+			<Control Id="chkToneHint" Text="Тони/Сповіщення"/>
+			<Control Id="chkLed" Text="LED індикатори"/>
+			<Control Id="lblChDispMode" Text="Режим дисплея"/>
+			<Control Id="chkPwdLock" Text="Пароль і блокування"/>
+			<Control Id="lblMenuLang" Text="Мова меню"/>
+			<Control Id="lblWorkMode" Text="Робочий режим"/>
+			<Control Id="chkPower" Text="Потужність"/>
+			<Control Id="chkBootScreen" Text="Екран завантаження"/>
+			<Control Id="chkEncrypt" Text="Шифрування"/>
+			<Control Id="lblKeyLockTime" Text="Час блок.[с]"/>
+			<Control Id="chkTalkAround" Text="Talkaround"/>
+			<Control Id="chkChDisp" Text="Режим дисплея"/>
+			<Control Id="grpContact" Text="Контакт"/>
+			<Control Id="chkOneKeyDial" Text="Швидкий виклик"/>
+			<Control Id="chkRadioDetect" Text="Перевірка радіо"/>
+			<Control Id="chkRadioActive" Text="Включення радіо"/>
+			<Control Id="chkContactEdit" Text="Редагувати"/>
+			<Control Id="chkRadioKill" Text="Вимкнення радіо"/>
+			<Control Id="chkManualDial" Text="Ручний набір"/>
+			<Control Id="chkRemoteMonitor" Text="Дистанційний монітор"/>
+			<Control Id="chkCallPrompt" Text="Сигнал виклику"/>
+			<Control Id="grpScan" Text="Сканування"/>
+			<Control Id="chkScanEditList" Text="Редагувати список"/>
+			<Control Id="chkScan" Text="Сканування"/>
+			<Control Id="grpBasic" Text="Базові"/>
+			<Control Id="lblMenuHangTime" Text="Час показу меню [с]"/>
+			<Control Id="chkInfo" Text="Інформація"/>
+			<Control Id="chkFm" Text="FM"/>
+			<Control Id="chkGps" Text="Gps"/>
+			<Control Id="chkP1Key" Text="Клавіша P1"/>
+			<Control Id="lblBrightness" Text="Яскравість"/>
+			<Control Id="chkNonSte" Text="Non Ste"/>
+			<Control Id="chkTxEndDelay" Text="Tx End Delay"/>
+			<Control Id="chkDoubleWaitTxSelect" Text="Вибір Tx подвійн.прийому"/>
+			<Control Id="chkSte" Text="STE"/>
+			<Control Id="chkPttid" Text="PTTID"/>
+			<Control Id="chkDateTime" Text="DateTime"/>
+			<Control Id="chkAni" Text="ANI Меню"/>
+			<Control Id="chkDtmfSideTone" Text="DTMF SideTone"/>
+			<Control Id="chkRecording" Text="Процес запису"/>
+			<Control Id="chkScanMode" Text="Scan Resume Mode"/>
+		</Controls>
+		<Commons>
+			<Item Id="KeyLockTime" Text="Вручну,5,10,15"/>
+			<Item Id="BacklightTime" Text="Постійно відкритий,Постійно закритий,5,10"/>
+			<Item Id="WorkMode" Text="VFO,Па'мять,№ каналу"/>
+			<Item Id="ChDispMode" Text="№ каналу,Назва каналу,Частота"/>
+			<Item Id="KeyTone" Text="Вимк,Увімк"/>
+			<Item Id="DoubleWait" Text="Вимк,Два активні,Один з двох"/>
+			<Item Id="MenuLang" Text="Англійська,Китайська"/>
+		</Commons>
+	</MenuForm>
+	<NormalScanForm Text="Сканування">
+		<Controls>
+			<Control Id="grpSelected" Text="Учасник"/>
+			<Control Id="chkTalkback" Text="Talkback"/>
+			<Control Id="grpUnselected" Text="Доступно"/>
+			<Control Id="chkChMark" Text="Channel Mark"/>
+			<Control Id="lblTxDesignatedCh" Text="Канал на паредачу"/>
+			<Control Id="lblPriorityCh1" Text="Пріоритетний канал 1"/>
+			<Control Id="lblSignalingHold" Text="Signaling Hold Time [ms]"/>
+			<Control Id="lblName" Text="Ім'я"/>
+			<Control Id="lblPLType" Text="PL Тип"/>
+			<Control Id="lblPriorityCh2" Text="Пріоритетний канал 2"/>
+			<Control Id="lblPrioritySample" Text="Priority Sample Time [ms]"/>
+			<Control Id="btnDown" Text="Вниз"/>
+			<Control Id="btnUp" Text="Вверх"/>
+			<Control Id="btnDel" Text="Видалити"/>
+			<Control Id="btnAdd" Text="Додати"/>
+		</Controls>
+		<Commons>
+			<Item Id="PriorityCh" Text="Немає,Обране"/>
+			<Item Id="TxDesignatedCh" Text="Останній активний,Обраний"/>
+			<Item Id="PlType" Text="Неприорітетний канал,Вимкнути,Пріоритетний канал,Пріоритет. і неприорітет. канал"/>
+		</Commons>
+	</NormalScanForm>
+	<PasswordForm Text="Пароль">
+		<Controls>
+			<Control Id="btnCancel" Text="Скасувати"/>
+			<Control Id="btnOk" Text="ОК"/>
+			<Control Id="lblPwd" Text="Пароль"/>
+		</Controls>
+	</PasswordForm>
+	<PowerPwdForm Text="Пароль">
+		<Controls>
+			<Control Id="btnCancel" Text="Скасувати"/>
+			<Control Id="btnOk" Text="ОК"/>
+			<Control Id="lblPwd" Text="Пароль"/>
+		</Controls>
+	</PowerPwdForm>
+	<RxGroupListForm Text="Список прийому">
+		<Controls>
+			<Control Id="btnDown" Text="Вниз"/>
+			<Control Id="btnUp" Text="Вверх"/>
+			<Control Id="grpSelected" Text="Учасник"/>
+			<Control Id="btnAdd" Text="Додати"/>
+			<Control Id="grpUnselected" Text="Доступно"/>
+			<Control Id="btnDel" Text="Видалити"/>
+			<Control Id="lblName" Text="Ім'я"/>
+		</Controls>
+	</RxGroupListForm>
+	<SignalingBasicForm Text="Signaling Basic">
+		<Controls>
+			<Control Id="chkCallAlert" Text="Call Alert Encode"/>
+			<Control Id="chkRadioDisable" Text="Radio Disable Decode"/>
+			<Control Id="chkRemoteMonitor" Text="Remote Monitor Decode"/>
+			<Control Id="chkEmgRM" Text="Emergency Remote Monitor Decode"/>
+			<Control Id="lblTxSyncWakeTot" Text="Tx Sync Wakeup TOT [ms]"/>
+			<Control Id="chkSelCall" Text="Self Call Encode"/>
+			<Control Id="lblTxWakeMsgLimit" Text="Tx Wakeup Message Limit"/>
+			<Control Id="lblSelCallToneId" Text="Self Call Tone/ID"/>
+			<Control Id="lblRMDuration" Text="Remote Monitor Duration [s]"/>
+			<Control Id="lblSelCallHang" Text="Self Call Hang Time [ms]"/>
+			<Control Id="lblAutoResetTimer" Text="Таймер автоскидання [с]"/>
+		</Controls>
+	</SignalingBasicForm>
+	<ScanBasicForm Text="Основне сканування">
+		<Controls>
+			<Control Id="lblScanTime" Text="Scan Time [s]"/>
+			<Control Id="lblDigitHang" Text="Час затримки (Цифра) [мс]"/>
+			<Control Id="lblAnalogHang" Text="Час затримки (Аналог) [мс]"/>
+			<Control Id="lblVoteHang" Text="Vote Scan Hang Time [s]"/>
+			<Control Id="lblFastVoteRssi" Text="Fast Vote RSSI Threshold [dB]"/>
+			<Control Id="lblStartVoteRssi" Text="Start Vote RSSI Threshold [dB]"/>
+			<Control Id="chkPriorityAlert" Text="Priority Alert"/>
+		</Controls>
+	</ScanBasicForm>
+	<TextMsgForm Text="Текстові повідомлення">
+		<Controls>
+			<Control Id="dgvMsg" Text="Зміст">
+				<ControlItem Id="txtMessage" Text="Текстові повідомлення"/>
+			</Control>
+			<Control Id="btnAdd" Text="Додати"/>
+			<Control Id="btnDel" Text="Видалити"/>
+		</Controls>
+	</TextMsgForm>
+	<TreeForm Text="TreeView">
+		<Controls/>
+	</TreeForm>
+	<VfoForm Text="Vfo">
+		<Controls>
+			<Control Id="btnCopy" Text=">>"/>
+			<Control Id="lblSquelch" Text="Шумоподавлювач"/>
+			<Control Id="lblSql" Text="Рівень шумодава"/>
+			<Control Id="grpDigit" Text="Цифровий"/>
+			<Control Id="lblTimingPreference" Text="Timing Leader Prefernce"/>
+			<Control Id="lblRepeaterSlot" Text="Таймслот"/>
+			<Control Id="lblArs" Text="ARS"/>
+			<Control Id="lblKeySwitch" Text="Шифрування"/>
+			<Control Id="lblKey" Text="Ключ шифрування"/>
+			<Control Id="lblTxColor" Text="Колірний код"/>
+			<Control Id="lblEmgSystem" Text="Аварійна система"/>
+			<Control Id="lblContact" Text="Контакт"/>
+			<Control Id="chkDualCapacity" Text="Dual Capacity Direct Mode"/>
+			<Control Id="chkUdpDataHead" Text="Стислий заголовок даних UDP"/>
+			<Control Id="chkAllowTxInterupt" Text="Дозволити переривання"/>
+			<Control Id="chkTxInteruptFreq" Text="Tx Interruptible Frequencies"/>
+			<Control Id="chkPrivateCall" Text="Підтв. приватного виклику"/>
+			<Control Id="chkDataCall" Text="Передача даних підтверджено"/>
+			<Control Id="chkEmgConfirmed" Text="Emergency Alarm Ack"/>
+			<Control Id="chkEnhancedChAccess" Text="Enhanced Channel Access"/>
+			<Control Id="lblRxColor" Text="Rx колірний код"/>
+			<Control Id="lblRxGroup" Text="Список прийому"/>
+			<Control Id="chkRxOnly" Text="тільки прийом"/>
+			<Control Id="chkAllowTalkaround" Text="Дозволити Talkaround"/>
+			<Control Id="grpAnalog" Text="Аналоговий"/>
+			<Control Id="lblChBandwidth" Text="Смуга [кГц]"/>
+			<Control Id="lblVoiceEmphasis" Text="Voice Emphasis"/>
+			<Control Id="lblSte" Text="STE"/>
+			<Control Id="lblNonSte" Text="Non STE"/>
+			<Control Id="lblRxTone" Text="Тон ПРМ [Гц]"/>
+			<Control Id="lblRxSignaling" Text="Сигналинг на ПРМ"/>
+			<Control Id="lblUnmuteRule" Text="Unmute Rule"/>
+			<Control Id="lblArtsInterval" Text="Інтервал ARTS [с]"/>
+			<Control Id="lblArts" Text="ARTS"/>
+			<Control Id="lblPttidType" Text="PTTID Type"/>
+			<Control Id="lblTxSignaling" Text="Сигналинг на ПРД"/>
+			<Control Id="lblTxTone" Text="Тон ПРД [Гц]"/>
+			<Control Id="chkDataPl" Text="PL for Data"/>
+			<Control Id="chkLoneWoker" Text="Одинокий працівник"/>
+			<Control Id="chkVox" Text="VOX"/>
+			<Control Id="chkAutoScan" Text="Автосканування"/>
+			<Control Id="lblChName" Text="Ім'я"/>
+			<Control Id="lblChMode" Text="Режим"/>
+			<Control Id="lblTot" Text="TOT [с]"/>
+			<Control Id="lblTotRekey" Text="TOT Rekey Delay [s]"/>
+			<Control Id="lblRssiThreshold" Text="RSSI Threshold [dBm]"/>
+			<Control Id="lblRxRefFreq" Text="Rx Reference Frequency"/>
+			<Control Id="lblTxRefFreq" Text="Tx Reference Frequency"/>
+			<Control Id="lblRxFreq" Text="ПРМ частота [МГц]"/>
+			<Control Id="lblPower" Text="Потужність"/>
+			<Control Id="lblAdmitCriteria" Text="Критерій дозволу"/>
+			<Control Id="lblTxFreq" Text="ПРД частота [МГЦ]"/>
+			<Control Id="lblScanList" Text="Список сканув."/>
+			<Control Id="lblOffsetStep" Text="Крок зсуву"/>
+			<Control Id="lblOffsetDirection" Text="Напрям зсуву"/>
+			<Control Id="lblOffsetFreq" Text="Зсув частоти"/>
+			<Control Id="lblBandType" Text="Діапазон"/>
+		</Controls>
+		<Commons>
+			<Item Id="ChMode" Text="Аналоговий,Цифровий"/>
+			<Item Id="RefFreq" Text="Низька,Середня,Висока"/>
+			<Item Id="Power" Text="Низька,Висока"/>
+			<Item Id="AdmitCriterica" Text="Завжди,Вільний канал,CTCSS/DCS"/>
+			<Item Id="AdmitCritericaD" Text="Завжди,Вільний канал,Колірний код"/>
+			<Item Id="Squelch" Text="Сильний,Нормальний"/>
+			<Item Id="VoiceEmphasis" Text="None,De and Pre,De,Pre"/>
+			<Item Id="Ste" Text="Частота,120°,180°,240°"/>
+			<Item Id="NonSte" Text="Немає,Частота"/>
+			<Item Id="SignalingSystem" Text="Вимк,DTMF"/>
+			<Item Id="UnmuteRule" Text="Std Unmute Mute,And Unmute Mute,And Unmute Or Mute"/>
+			<Item Id="PttidType" Text="None,Only Front,Only Post,Front and Post"/>
+			<Item Id="Arts" Text="Вимкнути,Tx,Rx,Tx і Rx"/>
+			<Item Id="TimingPreference" Text="Preferred,Eligible,Ineligible"/>
+			<Item Id="Ars" Text="Disable,System Change"/>
+			<Item Id="KeySwitch" Text="Вимк,Увімк"/>
+			<Item Id="OffsetDirection" Text="Немає,+,-"/>
+		</Commons>
+	</VfoForm>
+	<ZoneBasicForm Text="Базові зони">
+		<Controls>
+			<Control Id="grpSub" Text="Вниз"/>
+			<Control Id="lblSubCh" Text="Канал"/>
+			<Control Id="lblSubZone" Text="Зона"/>
+			<Control Id="grpMain" Text="Вверх"/>
+			<Control Id="lblMainCh" Text="Канал"/>
+			<Control Id="lblCurZone" Text="Зона"/>
+		</Controls>
+	</ZoneBasicForm>
+	<ZoneForm Text="Зона">
+		<Controls>
+			<Control Id="tsrZone" Text="toolStrip1">
+				<ToolStripItem Id="tslblInfo" Text=""/>
+				<ToolStripItem Id="tsbtnFirst" Text="Перший"/>
+				<ToolStripItem Id="tsbtnPrev" Text="Попередній"/>
+				<ToolStripItem Id="tsbtnNext" Text="Наступний"/>
+				<ToolStripItem Id="tsbtnLast" Text="Останній"/>
+				<ToolStripItem Id="tsbtnAdd" Text="Додати"/>
+				<ToolStripItem Id="tsbtnDel" Text="Видалити"/>
+			</Control>
+			<Control Id="btnDown" Text="Вниз"/>
+			<Control Id="btnUp" Text="Вверх"/>
+			<Control Id="grpSelected" Text="Учасник"/>
+			<Control Id="btnAdd" Text="Додати"/>
+			<Control Id="grpUnselected" Text="Доступно"/>
+			<Control Id="btnDel" Text="Видалити"/>
+			<Control Id="lblName" Text="Ім'я"/>
+		</Controls>
+	</ZoneForm>
+	<DownloadContactsForm Text="Завантажити контакти з списку останніх чутних">
+		<Controls>
+			<Control Id="lblMessage" Text="ВВедіть префікс ID вашого регіону і натисніть Завантажити..."/>
+			<Control Id="btnImport" Text="Імпортувати обрані"/>
+			<Control Id="btnSelectAll" Text="Вибрати все"/>
+			<Control Id="btnDownload" Text="Завантажити останні працюючі"/>
+			<Control Id="lblIDStart" Text="Префікс регіону"/>
+			<Control Id="lblMessageDownloading" Text="Завантаження"/>
+			<Control Id="dgvDownloadeContacts" Text="ID,Позивний,Назва,Востаннє чути">
+				<ControlItem Id="" Text="ID."/>
+				<ControlItem Id="" Text="Позивний"/>
+				<ControlItem Id="" Text="Ім'я"/>
+				<ControlItem Id="" Text="Останні чутні"/>
+			</Control>
+		</Controls>
+	</DownloadContactsForm>
+  <DMRIDForm Text="DMR ID">
+    <Controls>
+      <Control Id="lblMessage" Text="Введіть код префікса для свого регіону та натисніть Завантажити, щоб додати його до списку" />
+      <Control Id="lblRegionId" Text="Регіон" />
+      <Control Id="lblInactivityFilter" Text="Фільтр бездіяльності (днів)" />
+      <Control Id="btnDownload" Text="Завантажити HamDigital" />
+      <Control Id="btnImportCSV" Text="Імпортувати CSV - Фільтр pегіон" />     
+      <Control Id="btnRead" Text="Читайте від GD-77" />
+      <Control Id="btnWrite" Text="Напишіть GD-77" />
+      <Control Id="btnClear" Text="Очистити список" />
+    </Controls>
+  </DMRIDForm>  
+	<Commons>
+		<Item Id="None" Text="Немає"/>
+		<Item Id="Selected" Text="Вибрано"/>
+		<Item Id="Add" Text="Додати: "/>
+		<Item Id="Off" Text="Вимк"/>
+		<Item Id="RadioIdNotEmpty" Text="ID радіо не може бути порожнім!"/>
+		<Item Id="RadioIdOutOfRange" Text="ID радіо невірне!"/>
+		<Item Id="Read" Text="Читати"/>
+		<Item Id="Write" Text="Записати"/>
+		<Item Id="ReadComplete" Text="Читання завершено"/>
+		<Item Id="WriteComplete" Text="Записування завершено"/>
+		<Item Id="NameExist" Text="Ім'я уже існує"/>
+		<Item Id="FirstChNotDelete" Text="Перший канал у першій зоні не можна видалити"/>
+		<Item Id="FileFormatError" Text="Помилка формату файлу"/>
+		<Item Id="OpenSuccessfully" Text="Відкриття успішне"/>
+		<Item Id="SaveSuccessfully" Text="Збережено успішно"/>
+		<Item Id="TypeNotMatch" Text="Тип не співпадає"/>
+		<Item Id="NotSelectItemNotCopyItem" Text="Not select item or Not copyitem"/>
+		<Item Id="KeyPressHex" Text="Будь ласка введіть : "/>
+		<Item Id="KeyPressDigit" Text="Please input : Digit and {0}"/>
+		<Item Id="KeyPressPrint" Text="Please input print"/>
+		<Item Id="DeviceNotFound" Text="Пристрій не знайдено"/>
+		<Item Id="ModelNotMatch" Text="Модель не співпадає"/>
+		<Item Id="PromptKey1" Text="Зберегти файл перед виходом з програми?"/>
+		<Item Id="PromptKey2" Text="Завантажити стандартні налаштування? Всі збережені дані будуть стерті"/>
+		<Item Id="DataFormatError" Text="Помилка формату даних"/>
+		<Item Id="FirstNotDelete" Text="Перший рядок не можна видалити"/>
+		<Item Id="OpenPortFail" Text="Помилка відкриття послідовного порту"/>
+		<Item Id="CommError" Text="Комунікаційна помилка"/>
+		<Item Id="Add" Text="Додати: "/>
+		<Item Id="ScanSelected" Text="Unable to operate selected"/>
+		<Item Id="codePlugReadConfirm" Text="Are you sure you want to read the codeplug from the GD-77?.This will overwrite the current codeplug."/>
+		<Item Id="codePlugWriteConfirm" Text="Are you sure you want to write this codeplug to the GD-77?.This will overwrite codeplug currently in the GD-77"/>
+		<Item Id="pleaseConfirm" Text="Please confirm"/>
+		<Item Id="userAgreement" Text="This software is supplied 'as is' with no warranties. You use it at your own risk to both your PC and to your DMR Radio. By pressing the  Yes   button you agree and understand."/>
+		<Item Id="DownloadContactsMessageAdded" Text="There are {0} new ID's which are not already in your contacts"/>
+		<Item Id="DownloadContactsRegionEmpty" Text="Please enter the 3 digit Region previx code. e.g. 505 for Australia."/>
+		<Item Id="DownloadContactsDownloading" Text="Завантаження..."/>
+		<Item Id="DownloadContactsSelectContactsToImport" Text="Please select the contacts you would like to import"/>
+		<Item Id="DownloadContactsTooMany" Text="Not all contacts could be imported because the maximum number of Digital Contacts has been reached"/>
+		<Item Id="Warning" Text="Увага"/>
+		<Item Id="UnableDownloadFromInternet" Text="Unable to download data. Please check your Internet connection"/>
+		<Item Id="DownloadContactsImportComplete" Text="Import complete"/>
+		<Item Id="CodeplugUpgradeNotice" Text="This appears to be a V3.0.6 Codeplug. It will be converted to V3.1.x"/>
+		<Item Id="CodeplugUpgradeWarningToManyRxGroups" Text="Version 3.1.x can only have 76 Rx Groups. Additional Rx Groups have been ignored"/>
+    <Item Id="IdAlreadyExists" Text="ID already exists！" />
+    <Item Id="IdOutOfRange" Text="ID out of range!" />
+    <Item Id="IdNotEmpty" Text="ID can not be empty!" />
+    <Item Id="ContactNameDuplicate" Text="Warning. Duplicate contact name." />
+    <Item Id="EnableMemoryAccessMode" Text ="The GD-77 does not seem to be in Memory Access modeHold keys SK2 (Blue side key), Green Menu and * when turning on the transceiver, and try again" />
+    <Item Id="dataRead" Text="Reading data from GD-77"/>
+    <Item Id="dataWrite" Text="Writing data to GD-77"/>
+    <Item Id="DMRIdContcatsTotal" Text="Total number of IDs = {0}. Max of {1} can be uploaded" />
+    <Item Id="ErrorParsingData" Text="Error while parsing data" />    
+	</Commons>
+</Resource>
