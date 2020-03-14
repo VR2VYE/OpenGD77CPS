@@ -529,7 +529,7 @@ namespace DMR
 							break;
 						case OpenGD77CommsTransferData.CommsAction.BACKUP_CALIBRATION:
 
-							for (int p = 0; p < 8; p++)
+							for (int p = 0; p < CalibrationForm.CALIBRATION_HEADER_SIZE; p++)
 							{
 								if (dataObj.dataBuff[p] != CalibrationForm.CALIBRATION_HEADER[p])
 								{
@@ -1315,7 +1315,7 @@ namespace DMR
 
 					if (dataObj.dataBuff.Length == CalibrationForm.CALIBRATION_DATA_SIZE)
 					{
-						for (int p = 0; p < 8; p++)
+						for (int p = 0; p < CalibrationForm.CALIBRATION_HEADER_SIZE; p++)
 						{
 							if (dataObj.dataBuff[p] != CalibrationForm.CALIBRATION_HEADER[p])
 							{

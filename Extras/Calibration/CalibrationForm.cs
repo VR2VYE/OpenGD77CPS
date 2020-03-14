@@ -21,7 +21,8 @@ namespace DMR
 		public static int CALIBRATION_MEMORY_LOCATION_OFFICIAL_USB_PROTOCOL = 0x7c00;
 		private const int VHF_OFFSET = 0x70;
 		public static int CALIBRATION_DATA_SIZE = 224;
-		public static byte[] CALIBRATION_HEADER = { 0xA0, 0x0F, 0xC0, 0x12, 0xA0, 0x0F, 0xC0, 0x12 };
+		public static int CALIBRATION_HEADER_SIZE = 2;// On the Baofeng only the first 2 bytes in the header seem to be consitent
+		public static byte[] CALIBRATION_HEADER = { 0xA0, 0x0F , 0xC0, 0x12, 0xA0, 0x0F, 0xC0, 0x12 };
 
 		private const int MAX_TRANSFER_SIZE = 32;
 		private SerialPort _port = null;
@@ -200,7 +201,7 @@ namespace DMR
 
 
 
-				for (int p = 0; p < 8; p++)
+				for (int p = 0; p < CALIBRATION_HEADER_SIZE; p++)
 				{
 					if (dataObj.dataBuff[p] != CALIBRATION_HEADER[p])
 					{
