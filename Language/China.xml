@@ -1,0 +1,896 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Resource>
+  <Settings>
+    <Item Id="MaxZoneCount" Text="32" />
+  </Settings>
+  <Language Id="Eng" Text="China" />
+  <AboutForm Text="关于">
+    <Controls>
+      <Control Id="lblVersion" Text="" />
+      <Control Id="lblCompany" Text="Radioddity and GD-77 Community" />
+      <Control Id="btnClose" Text="OK" />
+      <Control Id="lblTranslationCredit" Text="" />
+    </Controls>
+  </AboutForm>
+  <BootItemForm Text="启动项目">
+    <Controls>
+      <Control Id="grpBootScreen" Text="开机画面" />
+      <Control Id="lblBootScreen" Text="开机画面" />
+      <Control Id="lblLine2" Text="第二行显示" />
+      <Control Id="lblLine1" Text="第一行显示" />
+      <Control Id="lblBootPwd" Text="开机密码" />
+      <Control Id="chkBootPwdEnable" Text="开机密码启动" />
+      <Control Id="chkBootScreen" Text="开机画面" />
+    </Controls>
+    <Commons>
+      <Item Id="BootScreen" Text="图片,自定义字符" />
+    </Commons>
+  </BootItemForm>
+  <ButtonForm Text="可编程键">
+    <Controls>
+      <Control Id="dgvOneTouch" Text="模式,呼叫类型,呼叫列表,短信">
+        <ControlItem Id="cmbMode" Text="模式" />
+        <ControlItem Id="cmbCallType" Text="呼叫类型" />
+        <ControlItem Id="cmbCallList" Text="呼叫列表" />
+        <ControlItem Id="cmbMsg" Text="短信" />
+      </Control>
+      <Control Id="lblEmgShortDur" Text="Emergency Short Press Duration [ms]" />
+      <Control Id="lblLongDur" Text="长按时长 [毫秒]" />
+      <Control Id="lblSK1" Text="SK1" />
+      <Control Id="lblSK2" Text="SK2" />
+      <Control Id="lblLongPress" Text="长按" />
+      <Control Id="lblTK" Text="TK" />
+      <Control Id="lblShortPress" Text="短按" />
+    </Controls>
+    <Commons>
+      <Item Id="ButtonItem" Text="无,所有提示音开关,紧急模式开启,紧急模式关闭,高/低功率选择,监听,无用信道删除,一键通1,一键通2,一键通3,一键通4,一键通5,一键通6,中继/脱网,扫描开/关,严格/正常静噪,加密开/关,声控开/关,区域选择,电池电量指示,单独工作开/关,长监听,退出电话,信道递增,信道递减,信道资讯," />
+      <Item Id="Mode" Text="无,数字,模拟" />
+      <Item Id="CallTypeD" Text="呼叫,短信" />
+      <Item Id="CallTypeA" Text="DTMF呼叫" />
+    </Commons>
+  </ButtonForm>
+  <ChannelForm Text="信道">
+    <Controls>
+      <Control Id="btnCopy" Text=">>" />
+      <Control Id="lblSquelch" Text="静噪" />
+      <Control Id="lblSql" Text="OpenGD77静噪水平" />
+      <Control Id="grpDigit" Text="数字" />
+      <Control Id="lblTimingPreference" Text="Timing Leader Prefernce" />
+      <Control Id="lblRepeaterSlot" Text="中继时隙" />
+      <Control Id="lblArs" Text="ARS" />
+      <Control Id="lblKeySwitch" Text="加密" />
+      <Control Id="lblKey" Text="加密组" />
+      <Control Id="lblTxColor" Text="色码" />
+      <Control Id="lblEmgSystem" Text="紧急报警系统" />
+      <Control Id="lblContact" Text="通讯录" />
+      <Control Id="chkDualCapacity" Text="双容量直接模式" />
+      <Control Id="chkUdpDataHead" Text="Compressed UDP Data Header" />
+      <Control Id="chkAllowTxInterupt" Text="Allow Interruption" />
+      <Control Id="chkTxInteruptFreq" Text="Tx Interruptible Frequencies" />
+      <Control Id="chkPrivateCall" Text="已确定单呼" />
+      <Control Id="chkDataCall" Text="已确定数字呼叫" />
+      <Control Id="chkEmgConfirmed" Text="紧急警报确认" />
+      <Control Id="chkEnhancedChAccess" Text="Enhanced Channel Access" />
+      <Control Id="lblRxColor" Text="接收色码" />
+      <Control Id="lblRxGroup" Text="组呼列表" />
+      <Control Id="chkRxOnly" Text="仅接收" />
+      <Control Id="chkAllowTalkaround" Text="允许脱网" />
+      <Control Id="grpAnalog" Text="模拟" />
+      <Control Id="lblChBandwidth" Text="Bandwidth [KHz]" />
+      <Control Id="lblVoiceEmphasis" Text="Voice Emphasis" />
+      <Control Id="lblSte" Text="信令尾音消除" />
+      <Control Id="lblNonSte" Text="无信令尾音消除" />
+      <Control Id="lblRxTone" Text="接收CTCSS/DCS [Hz]" />
+      <Control Id="lblRxSignaling" Text="接收信令系统" />
+      <Control Id="lblUnmuteRule" Text="Unmute Rule" />
+      <Control Id="lblArtsInterval" Text="ARTS Interval [s]" />
+      <Control Id="lblArts" Text="ARTS" />
+      <Control Id="lblPttidType" Text="PTTID 类型" />
+      <Control Id="lblTxSignaling" Text="发射信令系统" />
+      <Control Id="lblTxTone" Text="发射CTCSS/DCS [Hz]" />
+      <Control Id="chkDataPl" Text="数据PL" />
+      <Control Id="chkLoneWoker" Text="单独工作" />
+      <Control Id="chkOpenGD77ScanAllSkip" Text="Scan: All skip" />
+      <Control Id="chkVox" Text="声控发射" />
+      <Control Id="chkAutoScan" Text="自动扫描" />
+      <Control Id="chkOpenGD77ScanZoneSkip" Text="Scan: Zone skip" />
+      <Control Id="lblChName" Text="信道名称" />
+      <Control Id="lblChMode" Text="信道模式" />
+      <Control Id="lblTot" Text="发射限时 [s]" />
+      <Control Id="lblTotRekey" Text="TOT 再键延时 [s]" />
+      <Control Id="lblRssiThreshold" Text="RSSI Threshold [dBm]" />
+      <Control Id="lblRxRefFreq" Text="Rx Reference Frequency" />
+      <Control Id="lblTxRefFreq" Text="Tx Reference Frequency" />
+      <Control Id="lblRxFreq" Text="接收频率 [MHz]" />
+      <Control Id="lblPower" Text="功率级别" />
+      <Control Id="lblAdmitCriteria" Text="准许条件" />
+      <Control Id="lblTxFreq" Text="发射频率 [MHz]" />
+      <Control Id="lblScanList" Text="扫描列表" />
+      <Control Id="lblxband" Text="Warning: Rx and Tx bands are different. Radio performance may be affected" />
+      <Control Id="tsrCh" Text="toolStrip1">
+        <ToolStripItem Id="tslblInfo" Text="" />
+        <ToolStripItem Id="tsbtnFirst" Text="第一个" />
+        <ToolStripItem Id="tsbtnPrev" Text="前一个" />
+        <ToolStripItem Id="tsbtnNext" Text="后一个" />
+        <ToolStripItem Id="tsbtnLast" Text="最后一个" />
+        <ToolStripItem Id="tsbtnAdd" Text="增加(A)" />
+        <ToolStripItem Id="tsbtnDel" Text="删除" />
+      </Control>
+      <Control Id="mnsCh" Text="menuStrip1" />
+    </Controls>
+    <Commons>
+      <Item Id="ChMode" Text="模拟,数字" />
+      <Item Id="RefFreq" Text="低,中,高" />
+      <Item Id="Power" Text="低,高" />
+      <Item Id="AdmitCriterica" Text="始终,信道空闲,模拟亚音/数字亚音" />
+      <Item Id="AdmitCritericaD" Text="始终,信道空闲,色码" />
+      <Item Id="Squelch" Text="严格,正常" />
+      <Item Id="VoiceEmphasis" Text="无,De and Pre,De,Pre" />
+      <Item Id="Ste" Text="频率,120°,180°,240°" />
+      <Item Id="NonSte" Text="无,频率" />
+      <Item Id="SignalingSystem" Text="关闭,DTMF" />
+      <Item Id="UnmuteRule" Text="Std Unmute Mute,And Unmute Mute,And Unmute Or Mute" />
+      <Item Id="PttidType" Text="无,上线码,下线码,两者" />
+      <Item Id="Arts" Text="禁用,发射,接收,发射和接收" />
+      <Item Id="TimingPreference" Text="Preferred,Eligibel,Ineligibel" />
+      <Item Id="Ars" Text="Disable,System Change" />
+      <Item Id="KeySwitch" Text="关闭,开启" />
+    </Commons>
+  </ChannelForm>
+  <ChannelsForm Text="信道">
+    <Controls>
+      <Control Id="btnImport" Text="导入更新/追加" />
+      <Control Id="btnImportClearAll" Text="导入全部清除!"/>
+      <Control Id="btnExport" Text="导出指定行" />
+      <Control Id="btnDeleteSelect" Text="删除指定行" />
+      <Control Id="btnClear" Text="清空" />
+      <Control Id="btnDelete" Text="删除" />
+      <Control Id="btnAdd" Text="增加" />
+      <Control Id="dgvChannels" Text="序号,名称,接收频率,发射频率,信道模式,功率,接收亚音,发射亚音,色码,组接收列表,联系人,中继台时隙">
+        <ControlItem Id="" Text="序号" />
+        <ControlItem Id="" Text="名称" />
+        <ControlItem Id="" Text="接收频率" />
+        <ControlItem Id="" Text="发射频率" />
+        <ControlItem Id="" Text="信道模式" />
+        <ControlItem Id="" Text="功率" />
+        <ControlItem Id="" Text="接收亚音" />
+        <ControlItem Id="" Text="发射亚音" />
+        <ControlItem Id="" Text="色码" />
+        <ControlItem Id="" Text="组接收列表" />
+        <ControlItem Id="" Text="联系人" />
+        <ControlItem Id="" Text="中继台时隙" />
+      </Control>
+    </Controls>
+    <Commons>
+      <Item Id="DisplayHeaderText" Text="序号,名称,信道模式,接收频率,发射频率,色码,中继台时隙,联系人,组接收列表,扫描列表,接收亚音,发射亚音"/>
+      <Item Id="ExportHeaderText" Text="Data type,Name,Channel Type,Rx Frequency,Tx Frequency,Color Code,Timeslot,Contact,Contact Type, Contact Id,Rx Group,Scanlist,Zone,RX CTCSS,TX CTCSS,Power,Bandwidth,Rx Only,Squelch,Tx Admit,TOT,TOT Rekey,Tx Signaling,Rx Signaling,Privacy Group,Emergency System,Flags1,Flags2,Flags3,Flags4,RssiThreshold,VoiceEmphasis,TxSignaling,UnmuteRule,RxSignaling,ArtsInterval" />
+    </Commons>
+  </ChannelsForm>
+  <CommPrgForm Text="">
+    <Controls>
+      <Control Id="btnCancel" Text="取消" />
+    </Controls>
+    <Commons>
+      <Item Id="ButtonItem" Text="无,所有提示音开/关,紧急模式开启,紧急模式关闭,高/低功率,监听,无用信道删除,一键通 1,一键通 2,一键通 3,一键通 4,一键通 5,一键通 6,中继/脱网,扫描 开/关,严格/正常静噪,加密 开/关,声控 开/关,区域选择,电池电量提示,单独工作开/关,长监听,退出电话,信道递增,信道递减,信道资讯" />
+      <Item Id="Mode" Text="无,数字,模拟" />
+      <Item Id="CallTypeD" Text="呼叫,短信" />
+      <Item Id="CallTypeA" Text="DTMF 呼叫" />
+    </Commons>
+  </CommPrgForm>
+  <ContactForm Text="数字联系人">
+    <Controls>
+      <Control Id="chkCallRxTone" Text="呼叫接收提示音" />
+      <Control Id="lblRingStyle" Text="音调" />
+      <Control Id="lblCallType" Text="呼叫类型" />
+      <Control Id="lblName" Text="联系人名称" />
+      <Control Id="lblCallId" Text="呼叫 ID" />
+    </Controls>
+    <Commons>
+      <Item Id="CallType" Text="组呼,单呼,全呼" />
+      <Item Id="CallRxTone" Text="关,开" />
+    </Commons>
+  </ContactForm>
+  <ContactsForm Text="数字联系人">
+    <Controls>
+      <Control Id="btnImport" Text="导入" />
+      <Control Id="btnExport" Text="导出" />
+      <Control Id="btnDeleteSelect" Text="删除指定行" />
+      <Control Id="btnClear" Text="清空" />
+      <Control Id="btnDelete" Text="删除" />
+      <Control Id="btnAdd" Text="增加" />
+      <Control Id="btnInternetDownload" Text="联网下载" />
+      <Control Id="dgvContacts" Text="序号,名称,呼叫 ID,类型,音调,提示音,中继台时隙,">
+        <ControlItem Id="" Text="序号" />
+        <ControlItem Id="" Text="名称" />
+        <ControlItem Id="" Text="呼叫 ID" />
+        <ControlItem Id="" Text="类型" />
+        <ControlItem Id="" Text="音调" />
+        <ControlItem Id="" Text="提示音" />
+        <ControlItem Id="" Text="中继台时隙" />
+      </Control>
+    </Controls>
+    <Commons>
+      <Item Id="HeaderText" Text="序号,名称,呼叫 ID,类型,音调,提示音,中继台时隙," />
+    </Commons>
+  </ContactsForm>
+  <DeviceInfoForm Text="设备信息">
+    <Controls>
+      <Control Id="lblTo1" Text="-" />
+      <Control Id="lblTo2" Text="-" />
+      <Control Id="lblSection1" Text="频段 1 [MHz]" />
+      <Control Id="lblDspFwVer" Text="DSP 固件版本" />
+      <Control Id="lblFirmwareVer" Text="固件版本" />
+      <Control Id="lblHardwareVer" Text="硬件版本" />
+      <Control Id="lblCpsSwVer" Text="CPS 软件版本" />
+      <Control Id="lblSn" Text="序列号" />
+      <Control Id="lblSection2" Text="频段 2 [MHz]" />
+      <Control Id="lblLastPrgTime" Text="最后编程时间" />
+      <Control Id="lblModel" Text="机型" />
+    </Controls>
+  </DeviceInfoForm>
+  <DigitalKeyContactForm Text="数字快捷键配置">
+    <Controls>
+      <Control Id="dgvContact" Text="联系人">
+        <ControlItem Id="cmbContact" Text="联系人" />
+      </Control>
+    </Controls>
+    <Commons>
+      <Item Id="DigitKey" Text="数字键 " />
+    </Commons>
+  </DigitalKeyContactForm>
+  <DtmfContactForm Text="DTMF联系人">
+    <Controls>
+      <Control Id="dgvContact" Text="名称,号码">
+        <ControlItem Id="txtName" Text="名称" />
+        <ControlItem Id="txtCode" Text="号码" />
+      </Control>
+      <Control Id="btnAdd" Text="增加" />
+      <Control Id="btnDel" Text="删除" />
+    </Controls>
+  </DtmfContactForm>
+  <DtmfForm Text="DTMF">
+    <Controls>
+      <Control Id="chkSideTone" Text="DTMF侧音" />
+      <Control Id="lblUpCode" Text="PTTID 上线码" />
+      <Control Id="lblDownCode" Text="PTTID 下线码" />
+      <Control Id="lblSelfID" Text="本人ID码" />
+      <Control Id="lblRespHoldTime" Text="Response Hold [s]" />
+      <Control Id="lblKillCode" Text="遥毙码" />
+      <Control Id="lblAutoResetTime" Text="自动复位时间 [秒]" />
+      <Control Id="lblDecTime" Text="Decode Time [s]" />
+      <Control Id="lblWakeCode" Text="解遥毙码" />
+      <Control Id="lblDelimiter" Text="分隔符" />
+      <Control Id="lblGrpCallCode" Text="组呼码" />
+      <Control Id="lblDecResp" Text="解码响应" />
+      <Control Id="lblFstDlyTime" Text="首码延迟时间[毫秒]" />
+      <Control Id="lblKillWakeDec" Text="遥毙/激活解码" />
+      <Control Id="lblFstDur" Text="首码持续时间[毫秒]" />
+      <Control Id="lblKillType" Text="遥毙类型" />
+      <Control Id="lblOtherDur" Text="*#持续时间[毫秒]" />
+      <Control Id="lblRate" Text="DTMF速率" />
+    </Controls>
+    <Commons>
+      <Item Id="DecodeResp" Text="无,提醒,回复,提醒并回复" />
+      <Item Id="GroupCode" Text="无,A,B,C,D,*,#" />
+      <Item Id="KillType" Text="发射禁止,发射/接收禁止,清除" />
+      <Item Id="KillWakeDec" Text="关,开" />
+    </Commons>
+  </DtmfForm>
+  <EmergencyForm Text="数字紧急报警系统">
+    <Controls>
+      <Control Id="lblAlias" Text="系统名称" />
+      <Control Id="lblAlarmType" Text="报警类型" />
+      <Control Id="lblAlarmMode" Text="报警模式" />
+      <Control Id="lblRevertCh" Text="回复信道" />
+      <Control Id="lblImpoliteRetries" Text="不礼貌的重试" />
+      <Control Id="lblPoliteRetries" Text="礼貌重试" />
+      <Control Id="lblCycles" Text="周期数" />
+      <Control Id="lblTxCycle" Text="发射周期[秒]" />
+      <Control Id="lblRxCycle" Text="接收周期[秒]" />
+    </Controls>
+    <Commons>
+      <Item Id="AlarmType" Text="禁用,常规,静默,静默带语音" />
+      <Item Id="AlarmMode" Text="紧急警报,紧急警报和呼叫,紧急警报和语音" />
+      <Item Id="RevertCh" Text="无,选定的" />
+    </Commons>
+  </EmergencyForm>
+  <EncryptForm Text="加密">
+    <Controls>
+      <Control Id="dgvKey" Text="密钥">
+        <ControlItem Id="txtKey" Text="密钥" />
+      </Control>
+      <Control Id="lblType" Text="加密类型" />
+      <Control Id="btnDel" Text="删除" />
+      <Control Id="lblKeyLen" Text="加密长度" />
+      <Control Id="btnAdd" Text="增加" />
+    </Controls>
+    <Commons>
+      <Item Id="EncryptType" Text="无,基本" />
+    </Commons>
+  </EncryptForm>
+  <GeneralSetForm Text="总体设置">
+    <Controls>
+      <Control Id="chkTxExitTone" Text="发射退出提示音" />
+      <Control Id="grpBeep" Text="提示音" />
+      <Control Id="chkResetTone" Text="复位提示音" />
+      <Control Id="chkUnifamiliarNumber" Text="陌生号码提示音" />
+      <Control Id="lblCallAlertDur" Text="呼叫警报提示音时长[秒]" />
+      <Control Id="chkSelfTestPassTone" Text="自检通过提示音" />
+      <Control Id="chkCrescendoTone" Text="Enhanced Tone*" />
+      <Control Id="chkChFreeTone" Text="信道空闲提示音" />
+      <Control Id="chkDisableAllTone" Text="所有提示音禁用" />
+      <Control Id="lblTalkPermitTone" Text="通话允许提示音" />
+      <Control Id="lblArtsTone" Text="ARTS提示音" />
+      <Control Id="grpVoice" Text="语言" />
+      <Control Id="chkChVoice" Text="信道语音" />
+      <Control Id="lblVoiceLang" Text="语音语言" />
+      <Control Id="grpSaveMode" Text="省电模式" />
+      <Control Id="chkBatteryRx" Text="接收" />
+      <Control Id="chkBatteryPreamble" Text="前导码" />
+      <Control Id="grpLoneWork" Text="单独工作" />
+      <Control Id="lblReminderTmr" Text="单独工作提醒计时器[秒]" />
+      <Control Id="lblRespTmr" Text="单独工作响应计时器[分]" />
+      <Control Id="grpTalkAround" Text="脱网" />
+      <Control Id="lblPrivateHang" Text="脱网单呼挂起时间[毫秒]" />
+      <Control Id="lblGrpHold" Text="脱网组呼挂起时间[毫秒]" />
+      <Control Id="chkDisableAllLeds" Text="禁用所有LED" />
+      <Control Id="lblRadioName" Text="对讲机名称" />
+      <Control Id="lblRadioID" Text="对讲机ID" />
+      <Control Id="lblTxPreambleDur" Text="发射前导码时长[毫秒]" />
+      <Control Id="lblProgramPwd" Text="编程密码" />
+      <Control Id="lblRxLowBatt" Text="接收低电池电量间隔[秒]" />
+      <Control Id="chkKillState" Text="Kill State" />
+      <Control Id="chkTestMode" Text="Test Mode" />
+      <Control Id="lblArsInitDly" Text="ARS Initialization Delay [min]" />
+      <Control Id="chkDataEnCtrlStation" Text="Data Enabled COntrol Station" />
+      <Control Id="lblMonitorType" Text="监听类型" />
+      <Control Id="lblVoxSense" Text="声控发射灵敏度" />
+      <Control Id="chkPrivateCall" Text="单呼" />
+      <Control Id="chkTxInhibit" Text="发射禁止快速键覆盖" />
+      <Control Id="lblUpChMode" Text="上信道模式" />
+      <Control Id="lblDownChMode" Text="下信道模式" />
+      <Control Id="grpScan" Text="扫描" />
+      <Control Id="lblScanMode" Text="扫描模式" />
+    </Controls>
+    <Commons>
+      <Item Id="MonitorType" Text="打开静噪,静音" />
+      <Item Id="TalkPermitTone" Text="无,数字,模拟,两者" />
+      <Item Id="ArtsToneName" Text="禁用,一次,总是" />
+      <Item Id="ChannelMode" Text="信道,频率" />
+      <Item Id="ScanMode" Text="时间,载波,搜索" />
+    </Commons>
+  </GeneralSetForm>
+  <HelpForm Text="帮助栏">
+    <Controls />
+  </HelpForm>
+  <MainForm Text="Radioddity GD-77 CPS 3.0.6 Community Edition">
+    <TreeView>
+      <TreeNode Id="Model" Text="GD-77" />
+      <TreeNode Id="BasicInfo" Text="设备信息" />
+      <TreeNode Id="BootItem" Text="开机项" />
+      <TreeNode Id="Menu" Text="菜单选项" />
+      <TreeNode Id="NumKeyAssign" Text="数字快捷键配置" />
+      <TreeNode Id="GeneralSetting" Text="总体设置" />
+      <TreeNode Id="Buttons" Text="可编程键" />
+      <TreeNode Id="TextMsg" Text="短信" />
+      <TreeNode Id="Pivacy" Text="加密" />
+      <TreeNode Id="SignalingSys" Text="信令系统" />
+      <TreeNode Id="EmergencySys" Text="数字紧急报警系统" />
+      <TreeNode Id="Contact" Text="联络人" />
+      <TreeNode Id="DtmfContact" Text="DTMF" />
+      <TreeNode Id="DigitalContact" Text="数字联络人" />
+      <TreeNode Id="RxGroupList" Text="组列表" />
+      <TreeNode Id="Zone" Text="区域" />
+      <TreeNode Id="Channel" Text="信道" />
+      <TreeNode Id="Scan" Text="扫描" />
+      <TreeNode Id="DtmfSignal" Text="DTMF" />
+      <TreeNode Id="VFO" Text="频道" />
+      <TreeNode Id="VFOA" Text="频道A" />
+      <TreeNode Id="VFOB" Text="频道B" />
+    </TreeView>
+    <MenuStrip>
+      <MenuItem Id="tsmiFile" Text="&amp;文件" />
+      <MenuItem Id="tsmiNew" Text="新建" />
+      <MenuItem Id="tsmiSave" Text="保存" />
+      <MenuItem Id="tsmiOpen" Text="打开" />
+      <MenuItem Id="tsmiExit" Text="退出" />
+      <MenuItem Id="tsmiSetting" Text="设置" />
+      <MenuItem Id="tsmiDeviceInfo" Text="设备信息" />
+      <MenuItem Id="tsmiBootItem" Text="开机项" />
+      <MenuItem Id="tsmiMenu" Text="菜单选项" />
+      <MenuItem Id="tsmiNumKeyContact" Text="数字快捷键配置" />
+      <MenuItem Id="tsmiGerneralSet" Text="总体设置" />
+      <MenuItem Id="tsmiButton" Text="可编程键" />
+      <MenuItem Id="tsmiTextMsg" Text="短信" />
+      <MenuItem Id="tsmiEncrypt" Text="加密" />
+      <MenuItem Id="tsmiSignaling" Text="信令" />
+      <MenuItem Id="tsmiSignalingSystem" Text="信令系统" />
+      <MenuItem Id="tsmiDtmf" Text="DTMF" />
+      <MenuItem Id="tsmiEmgSystem" Text="紧急报警系统" />
+      <MenuItem Id="tsmiContact" Text="联系人" />
+      <MenuItem Id="tsmiDtmfContact" Text="DTMF" />
+      <MenuItem Id="tsmiDmrContact" Text="数字联系人" />
+      <MenuItem Id="tsmiContacts" Text="联系人" />
+      <MenuItem Id="tsmiGrpRxList" Text="组列表" />
+      <MenuItem Id="tsmiZone" Text="区域" />
+      <MenuItem Id="tsmiZoneList" Text="区域列表" />
+      <MenuItem Id="tsmiChannels" Text="信道" />
+      <MenuItem Id="tsmiScan" Text="扫描" />
+      <MenuItem Id="tsmiScanBasic" Text="基本扫描" />
+      <MenuItem Id="tsmiScanList" Text="扫描列表" />
+      <MenuItem Id="tsmiProgram" Text="编程" />
+      <MenuItem Id="tsmiRead" Text="读数据" />
+      <MenuItem Id="tsmiWrite" Text="写数据" />
+      <MenuItem Id="tsmiBasic" Text="Basic" />
+      <MenuItem Id="tsmiView" Text="视图" />
+      <MenuItem Id="tsmiTree" Text="树型栏" />
+      <MenuItem Id="tsmiHelp" Text="帮助栏" />
+      <MenuItem Id="tsmiToolBar" Text="工具栏" />
+      <MenuItem Id="tsmiStatusBar" Text="状态栏" />
+      <MenuItem Id="tsmiWindow" Text="窗口" />
+      <MenuItem Id="tsmiCascade" Text="层叠" />
+      <MenuItem Id="tsmiTileHor" Text="水平平铺" />
+      <MenuItem Id="tsmiTileVer" Text="垂直平铺" />
+      <MenuItem Id="tsmiCloseAll" Text="关闭所有窗口" />
+      <MenuItem Id="tsmiAbout" Text="关于" />
+      <MenuItem Id="tsmiLanguage" Text="语言" />
+      <MenuItem Id="tsmiEnglish" Text="英语" />
+      <MenuItem Id="tsmiChinese" Text="中文" />
+      <MenuItem Id="tsmiExtras" Text="附加功能" />
+      <MenuItem Id="tsmiContactsDownload" Text="下载通讯录" />
+      <MenuItem Id="tsmiDMRID" Text="DMR ID" />
+      <MenuItem Id="tsmiCalibration" Text="校准" />
+    </MenuStrip>
+    <ContextMenuStrip>
+      <MenuItem Id="tsmiAdd" Text="增加" />
+      <MenuItem Id="tsmiClear" Text="清空" />
+    </ContextMenuStrip>
+    <ContextMenuStrip>
+      <MenuItem Id="tsmiDel" Text="删除" />
+      <MenuItem Id="tsmiRename" Text="Rename" />
+      <MenuItem Id="tsmiCopy" Text="复制" />
+      <MenuItem Id="tsmiPaste" Text="粘贴" />
+      <MenuItem Id="tsmiMoveUp" Text="Move up" />
+      <MenuItem Id="tsmiMoveDown" Text="Move down" />
+    </ContextMenuStrip>
+    <ContextMenuStrip>
+      <MenuItem Id="tsmiCollapseAll" Text="Collapse All" />
+      <MenuItem Id="tsmiExpandAll" Text="Expand All" />
+    </ContextMenuStrip>
+    <ContextMenuStrip>
+      <MenuItem Id="tsmiAddContact" Text="增加" />
+      <MenuItem Id="tsmiGroupCall" Text="组呼" />
+      <MenuItem Id="tsmiPrivateCall" Text="单呼" />
+      <MenuItem Id="tsmiAllCall" Text="全呼" />
+    </ContextMenuStrip>
+    <ToolStrip>
+      <ToolItem Id="tsbtnNew" Text="新建" />
+      <ToolItem Id="tsbtnOpen" Text="打开" />
+      <ToolItem Id="tsbtnSave" Text="保存" />
+      <ToolItem Id="tsbtnRead" Text="读数据" />
+      <ToolItem Id="tsbtnWrite" Text="写数据" />
+      <ToolItem Id="tsbtnAbout" Text="关于" />
+    </ToolStrip>
+  </MainForm>
+  <MenuForm Text="菜单选项">
+    <Controls>
+      <Control Id="grpCall" Text="Call Log" />
+      <Control Id="chkReceivedCall" Text="已接呼叫" />
+      <Control Id="chkDialedCall" Text="已拨呼叫" />
+      <Control Id="chkMissedCall" Text="未接呼叫" />
+      <Control Id="grpSetting" Text="基本" />
+      <Control Id="chkDoubleWait" Text="双待" />
+      <Control Id="lblDwSwitch" Text="双待" />
+      <Control Id="lblKeyTone" Text="按键音" />
+      <Control Id="lblBacklightTime" Text="背光灯时间[秒]" />
+      <Control Id="chkSql" Text="静噪" />
+      <Control Id="chkBacklight" Text="背光灯" />
+      <Control Id="chkKeyboardLock" Text="键盘锁" />
+      <Control Id="chkVox" Text="声控" />
+      <Control Id="chkToneHint" Text="音调/提示" />
+      <Control Id="chkLed" Text="LED指示灯" />
+      <Control Id="lblChDispMode" Text="频道显示" />
+      <Control Id="chkPwdLock" Text="密码锁" />
+      <Control Id="lblMenuLang" Text="菜单语言" />
+      <Control Id="lblWorkMode" Text="工作模式" />
+      <Control Id="chkPower" Text="功率" />
+      <Control Id="chkBootScreen" Text="开机画面" />
+      <Control Id="chkEncrypt" Text="加密" />
+      <Control Id="lblKeyLockTime" Text="键盘锁时间[秒]" />
+      <Control Id="chkTalkAround" Text="脱网" />
+      <Control Id="chkChDisp" Text="频道显示" />
+      <Control Id="grpContact" Text="Contact" />
+      <Control Id="chkOneKeyDial" Text="一键拨号" />
+      <Control Id="chkRadioDetect" Text="对讲机检测" />
+      <Control Id="chkRadioActive" Text="对讲机激活" />
+      <Control Id="chkContactEdit" Text="编辑" />
+      <Control Id="chkRadioKill" Text="对讲机遥毙" />
+      <Control Id="chkManualDial" Text="手动拨号" />
+      <Control Id="chkRemoteMonitor" Text="远程监听" />
+      <Control Id="chkCallPrompt" Text="呼叫提示" />
+      <Control Id="grpScan" Text="扫描" />
+      <Control Id="chkScanEditList" Text="编辑列表" />
+      <Control Id="chkScan" Text="扫描" />
+      <Control Id="grpBasic" Text="基本" />
+      <Control Id="lblMenuHangTime" Text="菜单挂起时间[秒]" />
+      <Control Id="chkInfo" Text="信息" />
+      <Control Id="chkFm" Text="FM" />
+      <Control Id="chkGps" Text="Gps" />
+      <Control Id="chkP1Key" Text="P1 Key" />
+      <Control Id="lblBrightness" Text="亮度" />
+    </Controls>
+    <Commons>
+      <Item Id="KeyLockTime" Text="手动,5,10,15" />
+      <Item Id="BacklightTime" Text="打开,关闭,5,10" />
+      <Item Id="WorkMode" Text="VFO,MR,Channel" />
+      <Item Id="ChDispMode" Text="信道号,信道名称,频率" />
+      <Item Id="KeyTone" Text="关,开" />
+      <Item Id="DoubleWait" Text="关,双待双守,双待单守" />
+      <Item Id="MenuLang" Text="English,中文" />
+    </Commons>
+  </MenuForm>
+  <NormalScanForm Text="正常扫描">
+    <Controls>
+      <Control Id="grpSelected" Text="成员" />
+      <Control Id="chkTalkback" Text="应答" />
+      <Control Id="grpUnselected" Text="可用" />
+      <Control Id="chkChMark" Text="信道标记" />
+      <Control Id="lblTxDesignatedCh" Text="发射指定信道" />
+      <Control Id="lblPriorityCh1" Text="优先信道1" />
+      <Control Id="lblSignalingHold" Text="信令保持时间[毫秒]" />
+      <Control Id="lblName" Text="名称" />
+      <Control Id="lblPLType" Text="私线类型" />
+      <Control Id="lblPriorityCh2" Text="优先信道2" />
+      <Control Id="lblPrioritySample" Text="优先采样时间[毫秒]" />
+      <Control Id="btnDown" Text="下移" />
+      <Control Id="btnUp" Text="上移" />
+      <Control Id="btnDel" Text="删除" />
+      <Control Id="btnAdd" Text="添加" />
+    </Controls>
+    <Commons>
+      <Item Id="PriorityCh" Text="无,选定的" />
+      <Item Id="TxDesignatedCh" Text="Last Active Channel,Selected" />
+      <Item Id="PlType" Text="非优先信道,禁用,优先信道,优先信道和非优先信道" />
+    </Commons>
+  </NormalScanForm>
+  <PasswordForm Text="密码">
+    <Controls>
+      <Control Id="btnCancel" Text="取消" />
+      <Control Id="btnOk" Text="确定" />
+      <Control Id="lblPwd" Text="密码" />
+    </Controls>
+  </PasswordForm>
+  <PowerPwdForm Text="密码">
+    <Controls>
+      <Control Id="btnCancel" Text="取消" />
+      <Control Id="btnOk" Text="确定" />
+      <Control Id="lblPwd" Text="密码" />
+    </Controls>
+  </PowerPwdForm>
+  <RxGroupListForm Text="组列表">
+    <Controls>
+      <Control Id="btnDown" Text="下移" />
+      <Control Id="btnUp" Text="上移" />
+      <Control Id="grpSelected" Text="成员" />
+      <Control Id="btnAdd" Text="添加" />
+      <Control Id="grpUnselected" Text="可用" />
+      <Control Id="btnDel" Text="删除" />
+      <Control Id="lblName" Text="名称" />
+    </Controls>
+  </RxGroupListForm>
+  <SignalingBasicForm Text="Signaling Basic">
+    <Controls>
+      <Control Id="chkCallAlert" Text="Call Alert Encode" />
+      <Control Id="chkRadioDisable" Text="对讲机遥毙解码" />
+      <Control Id="chkRemoteMonitor" Text="远程监听解码" />
+      <Control Id="chkEmgRM" Text="紧急远程监听解码" />
+      <Control Id="lblTxSyncWakeTot" Text="发射同步唤醒TOT[毫秒]" />
+      <Control Id="chkSelCall" Text="自助呼叫编码" />
+      <Control Id="lblTxWakeMsgLimit" Text="发射唤醒消息限制" />
+      <Control Id="lblSelCallToneId" Text="Self Call Tone/ID" />
+      <Control Id="lblRMDuration" Text="远程监听时长[秒]" />
+      <Control Id="lblSelCallHang" Text="Self Call Hang Time [ms]" />
+      <Control Id="lblAutoResetTimer" Text="Auto Reset Timer [s]" />
+    </Controls>
+  </SignalingBasicForm>
+  <ScanBasicForm Text="基本扫描">
+    <Controls>
+      <Control Id="lblScanTime" Text="扫描时间[秒]" />
+      <Control Id="lblDigitHang" Text="扫描数字挂起时间[毫秒]" />
+      <Control Id="lblAnalogHang" Text="扫描模拟挂起时间[毫秒]" />
+      <Control Id="lblVoteHang" Text="Vote Scan Hang Time [s]" />
+      <Control Id="lblFastVoteRssi" Text="Fast Vote RSSI Threshold [dB]" />
+      <Control Id="lblStartVoteRssi" Text="Start Vote RSSI Threshold [dB]" />
+      <Control Id="chkPriorityAlert" Text="优先提示音" />
+    </Controls>
+  </ScanBasicForm>
+  <TextMsgForm Text="短信">
+    <Controls>
+      <Control Id="dgvMsg" Text="内容">
+        <ControlItem Id="txtMessage" Text="短信" />
+      </Control>
+      <Control Id="btnAdd" Text="增加" />
+      <Control Id="btnDel" Text="删除" />
+    </Controls>
+  </TextMsgForm>
+  <TreeForm Text="TreeView">
+    <Controls />
+  </TreeForm>
+  <VfoForm Text="Vfo">
+    <Controls>
+      <Control Id="btnCopy" Text=">>" />
+      <Control Id="lblSquelch" Text="静噪" />
+      <Control Id="lblSql" Text="OpenGD77静噪水平" />
+      <Control Id="grpDigit" Text="数字" />
+      <Control Id="lblTimingPreference" Text="Timing Leader Prefernce" />
+      <Control Id="lblRepeaterSlot" Text="中继台时隙" />
+      <Control Id="lblArs" Text="ARS" />
+      <Control Id="lblKeySwitch" Text="加密" />
+      <Control Id="lblKey" Text="加密组" />
+      <Control Id="lblTxColor" Text="色码" />
+      <Control Id="lblEmgSystem" Text="紧急报警系统" />
+      <Control Id="lblContact" Text="通讯录" />
+      <Control Id="chkDualCapacity" Text="双容量直接模式" />
+      <Control Id="chkUdpDataHead" Text="Compressed UDP Data Header" />
+      <Control Id="chkAllowTxInterupt" Text="Allow Interruption" />
+      <Control Id="chkTxInteruptFreq" Text="Tx Interruptible Frequencies" />
+      <Control Id="chkPrivateCall" Text="已确定单呼" />
+      <Control Id="chkDataCall" Text="已确定数字呼叫" />
+      <Control Id="chkEmgConfirmed" Text="紧急报警确定" />
+      <Control Id="chkEnhancedChAccess" Text="Enhanced Channel Access" />
+      <Control Id="lblRxColor" Text="Rx Color Code" />
+      <Control Id="lblRxGroup" Text="组列表" />
+      <Control Id="chkRxOnly" Text="仅接收" />
+      <Control Id="chkAllowTalkaround" Text="允许脱网" />
+      <Control Id="grpAnalog" Text="模拟" />
+      <Control Id="lblChBandwidth" Text="信道频宽[KHz]" />
+      <Control Id="lblVoiceEmphasis" Text="Voice Emphasis" />
+      <Control Id="lblSte" Text="信令尾音消除" />
+      <Control Id="lblNonSte" Text="无信令尾音消除" />
+      <Control Id="lblRxTone" Text="接收亚音[Hz]" />
+      <Control Id="lblRxSignaling" Text="接收信令系统" />
+      <Control Id="lblUnmuteRule" Text="Unmute Rule" />
+      <Control Id="lblArtsInterval" Text="ARTS Interval [s]" />
+      <Control Id="lblArts" Text="ARTS" />
+      <Control Id="lblPttidType" Text="PTTID类型" />
+      <Control Id="lblTxSignaling" Text="发射信令系统" />
+      <Control Id="lblTxTone" Text="发射亚音[Hz]" />
+      <Control Id="chkDataPl" Text="PL for Data" />
+      <Control Id="chkLoneWoker" Text="Lone Work" />
+      <Control Id="chkVox" Text="声控" />
+      <Control Id="chkAutoScan" Text="自动扫描" />
+      <Control Id="lblChName" Text="名称" />
+      <Control Id="lblChMode" Text="模式" />
+      <Control Id="lblTot" Text="发射限时器[秒]" />
+      <Control Id="lblTotRekey" Text="TOT再键延时[秒]" />
+      <Control Id="lblRssiThreshold" Text="RSSI Threshold [dBm]" />
+      <Control Id="lblRxRefFreq" Text="Rx Reference Frequency" />
+      <Control Id="lblTxRefFreq" Text="Tx Reference Frequency" />
+      <Control Id="lblRxFreq" Text="接收频率[MHz]" />
+      <Control Id="lblPower" Text="功率级别" />
+      <Control Id="lblAdmitCriteria" Text="Admit Criteria" />
+      <Control Id="lblTxFreq" Text="发射频率[MHz]" />
+      <Control Id="lblScanList" Text="扫描列表" />
+      <Control Id="lblOffsetStep" Text="偏移步进" />
+      <Control Id="lblOffsetDirection" Text="偏移方向" />
+      <Control Id="lblOffsetFreq" Text="偏移频率" />
+    </Controls>
+    <Commons>
+      <Item Id="ChMode" Text="模拟,数字" />
+      <Item Id="RefFreq" Text="低,中,高" />
+      <Item Id="Power" Text="低,高" />
+      <Item Id="AdmitCriterica" Text="始终,信道空闲,模拟亚音/数字亚音" />
+      <Item Id="AdmitCritericaD" Text="始终,信道空闲,色码" />
+      <Item Id="Squelch" Text="严格,正常" />
+      <Item Id="VoiceEmphasis" Text="无,De and Pre,De,Pre" />
+      <Item Id="Ste" Text="频率,120°,180°,240°" />
+      <Item Id="NonSte" Text="无,频率" />
+      <Item Id="SignalingSystem" Text="关,DTMF" />
+      <Item Id="UnmuteRule" Text="Std Unmute Mute,And Unmute Mute,And Unmute Or Mute" />
+      <Item Id="PttidType" Text="无,上线码,下线码,两者" />
+      <Item Id="Arts" Text="禁用,发射,接收,发射/接收" />
+      <Item Id="TimingPreference" Text="首选的,合格,不合格" />
+      <Item Id="Ars" Text="Disable,System Change" />
+      <Item Id="KeySwitch" Text="关,开" />
+      <Item Id="" Text="无,+,-" />
+    </Commons>
+  </VfoForm>
+  <ZoneBasicForm Text="基本设置">
+    <Controls>
+      <Control Id="grpSub" Text="下边机" />
+      <Control Id="lblSubCh" Text="信道" />
+      <Control Id="lblSubZone" Text="区域" />
+      <Control Id="grpMain" Text="上边机" />
+      <Control Id="lblMainCh" Text="信道" />
+      <Control Id="lblCurZone" Text="区域" />
+    </Controls>
+  </ZoneBasicForm>
+  <ZoneForm Text="区域">
+    <Controls>
+      <Control Id="tsrZone" Text="toolStrip1">
+        <ToolStripItem Id="tslblInfo" Text="" />
+        <ToolStripItem Id="tsbtnFirst" Text="第一个" />
+        <ToolStripItem Id="tsbtnPrev" Text="前一个" />
+        <ToolStripItem Id="tsbtnNext" Text="后一个" />
+        <ToolStripItem Id="tsbtnLast" Text="最后一个" />
+        <ToolStripItem Id="tsbtnAdd" Text="添加" />
+        <ToolStripItem Id="tsbtnDel" Text="删除" />
+      </Control>
+      <Control Id="btnDown" Text="下移" />
+      <Control Id="btnUp" Text="上移" />
+      <Control Id="grpSelected" Text="成员" />
+      <Control Id="btnAdd" Text="添加" />
+      <Control Id="grpUnselected" Text="可用" />
+      <Control Id="btnDel" Text="删除" />
+      <Control Id="lblName" Text="名称" />
+    </Controls>
+  </ZoneForm>
+  <DownloadContactsForm Text="下载通讯录">
+    <Controls>
+      <Control Id="lblMessage" Text="输入您所在地区的ID前缀代码，然后按下载..." />
+      <Control Id="btnImport" Text="导入所选" />
+      <Control Id="btnSelectAll" Text="全选" />
+      <Control Id="btnDownload" Text="从URL下载" />
+      <Control Id="btnDownloadDMRMARC" Text="从DRM MARC下载" />
+      <Control Id="lblIDStart" Text="区域前缀代码" />
+      <Control Id="lblMessageDownloading" Text="正在下载" />
+      <Control Id="dgvDownloadeContacts" Text="ID,呼号,名称,最后收到">
+        <ControlItem Id="" Text="ID." />
+        <ControlItem Id="" Text="呼号" />
+        <ControlItem Id="" Text="名称" />
+        <ControlItem Id="" Text="最后收到" />
+      </Control>
+    </Controls>
+  </DownloadContactsForm>
+  <CalibrationForm Text="校准查看器'">
+    <Controls>
+      <Control Id="btnSave" Text="保存" />
+      <Control Id="btnCancel" Text="取消" />
+      <Control Id="tabCtlBands" Text="" >
+        <ControlItem Id="tabVHF" Text="VHF">
+          <Control Id="calibrationBandControlVHF" Text="" >
+            <ControlItem Id="calibrationPowerControlHigh" Text="高功率"/>
+            <ControlItem Id="calibrationPowerControlLow" Text=""/>
+            <ControlItem Id="calibrationTXIandQ" Text=""/>
+            <ControlItem Id=" grpAnalogTxDeviation" Text=""/>
+            <ControlItem Id="lblDTMF" Text=""/>
+            <ControlItem Id="lblToneBurst" Text=""/>
+            <ControlItem Id="lblAnalogTxDeviationWide" Text=""/>
+            <ControlItem Id="lblAnalogTxDeviationNarrow" Text=""/>
+            <ControlItem Id="lblOverallGain" Text=""/>
+            <ControlItem Id="grpSquelch" Text=""/>
+            <ControlItem Id="lblSquelchOpenNormal" Text=""/>
+            <ControlItem Id="lblSquelchCloseNormal" Text=""/>
+            <ControlItem Id="lblSquelchOpenTight" Text=""/>
+            <ControlItem Id="lblSquelchCloseTight" Text=""/>
+            <ControlItem Id="lblSquelchWide" Text=""/>
+            <ControlItem Id="lblSquelchNarrow" Text=""/>
+            <ControlItem Id="grpDigitalGain" Text=""/>
+            <ControlItem Id="lblDigitalGainRx" Text=""/>
+            <ControlItem Id="lblDigitalGainTx" Text=""/>
+            <ControlItem Id="lblDigitalGainWide" Text=""/>
+            <ControlItem Id="lblDigitalGainNarrow" Text=""/>
+            <ControlItem Id="grpAnalogGain" Text=""/>
+            <ControlItem Id="lblAnalogAudioGainRx" Text=""/>
+            <ControlItem Id="lblAnalogAudioGainWide" Text=""/>
+            <ControlItem Id="lblAnalogAudioGainNarrow" Text=""/>
+
+            <ControlItem Id="grpSMeter" Text=""/>
+            <ControlItem Id="lblSMeterLowEnd" Text=""/>
+            <ControlItem Id="lblSMeterHighEnd" Text=""/>
+
+            <ControlItem Id="lblReferenceOscTuning" Text=""/>
+            <ControlItem Id="lblReceiveAGCTarget" Text=""/>
+            <ControlItem Id="lblAnalogMicGain" Text=""/>
+          </Control>
+          <ControlItem Id="tabUHF" Text="UHF"/>
+          <Control Id="calibrationBandControlUHF" Text="" >
+            <ControlItem Id="calibrationPowerControlHigh" Text="高功率"/>
+            <ControlItem Id="calibrationPowerControlLow" Text=""/>
+            <ControlItem Id="calibrationTXIandQ" Text=""/>
+            <ControlItem Id=" grpAnalogTxDeviation" Text=""/>
+            <ControlItem Id="lblDTMF" Text=""/>
+            <ControlItem Id="lblToneBurst" Text=""/>
+            <ControlItem Id="lblAnalogTxDeviationWide" Text=""/>
+            <ControlItem Id="lblAnalogTxDeviationNarrow" Text=""/>
+            <ControlItem Id="lblOverallGain" Text=""/>
+            <ControlItem Id="grpSquelch" Text=""/>
+            <ControlItem Id="lblSquelchOpenNormal" Text=""/>
+            <ControlItem Id="lblSquelchCloseNormal" Text=""/>
+            <ControlItem Id="lblSquelchOpenTight" Text=""/>
+            <ControlItem Id="lblSquelchCloseTight" Text=""/>
+            <ControlItem Id="lblSquelchWide" Text=""/>
+            <ControlItem Id="lblSquelchNarrow" Text=""/>
+            <ControlItem Id="grpDigitalGain" Text=""/>
+            <ControlItem Id="lblDigitalGainRx" Text=""/>
+            <ControlItem Id="lblDigitalGainTx" Text=""/>
+            <ControlItem Id="lblDigitalGainWide" Text=""/>
+            <ControlItem Id="lblDigitalGainNarrow" Text=""/>
+            <ControlItem Id="grpAnalogGain" Text=""/>
+            <ControlItem Id="lblAnalogAudioGainRx" Text=""/>
+            <ControlItem Id="lblAnalogAudioGainWide" Text=""/>
+            <ControlItem Id="lblAnalogAudioGainNarrow" Text=""/>
+            <ControlItem Id="grpSMeter" Text=""/>
+            <ControlItem Id="lblSMeterLowEnd" Text=""/>
+            <ControlItem Id="lblSMeterHighEnd" Text=""/>
+            <ControlItem Id="lblReferenceOscTuning" Text=""/>
+            <ControlItem Id="lblReceiveAGCTarget" Text=""/>
+            <ControlItem Id="lblAnalogMicGain" Text=""/>
+          </Control>
+        </ControlItem>
+      </Control>
+      <Control Id="lblMessageDownloading" Text="正在下载" />
+    </Controls>
+  </CalibrationForm>
+  <DMRIDForm Text="DMR ID">
+    <Controls>
+      <Control Id="lblMessage" Text="输入您所在地区的ID前缀代码，然后按下载，以附加到列表中" />
+      <Control Id="lblRegionId" Text="区域" />
+      <Control Id="lblInactivityFilter" Text="不活动过滤器(days)" />
+      <Control Id="btnDownload" Text="从HamDigital下载-按地区和非活动状态过滤" />
+      <Control Id="btnImportCSV" Text="导入CSV-按地区代码过滤" />
+      <Control Id="btnRead" Text="读取GD-77" />
+      <Control Id="btnWrite" Text="写入GD-77" />
+      <Control Id="btnClear" Text="确定" />
+    </Controls>
+  </DMRIDForm>
+  <Commons>
+    <Item Id="None" Text="无" />
+    <Item Id="Selected" Text="已选" />
+    <Item Id="RadioIdNotEmpty" Text="对讲机ID不能为空!" />
+    <Item Id="RadioIdOutOfRange" Text="对讲机ID超出范围!" />
+    <Item Id="Read" Text="读取" />
+    <Item Id="Write" Text="写入" />
+    <Item Id="ReadComplete" Text="读取完成" />
+    <Item Id="WriteComplete" Text="写入完成" />
+    <Item Id="NameExist" Text="名称存在" />
+    <Item Id="FirstChNotDelete" Text="第一个区域中的第一个频道无法删除" />
+    <Item Id="FileFormatError" Text="文件格式错误" />
+    <Item Id="OpenSuccessfully" Text="打开成功" />
+    <Item Id="SaveSuccessfully" Text="保存成功" />
+    <Item Id="TypeNotMatch" Text="类型不符" />
+    <Item Id="NotSelectItemNotCopyItem" Text="不选择项目或不复制项目" />
+    <Item Id="KeyPressHex" Text="请输入 : " />
+    <Item Id="KeyPressDigit" Text="请输入：数字和{0}" />
+    <Item Id="KeyPressPrint" Text="请输入打印" />
+    <Item Id="DeviceNotFound" Text="找不到设备" />
+    <Item Id="ModelNotMatch" Text="模式不匹配" />
+    <Item Id="PromptKey1" Text="您要在退出之前保存代码插件吗?" />
+    <Item Id="PromptKey2" Text="您是否要加载新的默认代码插件？ 所有当前数据将被替换." />
+    <Item Id="DataFormatError" Text="数据格式错误" />
+    <Item Id="FirstNotDelete" Text="第一行无法删除" />
+    <Item Id="OpenPortFail" Text="打开串口失败" />
+    <Item Id="CommError" Text="通信故障" />
+    <Item Id="Add" Text="添加: " />
+    <Item Id="ScanSelected" Text="无法选择操作" />
+    <Item Id="codePlugReadConfirm"  Text="您确定要从GD-77读取代码插件吗？这将覆盖当前的代码插件." />
+    <Item Id="codePlugWriteConfirm"  Text="确定要将此代码插件写入GD-77吗？这将覆盖GD-77中当前的代码插件" />
+    <Item Id="pleaseConfirm"  Text="请确认" />
+    <Item Id="userAgreement"  Text="该软件按“原样”提供，不提供任何担保。 您对PC和DMR无线电使用风险自负。 通过按“是”按钮，您同意并理解." />
+    <Item Id="DownloadContactsMessageAdded" Text="您的联系人中还没有{0}个新ID" />
+    <Item Id="DownloadContactsRegionEmpty" Text="请输入3位数的地区前缀代码。 例如 505（澳大利亚）." />
+    <Item Id="DownloadContactsDownloading" Text="正在下载..." />
+    <Item Id="DownloadContactsSelectContactsToImport" Text="请选择您要导入的联系人" />
+    <Item Id="DownloadContactsTooMany" Text="Not all contacts could be imported because the maximum number of Digital Contacts has been reached" />
+    <Item Id="Warning" Text="警告" />
+    <Item Id="UnableDownloadFromInternet" Text="无法下载数据。 请检查您的互联网连接" />
+    <Item Id="DownloadContactsImportComplete" Text="导入完成" />
+    <Item Id="CodeplugUpgradeNotice" Text="这似乎是V3.0.6 Codeplug。 它将转换为V3.1.x" />
+    <Item Id="CodeplugUpgradeWarningToManyRxGroups" Text="版本3.1.x只能具有76个接收组。 其他接收组已被忽略" />
+    <Item Id="CodeplugRead" Text="从GD-77读取codeplug" />
+    <Item Id="CodeplugWrite" Text="将代码插件写入GD-77" />
+    <Item Id="DMRIDRead" Text="从GD-77读取DMR ID数据库" />
+    <Item Id="DMRIDWrite" Text="将DMR ID数据库写入GD-77" />
+    <Item Id="CalibrationRead" Text="从GD-77读取校准数据" />
+    <Item Id="CalibrationWrite" Text="将校准数据写入GD-77" />
+    <Item Id="IdAlreadyExists" Text="ID已经存在！" />
+    <Item Id="IdOutOfRange" Text="ID超出范围!" />
+    <Item Id="IdNotEmpty" Text="ID不能为空!" />
+    <Item Id="ContactNameDuplicate" Text="警告。 联系人姓名重复." />
+    <Item Id="EnableMemoryAccessMode" Text ="GD-77似乎不处于内存访问模式。打开收发器时，按住SK2键（蓝色侧键），绿色菜单和*键，然后重试" />
+    <Item Id="dataRead" Text="从GD-77读取数据"/>
+    <Item Id="dataWrite" Text="将数据写入GD-77"/>
+    <Item Id="DMRIdContcatsTotal" Text="ID总数= {0}。 最多可以上传{1}" />
+    <Item Id="ErrorParsingData" Text="解析数据时出错" />
+  </Commons>
+</Resource>
